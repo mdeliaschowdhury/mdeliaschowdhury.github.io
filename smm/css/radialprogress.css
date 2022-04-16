@@ -1,0 +1,53 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Nunito', sans-serif;
+    src: url('fonts/fonts/Nunito-Regular.ttf') format('truetype'),
+    url('fonts/fonts/Nunito-Bold.ttf') format('truetype'),
+    url('fonts/fonts/Nunito-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('fonts/fonts/Poppins-Medium.ttf') format('truetype'),
+    url('fonts/fonts/Poppins-SemiBold.ttf') format('truetype'),
+    url('fonts/fonts/Poppins-Bold.ttf') format('truetype');
+}
+svg.radial-progress {
+    height: auto;
+    max-width: 200px;
+    max-height: 140px;
+    padding: 0;
+    transform: rotate(-90deg);
+    width: 100%;
+}
+svg.radial-progress circle {
+    fill: rgba(0,0,0,0);
+    stroke: #fff;
+    stroke-dashoffset: 219.91148575129;
+    stroke-width: 2.5px;
+}
+svg.radial-progress circle.incomplete { 
+    opacity: 0.25;
+}
+svg.radial-progress circle.complete { 
+    stroke-dasharray: 219.91148575129; 
+}
+svg.radial-progress text {
+    fill: #232323;
+    font: 400 10px/1 'Poppins', sans-serif;
+    text-anchor: middle;
+}
+.cp_1 svg.radial-progress circle { 
+    stroke: #2853cc; 
+}
+.cp_2 svg.radial-progress circle { 
+    stroke: #f19910; 
+}
+.cp_3 svg.radial-progress circle { 
+    stroke: #69e8a1;
+}
+/* svg.radial-progress:nth-of-type(6n+4) circle {
+    stroke: #fca858; 
+}
+svg.radial-progress:nth-of-type(6n+5) circle { 
+    stroke: #fddc32; 
+} */
