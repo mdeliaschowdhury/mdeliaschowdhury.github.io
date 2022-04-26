@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+	<meta name="color-scheme" content="light dark">
+	<meta name="supported-color-schemes" content="light dark only">
+    <title>Homeland Email Template</title>
+
+	<link rel="icon" type="image/png" href="images/title-icon.png" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap" />
+
+    <!-- CSS RESET : BEGIN -->
+    <style>
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+		body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			height: 100% !important;
+			width: 100% !important;
+			background: #f1f1f1;
+		}
+
+		/* What it does: Stops email clients resizing small text. */
+		* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		/* What it does: Centers email on Android 4.4 */
+		div[style*="margin: 16px 0"] {
+			margin: 0 !important;
+		}
+
+		/* What it does: Stops Outlook from adding extra spacing to tables. */
+		table,
+		td {
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+		}
+
+		/* What it does: Fixes webkit padding issue. */
+		table {
+			border-spacing: 0 !important;
+			border-collapse: separate !important;
+			table-layout: fixed !important;
+			margin: 0 auto !important;
+		}
+
+		/* What it does: Uses a better rendering method when resizing images in IE. */
+		img {
+			-ms-interpolation-mode:	bicubic;
+		}
+
+		/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+		a {
+			text-decoration: none !important;
+		}
+
+		/* What it does: A work-around for email clients meddling in triggered links. */
+		*[x-apple-data-detectors],  /* iOS */
+		.unstyle-auto-detected-links *,
+		.aBn {
+			border-bottom: 0 !important;
+			cursor: default !important;
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
+
+		/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+		.a6S {
+			display: none !important;
+			opacity: 0.01 !important;
+		}
+
+		/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+		.im {
+			color: inherit !important;
+		}
+
+		/* If the above doesn't work, add a .g-img class to any image in question. */
+		img.g-img + div {
+			display: none !important;
+		}
+
+		/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+		/* Create one of these media queries for each additional viewport size you'd like to fix */
+
+		/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+		@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+			u ~ div .email-container {
+				min-width: 320px !important;
+			}
+		}
+		/* iPhone 6, 6S, 7, 8, and X */
+		@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+			u ~ div .email-container {
+				min-width: 375px !important;
+			}
+		}
+		/* iPhone 6+, 7+, and 8+ */
+		@media only screen and (min-device-width: 414px) {
+			u ~ div .email-container {
+				min-width: 414px !important;
+			}
+		}
+    </style>
+    <!-- CSS RESET : END -->
+
+	<!-- Allow for better image rendering on Windows hi-DPI displays. -->
+	<!--[if mso]>
+	<noscript>
+		<xml>
+			<o:OfficeDocumentSettings>
+			<o:AllowPNG/>
+			<o:PixelsPerInch>96</o:PixelsPerInch>
+			</o:OfficeDocumentSettings>
+		</xml>
+	</noscript>
+	<![endif]-->
+
+	<style>
+		.& .herobanner{ background-image: url('images/herobanner.jpg') !important; background-size: 100% 100% !important; background-repeat: no-repeat !important; }
+	</style>
+	<style>
+		[class~="x_herobanner"]{ background-image: url('images/herobanner.jpg') !important; background-size: 100% 100% !important; background-repeat: no-repeat !important; }
+	</style>
+	<style>
+		body[data-outlook-cycle] .herobanner { background-image: url('images/herobanner.jpg') !important; background-size: 100% 100% !important; background-repeat: no-repeat !important; }
+	</style>
+
+    <!-- PROGRESSIVE ENHANCEMENTS : BEGIN -->
+    <style>
+		body {
+			color: #353535;
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 1.8;
+			font-family: 'Open Sans', sans-serif;
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin: 0;
+			padding: 0;
+			color: #353535;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+		}
+		a {
+			color: #feb062;
+		}
+		@media screen and (max-width: 575px) {	
+			.smartviews .fullwidth {
+				width: 100% !important;
+				clear: both;
+			}
+			.smartviews .fullcenter {
+				text-align: center !important;
+			}
+		}
+    </style>
+	<!-- PROGRESSIVE ENHANCEMENTS : END -->
+</head>
+
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f1f1f1; overflow-x: hidden;">
+	<div style="display: none;font-size: 0;line-height: 1px;color: #353535;max-width: 0;max-height: 0;overflow: hidden;">Hi visit our real estate company!</div>
+	<div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+		&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+	</div>
+	<table role="presentation" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" bgcolor="#f1f1f1">
+		<tr>
+			<td class="smartviews" align="center" valign="top" bgcolor="#f1f1f1">
+				<table class="fullwidth" role="presentation" width="638" height="100%" align="center" cellspacing="0" cellpadding="0" border="0"  style="max-width: 638px; margin: 0 auto;">
+					<tr>
+						<td align="center" valign="top" bgcolor="#f1f1f1">
+							<!-- BODY : BEGIN -->
+							<table class="email-container" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td class="topbar" align="left" valign="top" bgcolor="#f1f1f1" style="padding: 5px 30px;">
+										<table class="fullwidth" role="presentation" width="50%" align="left" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td class="fullcenter" height="27" align="left" valign="middle" style="font-size: 0;">
+													<img src="images/envelope.png" width="16" alt="Icon Missing" style="display: inline-block;margin-right: 5px;vertical-align: middle;">
+													<a href="mailto:No-reply@domain.com" style="margin: 0;padding: 0;color: #353535;font-size: 12px;font-weight: 500;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: 12px;text-transform: uppercase;text-decoration: none;vertical-align: middle;">
+														No-reply@domain.com
+													</a>
+												</td>
+											</tr>
+										</table>
+										<table class="fullwidth" role="presentation" width="50%" align="left" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td class="fullcenter" height="27" align="right" valign="middle" style="font-size: 0;">
+													<a href="https://www.facebook.com/" style="display: inline-block;text-decoration: none;">
+														<img src="images/icon-facebook.png" alt="Icon Missing" width="16">
+													</a>
+													<a href="https://www.instagram.com/" style="display: inline-block;margin-left: 15px;text-decoration: none;">
+														<img src="images/icon-instagram.png" alt="Icon Missing" width="14">
+													</a>
+													<a href="https://twitter.com/" style="display: inline-block;margin-left: 15px;text-decoration: none;">
+														<img src="images/icon-twitter.png" alt="Icon Missing" width="16">
+													</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr><!-- end tr -->
+				
+								<tr>
+									<td class="header" align="left" valign="top" bgcolor="#ffffff" style="padding: 20px 30px;">
+										<table class="fullwidth" width="164" align="left" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td class="fullcenter" align="left" valign="top" style="font-size: 0;">
+													<a href="https://www.linkedin.com/in/feelfree009/" style="margin: 0;padding: 0;display: inline-block;width: 100%;">
+														<img src="images/logo.png" alt="Logo Missing">
+													</a>
+												</td>
+											</tr>
+										</table>
+										<table class="fullwidth" align="right" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td height="10" align="right" valign="top"></td>
+											</tr>
+											<tr>
+												<td class="fullcenter" align="right" valign="middle">
+													<a href="https://www.linkedin.com/in/feelfree009/" style="color: #353535;font-size: 14px;font-weight: 400;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-decoration: none;">
+														About
+													</a>
+													<a href="https://www.linkedin.com/in/feelfree009/" style="padding-left: 7px;color: #353535;font-size: 14px;font-weight: 400;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-decoration: none;">
+														Benefits
+													</a>
+													<a href="https://www.linkedin.com/in/feelfree009/" style="padding-left: 7px;color: #353535;font-size: 14px;font-weight: 400;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-decoration: none;">
+														Offers
+													</a>
+													<a href="https://www.linkedin.com/in/feelfree009/" style="padding-left: 7px;color: #353535;font-size: 14px;font-weight: 400;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-decoration: none;">
+														Properties
+													</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr><!-- end tr -->
+				
+								<tr>
+									<td class="hero" width="100%" height="328" align="center" valign="top" bgcolor="#ff4f03">
+										<div class="herobanner" style="height: 100%;background: rgb(255, 79, 3); background: linear-gradient(to right, rgba(0,0,0,0.05), rgba(0,0,0,0.05));">
+											<!--[if gte mso 9]>
+												<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+													<v:fill type="frame" color="#134f8d" src="images/wc-banner.jpg" />
+												</v:background>
+											<![endif]-->
+											<table role="presentation" width="100%" align="left" cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td class="herobanner" width="100%" height="328" align="left" valign="top" bgcolor="#ff4f03" background="images/herobanner.jpg" style="background: linear-gradient(to right, rgba(0,0,0,0.05), rgba(0,0,0,0.05)), url(images/herobanner.jpg); background-size: cover; background-position: center center;background-repeat: no-repeat;height: 328px;">
+														<table width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+															<tr>
+																<td align="center" valign="bottom">
+																	<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																		<tr>
+																			<td width="100%" align="center" valign="top">
+																				<h3 class="hero-caption" style="margin: 0;padding: 0;color: #ffffff;font-size: 26px;font-weight: 700;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: 1.2;text-align:center;text-transform: uppercase;">
+																					Discover your perfect home
+																				</h3>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td width="100%" height="12" align="center" valign="top"></td>
+																		</tr>
+																		<tr>
+																			<td width="100%" align="center" valign="top">
+																				<p class="hero-text" style="margin: 0;padding: 0;color: #ffffff;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: 1;text-align: center;text-transform: uppercase;">Starting from $250</p>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td width="100%" height="16" align="center" valign="top"></td>
+																		</tr>
+																		<tr>
+																			<td width="100%" align="center" valign="top">
+																				<a href="https://www.linkedin.com/in/feelfree009/" style="margin: 0;padding: 10px 16px;display: inline-block;color: #ffffff;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: 1;text-transform: uppercase;border: 0;border-radius: 4px;background-color: #ff4f03;text-decoration: none;">
+																					Browse More
+																				</a>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td width="100%" height="50" align="center" valign="top" style="font-size: 0;"></td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</td>
+								</tr><!-- end tr -->
+				
+								<tr>
+									<td class="sec-container" align="left" valign="top" bgcolor="#ffffff">
+										<table class="title-container" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td align="center" valign="top" style="padding: 0 5px;">
+													<table class="title-wrapper" width="100%" align="left" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td width="100%" height="40" align="left" valign="top"></td>
+														</tr>
+														<tr>
+															<td align="center" valign="top">
+																<h3 class="sec-heading" style="color: #353535;font-size: 26px;font-weight: 700;font-family: 'Open Sans', sans-serif;letter-spacing: 1px;line-height: 26px;text-align: center;text-transform: uppercase;">
+																	What we offer you
+																</h3>
+															</td>
+														</tr>
+														<tr>
+															<td width="100%" height="20" align="center" valign="top"></td>
+														</tr>
+														<tr>
+															<td align="center" valign="top">
+																<table align="center" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td width="77" height="3" align="center" valign="top" bgcolor="#ff4f03"></td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td width="100%" height="45" align="center" valign="top"></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										
+										<table class="card-container" role="presentation" width="100%" align="left" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td class="card-row" align="center" valign="top" style="padding: 0 30px;">
+													<table class="card-wrapper fullwidth" width="258" align="left" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="top">
+																<img src="images/icon-car.png" alt="Icon Missing">
+																<p style="color: #353535;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: uppercase;">Free parking spaces</p>
+																<p style="color: #717171;font-size: 13px;font-weight: 400;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: initial;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+															</td>
+														</tr>
+														<tr>
+															<td width="100%" height="30" align="left" valign="top"></td>
+														</tr>
+													</table>
+													<table class="card-wrapper fullwidth" width="258" align="right" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="top">
+																<img src="images/icon-safe.png" alt="Icon Missing">
+																<p style="color: #353535;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: uppercase;">24/7 Security</p>
+																<p style="color: #717171;font-size: 13px;font-weight: 400;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: initial;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+															</td>
+														</tr>
+														<tr>
+															<td width="100%" height="30" align="left" valign="top"></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+				
+											<tr>
+												<td class="card-row" align="center" valign="top" style="padding: 0 30px;">
+													<table class="card-wrapper fullwidth" width="258" align="left" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="top">
+																<img src="images/icon-leaves.png" alt="Icon Missing">
+																<p style="color: #353535;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: uppercase;">Tranquillity of Nature</p>
+																<p style="color: #717171;font-size: 13px;font-weight: 400;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: initial;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+															</td>
+														</tr>
+														<tr>
+															<td width="100%" height="30" align="left" valign="top"></td>
+														</tr>
+													</table>
+													<table class="card-wrapper fullwidth" width="258" align="right" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="top">
+																<img src="images/icon-club.png" alt="Icon Missing">
+																<p style="color: #353535;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: uppercase;">Gym And Club</p>
+																<p style="color: #717171;font-size: 13px;font-weight: 400;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: initial;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+															</td>
+														</tr>
+														<tr>
+															<td width="100%" height="30" align="left" valign="top"></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr><!-- end tr -->
+				
+								<tr>
+									<td class="sec-container" align="center" valign="top" bgcolor="#f9f9f9">
+										<table class="title-container" width="100%" role="presentation" align="center" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td align="center" valign="top" style="padding: 0 5px;">
+													<table class="title-wrapper" width="100%" align="left" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td width="100%" height="40" align="left" valign="top"></td>
+														</tr>
+														<tr>
+															<td align="center" valign="top">
+																<h3 class="sec-heading" style="color: #353535;font-size: 26px;font-weight: 700;font-family: 'Open Sans', sans-serif;letter-spacing: 1px;line-height: 26px;text-align: center;text-transform: uppercase;">
+																	Properties for rent
+																</h3>
+															</td>
+														</tr>
+														<tr>
+															<td width="100%" height="20" align="center" valign="top"></td>
+														</tr>
+														<tr>
+															<td align="center" valign="top">
+																<table align="center" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td width="77" height="3" align="center" valign="top" bgcolor="#ff4f03"></td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td width="100%" height="45" align="center" valign="top"></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										
+										<table class="card-container" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td class="card-row" align="center" valign="top" style="padding: 0 15px;">
+													<table class="card fullwidth" width="202.6666666666667" align="left" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="top" style="padding: 0 15px;">
+																<table class="card-wrapper" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td class="fullcenter" align="left" valign="top">
+																			<img src="images/property-card-1.jpg" alt="Card Image" width="172.6666666666667" style="max-width: 172.6666666666667px;">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="fullcenter" align="left" valign="top" style="padding: 10px 0;">
+																			<p style="margin: 0;padding: 0;color: #353535;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: uppercase;">Luxury Appartment</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="fullcenter" align="left" valign="top" style="padding-bottom: 8px;">
+																			<p style="margin: 0;padding: 0;color: #717171;font-size: 13px;font-weight: 400;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: initial;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="fullcenter" align="left" valign="top">
+																			<img src="images/icon-label.png" alt="Icon Missing" width="15" style="vertical-align: middle;">
+																			&nbsp;
+																			<span style="color: #717171;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;vertical-align: middle;">$ 500000</span>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="fullcenter" align="left" valign="top">
+																			<img src="images/icon-map.png" alt="Icon Missing" width="15" style="vertical-align: middle;">
+																			&nbsp;
+																			<span style="color: #717171;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;vertical-align: middle;">20 Gulshan, Dhaka</span>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="fullcenter" align="left" valign="top">
+																			<img src="images/icon-home.png" alt="Icon Missing" width="15" style="vertical-align: middle;">
+																			&nbsp;
+																			<span style="color: #717171;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;vertical-align: middle;">4 Bed Rooms</span>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="fullcenter" width="100%" align="left" valign="top" style="padding-top: 10px;">
+																			<a href="https://www.linkedin.com/in/feelfree009/" style="margin: 0;padding: 6px 12px;display: inline-block;color: #ffffff;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: uppercase;border: 0;border-radius: 4px;background-color: #ff4f03;text-decoration: none;">Read More</a>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td width="100%" height="40" align="left" valign="top"></td>
+														</tr>
+													</table>
+
+													<table class="card fullwidth" width="202.6666666666667" align="left" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="top" style="padding: 0 15px;">
+																<table class="card-wrapper" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td class="fullcenter" align="left" valign="top">
+																			<img src="images/property-card-2.jpg" alt="Card Image" width="172.6666666666667" style="max-width: 172.6666666666667px;">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="fullcenter" align="left" valign="top" style="padding: 10px 0;">
+																			<p style="margin: 0;padding: 0;color: #353535;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: uppercase;">Luxury Appartment</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="fullcenter" align="left" valign="top" style="padding-bottom: 8px;">
+																			<p style="margin: 0;padding: 0;color: #717171;font-size: 13px;font-weight: 400;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: initial;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="fullcenter" align="left" valign="top">
+																			<img src="images/icon-label.png" alt="Icon Missing" width="15" style="vertical-align: middle;">
+																			&nbsp;
+																			<span style="color: #717171;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;vertical-align: middle;">$ 500000</span>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="fullcenter" align="left" valign="top">
+																			<img src="images/icon-map.png" alt="Icon Missing" width="15" style="vertical-align: middle;">
+																			&nbsp;
+																			<span style="color: #717171;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;vertical-align: middle;">20 Gulshan, Dhaka</span>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="fullcenter" align="left" valign="top">
+																			<img src="images/icon-home.png" alt="Icon Missing" width="15" style="vertical-align: middle;">
+																			&nbsp;
+																			<span style="color: #717171;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;vertical-align: middle;">4 Bed Rooms</span>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="fullcenter" width="100%" align="left" valign="top" style="padding-top: 10px;">
+																			<a href="https://www.linkedin.com/in/feelfree009/" style="margin: 0;padding: 6px 12px;display: inline-block;color: #ffffff;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: uppercase;border: 0;border-radius: 4px;background-color: #ff4f03;text-decoration: none;">Read More</a>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td width="100%" height="40" align="left" valign="top"></td>
+														</tr>
+													</table>
+
+													<table class="card fullwidth" width="202.6666666666667" align="left" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="top" style="padding: 0 15px;">
+																<table class="card-wrapper" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td class="fullcenter" align="left" valign="top">
+																			<img src="images/property-card-3.jpg" alt="Card Image" width="172.6666666666667" style="max-width: 172.6666666666667px;">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="fullcenter" align="left" valign="top" style="padding: 10px 0;">
+																			<p style="margin: 0;padding: 0;color: #353535;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: uppercase;">Luxury Appartment</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="fullcenter" align="left" valign="top" style="padding-bottom: 8px;">
+																			<p style="margin: 0;padding: 0;color: #717171;font-size: 13px;font-weight: 400;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: initial;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="fullcenter" align="left" valign="top">
+																			<img src="images/icon-label.png" alt="Icon Missing" width="15" style="vertical-align: middle;">
+																			&nbsp;
+																			<span style="color: #717171;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;vertical-align: middle;">$ 500000</span>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="fullcenter" align="left" valign="top">
+																			<img src="images/icon-map.png" alt="Icon Missing" width="15" style="vertical-align: middle;">
+																			&nbsp;
+																			<span style="color: #717171;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;vertical-align: middle;">20 Gulshan, Dhaka</span>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="fullcenter" align="left" valign="top">
+																			<img src="images/icon-home.png" alt="Icon Missing" width="15" style="vertical-align: middle;">
+																			&nbsp;
+																			<span style="color: #717171;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;vertical-align: middle;">4 Bed Rooms</span>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="fullcenter" width="100%" align="left" valign="top" style="padding-top: 10px;">
+																			<a href="https://www.linkedin.com/in/feelfree009/" style="margin: 0;padding: 6px 12px;display: inline-block;color: #ffffff;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: uppercase;border: 0;border-radius: 4px;background-color: #ff4f03;text-decoration: none;">Read More</a>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td width="100%" height="40" align="left" valign="top"></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr><!-- end tr -->
+								
+								<tr>
+									<td class="sec-container" align="left" valign="top" bgcolor="#ff4f03">
+										<table class="title-container" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td align="center" valign="top" style="padding: 0 5px;">
+													<table class="title-wrapper" width="100%" align="left" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td width="100%" height="40" align="left" valign="top"></td>
+														</tr>
+														<tr>
+															<td align="center" valign="top">
+																<h3 class="sec-heading" style="color: #ffffff;font-size: 26px;font-weight: 700;font-family: 'Open Sans', sans-serif;letter-spacing: 1px;line-height: 26px;text-align: center;text-transform: uppercase;">
+																	What you need to know<br>about lake demo?
+																</h3>
+															</td>
+														</tr>
+														<tr>
+															<td width="100%" height="20" align="center" valign="top"></td>
+														</tr>
+														<tr>
+															<td align="center" valign="top">
+																<table align="center" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td width="77" height="3" align="center" valign="top" bgcolor="#ffffff"></td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td width="100%" height="45" align="center" valign="top"></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+				
+										<table class="card-container" role="presentation" width="100%" align="left" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td align="left" valign="top">
+													<table width="100%" height="20" align="left" cellspacing="0" cellpadding="0" border="0"></table>
+												</td>
+											</tr>
+				
+											<tr>
+												<td class="card-row" align="center" valign="top" style="padding: 0 15px;">
+													<table class="card-wrapper fullwidth" width="202.6666666666667" align="left" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="top" style="padding: 0 15px">
+																<img src="images/icon-like.png" alt="Icon Missing">
+																<p style="color: #ffffff;font-size: 16px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: uppercase;">Exclusivity</p>
+																<p style="color: #ffffff;font-size: 13px;font-weight: 400;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: initial;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+															</td>
+														</tr>
+														<tr>
+															<td width="100%" height="30" align="left" valign="top"></td>
+														</tr>
+													</table>
+
+													<table class="card-wrapper fullwidth" width="202.6666666666667" align="left" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="top" style="padding: 0 15px;">
+																<img src="images/icon-pin.png" alt="Icon Missing">
+																<p style="color: #ffffff;font-size: 16px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: uppercase;">Location</p>
+																<p style="color: #ffffff;font-size: 13px;font-weight: 400;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: initial;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+															</td>
+														</tr>
+														<tr>
+															<td width="100%" height="30" align="left" valign="top"></td>
+														</tr>
+													</table>
+
+													<table class="card-wrapper fullwidth" width="202.6666666666667" align="left" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="top" style="padding: 0 15px;">
+																<img src="images/icon-luggage.png" alt="Icon Missing">
+																<p style="color: #ffffff;font-size: 16px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: uppercase;">Investment</p>
+																<p style="color: #ffffff;font-size: 13px;font-weight: 400;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: initial;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+															</td>
+														</tr>
+														<tr>
+															<td width="100%" height="30" align="left" valign="top"></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr><!-- end tr -->
+				
+								<tr>
+									<td class="sec-container" align="center" valign="top" bgcolor="#f9f9f9">
+										<table class="title-container" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td align="center" valign="top" style="padding: 0 5px;">
+													<table class="title-wrapper" width="100%" align="left" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td width="100%" height="40" align="left" valign="top"></td>
+														</tr>
+														<tr>
+															<td align="center" valign="top">
+																<h3 class="sec-heading" style="color: #353535;font-size: 26px;font-weight: 700;font-family: 'Open Sans', sans-serif;letter-spacing: 1px;line-height: 26px;text-align: center;text-transform: uppercase;">
+																	Meet our agents
+																</h3>
+															</td>
+														</tr>
+														<tr>
+															<td width="100%" height="20" align="center" valign="top"></td>
+														</tr>
+														<tr>
+															<td align="center" valign="top">
+																<table align="center" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td width="77" height="3" align="center" valign="top" bgcolor="#ff4f03"></td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td width="100%" height="45" align="center" valign="top"></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										
+										<table class="card-container" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td class="card-row" align="center" valign="top" style="padding: 0 15px;">
+													<table class="card fullwidth" width="202.6666666666667" align="left" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="top" style="padding: 0 15px;">
+																<table class="card-wrapper" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td align="center" valign="top" style="font-size: 0;">
+																			<img src="images/teammember-1.jpg" alt="Card Image" width="172.6666666666667" style="max-width: 100%;">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="top" style="padding: 10px 0;">
+																			<p style="margin: 0;padding: 0;color: #353535;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: uppercase;">John Morris</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="top" style="padding: 8px 0;">
+																			<p style="margin: 0;padding: 0;color: #717171;font-size: 13px;font-weight: 400;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: uppercase;">Chief Executive</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="top">
+																			<a href="https://www.facebook.com" style="display: inline-block;color: #353535;text-decoration: none;">
+																				<img src="images/icon-facebook-gray.png" alt="Icon Missing" width="18">
+																			</a>
+																			<a href="https://www.instagram.com" style="display: inline-block;padding: 0 15px;color: #353535;text-decoration: none;">
+																				<img src="images/icon-instagram-gray.png" alt="Icon Missing" width="16">
+																			</a>
+																			<a href="https://www.twitter.com" style="display: inline-block;color: #353535;text-decoration: none;">
+																				<img src="images/icon-twitter-gray.png" alt="Icon Missing" width="18">
+																			</a>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td width="100%" height="40" align="left" valign="top"></td>
+														</tr>
+													</table>
+
+													<table class="card fullwidth" width="202.6666666666667" align="left" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="top" style="padding: 0 15px;">
+																<table class="card-wrapper" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td align="center" valign="top" style="font-size: 0;">
+																			<img src="images/teammember-2.jpg" alt="Card Image" width="172.6666666666667" style="max-width: 172.6666666666667px;">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="top" style="padding: 10px 0;">
+																			<p style="margin: 0;padding: 0;color: #353535;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: uppercase;">Lucas Pedro</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="top" style="padding: 8px 0;">
+																			<p style="margin: 0;padding: 0;color: #717171;font-size: 13px;font-weight: 400;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: uppercase;">Stock Broker</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="top">
+																			<a href="https://www.facebook.com" style="display: inline-block;color: #353535;text-decoration: none;">
+																				<img src="images/icon-facebook-gray.png" alt="Icon Missing" width="18">
+																			</a>
+																			<a href="https://www.instagram.com" style="display: inline-block;padding: 0 15px;color: #353535;text-decoration: none;">
+																				<img src="images/icon-instagram-gray.png" alt="Icon Missing" width="16">
+																			</a>
+																			<a href="https://www.twitter.com" style="display: inline-block;color: #353535;text-decoration: none;">
+																				<img src="images/icon-twitter-gray.png" alt="Icon Missing" width="18">
+																			</a>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td width="100%" height="40" align="left" valign="top"></td>
+														</tr>
+													</table>
+
+													<table class="card fullwidth" width="202.6666666666667" align="left" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="top" style="padding: 0 15px;">
+																<table class="card-wrapper" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td align="center" valign="top" style="font-size: 0;">
+																			<img src="images/teammember-3.jpg" alt="Card Image" width="172.6666666666667" style="max-width: 172.6666666666667px;">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="top" style="padding: 10px 0;">
+																			<p style="margin: 0;padding: 0;color: #353535;font-size: 13px;font-weight: 600;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: uppercase;">Jessica</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="top" style="padding: 8px 0;">
+																			<p style="margin: 0;padding: 0;color: #717171;font-size: 13px;font-weight: 400;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: normal;text-transform: uppercase;">Chief Designer</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="top">
+																			<a href="https://www.facebook.com" style="display: inline-block;color: #353535;text-decoration: none;">
+																				<img src="images/icon-facebook-gray.png" alt="Icon Missing" width="18">
+																			</a>
+																			<a href="https://www.instagram.com" style="display: inline-block;padding: 0 15px;color: #353535;text-decoration: none;">
+																				<img src="images/icon-instagram-gray.png" alt="Icon Missing" width="16">
+																			</a>
+																			<a href="https://www.twitter.com" style="display: inline-block;color: #353535;text-decoration: none;">
+																				<img src="images/icon-twitter-gray.png" alt="Icon Missing" width="18">
+																			</a>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td width="100%" height="40" align="left" valign="top"></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr><!-- end tr -->
+				
+								<tr>
+									<td class="sec-container" align="left" valign="top" bgcolor="#ff4f03" style="padding: 25px 30px;">
+										<table class="fullwidth" role="presentation" width="400" align="left" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td align="center" valign="middle" style="padding: 5px 0;font-size: 0;">
+													<span style="color:#ffffff;font-size: 18px;font-weight: 700;font-family: 'Open Sans', sans-serif;letter-spacing: 0;line-height: inherit;text-transform: uppercase;">
+														Free call today <a href="tel:+8801710560323" style="margin: 0;padding: 0;color: #ffffff;">+88 01710 560 323</a>
+													</span>
+												</td>
+											</tr>
+										</table>
+
+										<table class="fullwidth" role="presentation" width="178" align="left" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td align="center" valign="middle" style="padding: 5px 0;font-size: 0;">
+													<a href="https://www.linkedin.com/in/feelfree009/" style="display: inline-block;vertical-align: middle;padding: 3.6px 10px;color:#ff4f03;font-size: 14px;font-weight: 700;font-family: 'Open Sans', sans-serif;letter-spacing: 1px;line-height: inherit;text-transform: uppercase;text-decoration: none;background-color: #ffffff;">
+														Contact us
+													</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr><!-- end tr -->
+							</table>
+							<!-- BODY : END -->
+
+							<!-- FOOTER : BEGIN -->
+							<table class="footer" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td align="left" valign="middle" bgcolor="#f1f1f1" style="padding: 25px 30px">
+										<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td align="center" valign="middle" style="font-size: 0;">
+													<a href="https://www.facebook.com/" style="display: inline-block;text-decoration: none;">
+														<img src="images/icon-facebook-gray.png" alt="Icon Missing" width="18">
+													</a>
+													<a href="https://www.instagram.com/" style="display: inline-block;margin-left: 15px;text-decoration: none;">
+														<img src="images/icon-instagram-gray.png" alt="Icon Missing" width="16">
+													</a>
+													<a href="https://twitter.com/" style="display: inline-block;margin-left: 15px;text-decoration: none;">
+														<img src="images/icon-twitter-gray.png" alt="Icon Missing" width="18">
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td align="center" valign="middle" style="padding: 20px 0;">
+													<p style="margin: 0;color: #353535;font-size: 13px;font-weight: normal;">
+														Design and Developed &copy; <a href="https://www.linkedin.com/in/feelfree009" target="_blank"style="color: #353535;text-decoration: none;">Elias</a>
+													</p>
+												</td>
+											</tr>
+											<tr>
+												<td align="center" valign="middle">
+													<a href="https://eliassoft.xyz" style="margin: 0;color: #353535;font-size: 13px;font-weight: normal;text-decoration: none;">
+														Unsubscribe
+													</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr><!-- end: tr -->
+							</table>
+							<!-- FOOTER : END -->
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
