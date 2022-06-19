@@ -388,17 +388,16 @@
         $(this).parents('.media-body').find('.reply').slideToggle();
     });
     
-    $('a[href*="#"]:not([href="#"])').on('click', function() {
-        var findParent = $('a[href*="#"]:not([href="#"])').parents('.pills-tab');
-        if (!findParent && location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.height ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.height) {
-                $('html, body').animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-                return false;
-            }
-        }
-    });
+    // $('a[href*="#"]:not([href="#"])').on('click', function() {
+    //     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    //         var target = $(this.hash);
+    //         target = target.height ? target : $('[name=' + this.hash.slice(1) + ']');
+    //         if (target.height) {
+    //             $('html, body').animate({
+    //                 scrollTop: target.offset().top
+    //             }, 1000);
+    //             return false;
+    //         }
+    //     }
+    // });
 })(jQuery);
