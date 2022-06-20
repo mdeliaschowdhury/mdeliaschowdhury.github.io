@@ -1,0 +1,69 @@
+function myScreenSize(event) {
+        if (event.matches) {
+            console.log('SCREENSIZE==767PX')
+            
+            $('#investmentnavbar .nav-link').removeClass('nav-link-active');
+            $('.dropdown-patent--i').addClass('sliding-control').removeClass('show');
+            $('.dropdown-patent--i').find('.dropdown-menu').removeClass('show slideUp');
+            $('.dropdown-patent--i').find('.dropdown-menu').removeAttr('style');
+            // $('.dropdown-menu').parent('.dropdown-patent--i').find('show').addClass('sliding-control-up').removeClass('sliding-control');
+            // var checker = $('.dropdown-patent--i').hasClass('show');
+            // if (checker.length == true) {
+            //     $('.dropdown-patent--i').removeClass('sliding-control').addClass('sliding-control-up');
+            //     console.log('xxx');
+            // } 
+            // else if($(this).checker !== true) {
+            //     $('.dropdown-patent--i').removeClass('sliding-control-up').addClass('sliding-control');
+            // }
+
+
+            
+            // $('.dropdown-patent--i').addClass('sliding-control');
+            
+            $('.dropdown-patent--i .dropdown-toggle').on('click', function(){
+                // console.log('Toggle');
+                if($(this).parent('.dropdown-patent--i').hasClass('sliding-control')){
+                    console.log('If Condition');
+                    $(this).parent('.dropdown-patent--i').removeClass('sliding-control').addClass('sliding-control-up');
+                    $(this).parent('.dropdown-patent--i').find('.dropdown-menu').slideDown().addClass('slideUp').removeClass('show');
+                    $('.dropdown-patent--i .dropdown-toggle').not(this).parent('.dropdown-patent--i').removeClass('sliding-control-up').addClass('sliding-control').find('.dropdown-menu').slideUp().removeClass('slideUp');
+                    
+                }
+                else if($(this).parent('.dropdown-patent--i').hasClass('sliding-control-up') && $(this).parent('.dropdown-patent--i').find('.dropdown-menu').hasClass('slideUp')) {
+                    console.log('else if');
+                    $(this).parent('.dropdown-patent--i').removeClass('sliding-control-up').addClass('sliding-control');
+                    $(this).parent('.dropdown-patent--i').find('.dropdown-menu').slideUp().removeClass('slideUp');
+                };
+            });
+            
+            // Close the dropdown if the user clicks outside of it
+            // window.onclick = function(event) {
+            //     if (!event.target.matches('.dropdown-patent--i .dropdown-toggle')) {
+            //         var dropdowns = $('.dropdown-patent--i .dropdown-menu');
+            //         var i;
+            //         for (i = 0; i < dropdowns.length; i++) {
+            //             var openDropdown = dropdowns[i];
+            //             openDropdown.slideUp();
+            //             // if (openDropdown.classList.contains('show')) {
+            //             //     openDropdown.slideUp();
+            //             //     // openDropdown.classList.remove('show');
+            //             //     // console.log('Slide Up Dropdown');
+            //             // }
+            //         }
+            //     }
+            // }
+            // $(window).on('click', function(){
+        
+            //     $('.dropdown-patent--i .dropdown-toggle').parents('.dropdown-patent--i').find('.dropdown-menu').slideUp();
+            //     console.log('xxx');
+            //     // $('.dropdown-patent--i .dropdown-toggle').parents('.dropdown-patent--i').find('.dropdown-menu').removeClass('show');
+            // });
+        } else {
+            console.log('SCREENSIZE<=768PX')
+            $('.dropdown-patent--i').removeClass('sliding-control sliding-control-up');
+            $('.dropdown-patent--i').find('.dropdown-menu').css('display', 'block');
+        }
+    }
+    var mediaQuery = window.matchMedia("(max-width: 767px)");
+    myScreenSize(mediaQuery);
+    mediaQuery.addListener(myScreenSize);
