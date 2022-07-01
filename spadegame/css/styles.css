@@ -629,18 +629,37 @@ PAGE STYLES - HOME PAGE
     background-image: url(https://d3hp2os08tb528.cloudfront.net/shared/images/svg/speech-right.svg);
     background-repeat: no-repeat;
 }
-@media (max-width: 767px) {
-    
-}
-@media (max-width: 464px) {
-    
-}
 /*--------------------------------------------------------------------
-RESPONSIVE - CLASSES & TEXT
+RESPONSIVENESS
 ----------------------------------------------------------------------*/
-@media (max-width: 767px) {
-    
-}
 @media (max-width: 575px) {
-    
+    .game-wrapper {
+        padding: 5px;
+    }
+    .player-col-i {
+        max-width: 45px;
+    }
+    .player-info-box {
+        max-width: 45px;
+    }
+    .player-avatar {
+        max-width: 40px;
+    }
+    .bid-info-box {
+        width: 110px;
+    }
+    .left-bid-box {
+        top: -25px;
+        left: 40px;
+    }
+    .top-bid-box {
+        left: -30px;
+    }
+    .right-bid-box {
+        top: -25px;
+        right: 40px;
+    }
+    .bottom-bid-box {
+        right: -30px;
+    }
 }
