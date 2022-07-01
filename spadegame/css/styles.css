@@ -629,6 +629,24 @@ PAGE STYLES - HOME PAGE
     background-image: url(https://d3hp2os08tb528.cloudfront.net/shared/images/svg/speech-right.svg);
     background-repeat: no-repeat;
 }
+.score-table-wrapper {
+    position: absolute;
+    right: calc(0px - 73px);
+    bottom: 0;
+    width: auto;
+    padding: 2px;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+.score-table-wrapper table th,
+.score-table-wrapper table td {
+    padding: 0 1px;
+    color: var(--textcolor);
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5;
+    border: 1px solid #000000;
+}
 /*--------------------------------------------------------------------
 RESPONSIVENESS
 ----------------------------------------------------------------------*/
@@ -636,8 +654,13 @@ RESPONSIVENESS
     .game-wrapper {
         padding: 5px;
     }
-    .player-col-i {
+    .player-col-i,
+    .player-col-iii {
         max-width: 45px;
+    }
+    .player-col-ii {
+        width: 439px;
+        max-width: 439px;
     }
     .player-info-box {
         max-width: 45px;
@@ -653,13 +676,20 @@ RESPONSIVENESS
         left: 40px;
     }
     .top-bid-box {
-        left: -30px;
+        left: calc(50% - 135px);
     }
     .right-bid-box {
         top: -25px;
         right: 40px;
     }
     .bottom-bid-box {
-        right: -30px;
+        right: calc(50% - 135px);
+    }
+    .score-table-wrapper {
+        right: calc(0% - 40px);
+    }
+    .score-table-wrapper table th,
+    .score-table-wrapper table td {
+        font-size: 10px;
     }
 }
