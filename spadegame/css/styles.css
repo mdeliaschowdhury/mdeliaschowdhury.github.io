@@ -671,12 +671,18 @@ RESPONSIVENESS
     .bid-info-box {
         width: 110px;
     }
+    .bid-box-wrapper {
+        height: 64px;
+    }
     .left-bid-box {
         top: -25px;
         left: 40px;
     }
     .top-bid-box {
         left: calc(50% - 135px);
+    }
+    .top-bid-box .bid-box-wrapper .player-bid-count {
+        padding-top: 0 !important;
     }
     .right-bid-box {
         top: -25px;
