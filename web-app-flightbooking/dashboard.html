@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="eng">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <![endif]-->
+    <meta name="keywords" content="HTML5 Template" />
+	<title>Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="Personal Web Template" content="Air ticket booking site" />
+	<meta name="Site Description" content="WEBSITE DESCRIPTION" />
+
+	<link rel="icon" type="image/png" href="images/icon/title-icon.png" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/themify-icons.css" />
+	<!--[if lt IE 8]><!-->
+	<link rel="stylesheet" type="text/css" href="css/ie7.css">
+	<!--<![endif]-->
+	<link rel="stylesheet" type="text/css" href="css/libs-ui.css" />
+	<link rel="stylesheet" type="text/css" href="css/libs-select.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.typeahead.css" />
+	<link rel="stylesheet" type="text/css" href="css/responsiveslides.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-countryselector.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/datatables.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/prism.css" />
+    <link rel="stylesheet" type="text/css" href="css/intlTelInput.css?1551697588835" />
+    <link rel="stylesheet" type="text/css" href="css/cellValid.css?1551697588835" />
+    <link rel="stylesheet" type="text/css" href="css/isValidNumber.css?1551697588835" />
+    <link rel="stylesheet" type="text/css" href="css/flags.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+	<script type="text/javascript" src="js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<!--==================================
+	PRELOADER
+	===================================-->
+	<div id="st-preloader">
+		<div id="pre-status">
+			<div class="preload-placeholder"></div>
+		</div>
+	</div>
+	<!--==================================
+	/PRELOADER
+	===================================-->
+	
+	<!--==================================
+	DAS-NAVBAR
+	===================================-->
+	<section id="das-navbar" class="logged-navbar">
+		<div class="container-fluid">
+			<div class="das-navbar">
+				<div class="ds__logo">
+					<a href="index.html"><img src="images/logo.png" alt="Image Missing"></a>
+				</div>
+				<div class="ds__myaccount my__account">
+					<div class="dropdown">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account <span class="caret"></span></a>
+					    <ul class="booking-theme dropdown-menu">
+					        <li>
+					        	<div class="geo-cash">
+					        		<h6>Welcome!</h6>
+					        		<div class="geo-box">
+					        			<h4>Your Balance <strong>500</strong> BDT</h4>
+					        			<p>You can use them on your next booking</p>
+					        		</div>
+					        	</div>
+					        </li>
+					        <li><a href="dashboard.html">My Account</a></li>
+					        <li><a href="dashboard.html">Topup Your Balance</a></li>
+					        <li><a href="#">Logout</a></li>
+					    </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--==================================
+	/DAS-NAVBAR
+	===================================-->
+
+	<!--==================================
+	DASHBOARD
+	===================================-->
+	<section id="dashboard">
+		<!-- CONTAINER-FLUID -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-3">
+					<ul class="das-nav nav nav-pills">
+					    <li class="active">
+					    	<a href="dashboard.html"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</a>
+					    </li>
+					    <li>
+					    	<a href="d-profile.html"><i class="fa fa-user" aria-hidden="true"></i>Profile</a>
+					    </li>
+					    <li>
+					    	<a href="d-booking.html"><i class="fa fa-bookmark" aria-hidden="true"></i>Bookings</a>
+					    </li>
+					    <li>
+					    	<a href="d-travellerinfo.html"><i class="fa fa-info-circle" aria-hidden="true"></i>Travellers</a>
+					    </li>
+					    <li>
+					    	<a href="d-forms.html"><i class="fa fa-bookmark" aria-hidden="true"></i>Forms</a>
+					    </li>
+					    <li>
+					    	<a href="d-accounts.html"><i class="fa fa-info-circle" aria-hidden="true"></i>Accounts</a>
+					    </li>
+					</ul>
+				</div>
+				<div class="col-md-9">
+					<!-- USER-NOTIFICATION -->
+					<div class="user-notification">
+						<div class="notify-block-i">
+						     <h5>Welcome!<br>Md Parvez Mahmud</h5>
+						</div>
+						<div class="notify-block-ii">
+				      		<div class="notify-wrapper">
+				      			<p>Flights Booked</p>
+				      			<p>2</p>
+				      		</div>
+				      		<div class="notify-wrapper">
+				      			<p>New Coupons</p>
+				      			<p>2</p>
+				      		</div>
+				      		<div class="notify-wrapper">
+				      			<p>Balance</p>
+				      			<p>BDT 90000</p>
+				      		</div>
+		      			</div>
+					</div>
+					<!-- /USER-NOTIFICATION -->
+
+			      	<!-- DAS-SEARCH -->
+					<div id="das-search">
+						<!-- SEARCH-AREA -->
+				    	<div class="search-area">
+				    		<!-- PILLS-TAB -->
+					    	<ul class="booking-theme nav nav-pills">
+							    <li class="active"><a data-toggle="pill" href="#flight">Flight</a></li>
+							</ul>
+							<!-- PILLS-TAB -->
+							
+							<!-- PILLS-TABCONTENT -->
+							<div class="das_tab tab-content">
+								<!-- PILLS :: FLIGHT -->
+							    <div id="flight" class="tab-pane fade in active">
+							    	<!-- FLIGHT-CATEGORY -->
+							    	<div class="flight-category">
+							    		<label class="chek-box-container" id="International"><span>International</span>
+										  	<input type="checkbox" value="checked 1" checked="checked">
+										  	<span class="checkmark"></span>
+										</label>
+										<label class="chek-box-container" id="bd-domestic">Bangladeshi Domestic
+										  	<input type="checkbox" value="checked 2">
+										  	<span class="checkmark"></span>
+										</label>
+										<label class="chek-box-container" id="ind-domestic">Indian Domestic
+										  	<input type="checkbox" value="checked 3">
+										  	<span class="checkmark"></span>
+										</label>  
+									</div>
+									<!-- /FLIGHT-CATEGORY -->
+
+									<!-- FLIGHT-SEARCH -->
+								    <div class="flight-search">
+								    	<!-- MULTICITY -->
+								    	<div id="multicity">
+									    	<form class="search-form ds__searchform" action="" method="">
+									    		<!-- FLEX-CONTAINER -->
+									    		<div class="flex-container _row-i">
+									    			<div class="flex-item">
+										    			<div class="typeahead__container">
+											    			<div class="typeahead__field ui-flight">
+															  	<span class="typeahead__query">
+															  		<input class="js-typeahead" name="q" type="search" autofocus autocomplete="off" placeholder="Flying from">
+															  	</span>
+															</div>
+														</div>
+													</div>
+													<div class="flex-item">
+										    			<div class="typeahead__container ">
+											    			<div class="typeahead__field ui-flight">
+															  	<span class="typeahead__query">
+															  		<input class="js-typeahead" name="q" type="search" autofocus autocomplete="off" placeholder="Flying to">
+															  	</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- /FLEX-CONTAINER -->
+
+												<!-- FLEX-CONTAINER -->
+												<div class="flex-container _row-ii">
+													<div class="flex-item departure">
+														<input type="text" class="depart-date" placeholder="Depart Date" required="required">
+													</div>
+													<div class="flex-item return">
+														<input type="text" class="return-date" placeholder="Return date" required="required">
+													</div>
+													<div class="flex-item journey-type">
+														<!-- DROPLIST -->
+														<div class="droplist" id="js-select-special">
+															<input class="droplist-input info" type="text" name="traveller" value="1 Travellers, Economy" disabled="disabled" id="info">
+															<a class="droplist-toggle"><span class="droplist-toggle-span">1</span> Traveller&nbsp;<span class="cabin-class-name">Economy</span></a>
+															<!-- DROPLIST-MENU -->
+															<div class="droplist-menu">
+																<!-- ADD-TRAVELLER -->
+																<ul class="add-traveller">
+																	<li class="list-person_item_1">
+																		<span class="trv-category">Adult</span>
+																		<div class="spin-quantity quantity1" id="">
+																			<span class="btn-spin-minus">
+																				<span class="fa fa-minus" aria-hidden="true"></span>
+																			</span>
+																			<input class="inputQty" type="number" min="1" max="9" value="1">
+																			<span class="btn-spin-plus">
+																				<span class="fa fa-plus" aria-hidden="true"></span>
+																			</span>
+																		</div>
+																	</li>
+																	<li class="list-person_item_2">
+																		<span class="trv-category">Child <small>2-12 Years</small></span>
+																		<div class="spin-quantity quantity2" id="">
+																			<span class="btn-spin-minus">
+																				<span class="fa fa-minus" aria-hidden="true"></span>
+																			</span>
+																			<input class="inputQty" type="number" min="0" max="9" value="0">
+																			<span class="btn-spin-plus">
+																				<span class="fa fa-plus" aria-hidden="true"></span>
+																			</span>
+																		</div>
+																	</li>
+																	<li class="list-person_item_3">
+																		<span class="trv-category">Infant <small>Below 2 Years</small></span>
+																		<div class="spin-quantity quantity3">
+																			<span class="btn-spin-minus">
+																				<span class="fa fa-minus" aria-hidden="true"></span>
+																			</span>
+																			<input class="inputQty" type="number" min="0" max="9" value="0">
+																			<span class="btn-spin-plus">
+																				<span class="fa fa-plus" aria-hidden="true"></span>
+																			</span>
+																		</div>
+																	</li>
+																</ul>
+																<!-- /ADD-TRAVELLER -->
+
+																<!-- JOURNEY-CATEGORY -->
+																<div class="journey-category">
+																	<div class="category-list">
+																		<label class="category-name">
+																			<input type="radio" name="category-name" checked="checked">&nbsp;Economy
+																		</label>
+																	</div>
+																	<div class="category-list">
+																		<label class="category-name">
+																			<input type="radio" name="category-name">&nbsp;Premium Economy
+																		</label>
+																	</div>
+																	<div class="category-list">
+																		<label class="category-name">
+																			<input type="radio" name="category-name">&nbsp;Business
+																		</label>
+																	</div>
+																	<div class="category-list">
+																		<label class="category-name">
+																			<input type="radio" name="category-name">&nbsp;First Class
+																		</label>
+																	</div>
+																</div>
+																<!-- /JOURNEY-CATEGORY -->
+
+																<div class="spin-submit">
+																	<span>Done</span>
+																</div>
+															</div>
+															<!-- /DROPLIST-MENU -->
+														</div>
+														<!-- /DROP-LIST -->
+													</div>
+												</div>
+												<!-- /FLEX-CONTAINER -->
+												
+												<!-- MULTICITYCONTAINER -->
+												<div class="multicityContainer ds__mulContainer">
+													<!-- FLEX-CONTAINER -->
+													<div class="flex-container add_multicity">
+														<div class="flex-item">
+											    			<div class="typeahead__container ">
+												    			<div class="typeahead__field ui-flight">
+																  	<span class="typeahead__query">
+																  		<input class="js-typeahead" name="q" type="search" autofocus autocomplete="off" placeholder="Flying from">
+																  	</span>
+																</div>
+															</div>
+														</div>
+														<div class="flex-item">
+											    			<div class="typeahead__container ">
+												    			<div class="typeahead__field ui-flight">
+																  	<span class="typeahead__query">
+																  		<input class="js-typeahead" name="q" type="search" autofocus autocomplete="off" placeholder="Flying to">
+																  	</span>
+																</div>
+															</div>
+														</div>
+														<div class="flex-item departure">
+															<input type="text" class="from" placeholder="Depart Date">
+														</div>
+														<div class="flex-item btn-search">
+															<button class="add-flight"><i class="fa fa-plus-square" aria-hidden="true"></i>&nbsp;&nbsp;Add City</button>
+														</div>
+													</div>
+													<!-- /FLEX-CONTAINER -->
+
+													<!-- FLEX-CONTAINER -->
+													<div id="form-1" class="flex-container formFlex">
+														<div class="flex-item">
+											    			<div class="typeahead__container ">
+												    			<div class="typeahead__field ui-flight">
+																  	<span class="typeahead__query">
+																  		<input class="js-typeahead" name="q" type="search" autofocus autocomplete="off" placeholder="Flying from">
+																  	</span>
+																</div>
+															</div>
+														</div>
+														<div class="flex-item">
+											    			<div class="typeahead__container ">
+												    			<div class="typeahead__field ui-flight">
+																  	<span class="typeahead__query">
+																  		<input class="js-typeahead" name="q" type="search" autofocus autocomplete="off" placeholder="Flying to">
+																  	</span>
+																</div>
+															</div>
+														</div>
+														<div class="flex-item departure">
+															<input type="text" class="from" placeholder="Depart Date">
+														</div>
+														<div class="flex-item btn-search">
+															<span class="remove-flight">X</span>
+														</div>
+													</div>
+													<!-- /FLEX-CONTAINER -->
+
+													<!-- FLEX-CONTAINER -->
+													<div id="form-2" class="flex-container formFlex">
+														<div class="flex-item">
+											    			<div class="typeahead__container ">
+												    			<div class="typeahead__field ui-flight">
+																  	<span class="typeahead__query">
+																  		<input class="js-typeahead" name="q" type="search" autofocus autocomplete="off" placeholder="Flying from">
+																  	</span>
+																</div>
+															</div>
+														</div>
+														<div class="flex-item">
+											    			<div class="typeahead__container">
+												    			<div class="typeahead__field ui-flight">
+																  	<span class="typeahead__query">
+																  		<input class="js-typeahead" name="q" type="search" autofocus autocomplete="off" placeholder="Flying to">
+																  	</span>
+																</div>
+															</div>
+														</div>
+														<div class="flex-item departure">
+															<input type="text" class="from" placeholder="Depart Date">
+														</div>
+														<div class="flex-item btn-search">
+															<span class="remove-flight">X</span>
+														</div>
+													</div>
+													<!-- /FLEX-CONTAINER -->
+
+													<!-- FLEX-CONTAINER -->
+													<div id="form-3" class="flex-container formFlex">
+														<div class="flex-item">
+											    			<div class="typeahead__container ">
+												    			<div class="typeahead__field ui-flight">
+																  	<span class="typeahead__query">
+																  		<input class="js-typeahead" name="q" type="search" autofocus autocomplete="off" placeholder="Flying from">
+																  	</span>
+																</div>
+															</div>
+														</div>
+														<div class="flex-item">
+											    			<div class="typeahead__container">
+												    			<div class="typeahead__field ui-flight">
+																  	<span class="typeahead__query">
+																  		<input class="js-typeahead" name="q" type="search" autofocus autocomplete="off" placeholder="Flying to">
+																  	</span>
+																</div>
+															</div>
+														</div>
+														<div class="flex-item departure">
+															<input type="text" class="from" placeholder="Depart Date">
+														</div>
+														<div class="flex-item btn-search">
+															<span class="remove-flight">X</span>
+														</div>
+													</div>
+													<!-- /FLEX-CONTAINER -->
+
+													<!-- FLEX-CONTAINER -->
+													<div id="form-4" class="flex-container formFlex">
+														<div class="flex-item">
+											    			<div class="typeahead__container ">
+												    			<div class="typeahead__field ui-flight">
+																  	<span class="typeahead__query">
+																  		<input class="js-typeahead" name="q" type="search" autofocus autocomplete="off" placeholder="Flying from">
+																  	</span>
+																</div>
+															</div>
+														</div>
+														<div class="flex-item">
+											    			<div class="typeahead__container">
+												    			<div class="typeahead__field ui-flight">
+																  	<span class="typeahead__query">
+																  		<input class="js-typeahead" name="q" type="search" autofocus autocomplete="off" placeholder="Flying to">
+																  	</span>
+																</div>
+															</div>
+														</div>
+														<div class="flex-item departure">
+															<input type="text" class="from" placeholder="Depart Date">
+														</div>
+														<div class="flex-item btn-search">
+															<span class="remove-flight">X</span>
+														</div>
+													</div>
+													<!-- /FLEX-CONTAINER -->
+
+													<!-- FLEX-CONTAINER -->
+													<div id="form-5" class="flex-container formFlex">
+														<div class="flex-item">
+											    			<div class="typeahead__container ">
+												    			<div class="typeahead__field ui-flight">
+																  	<span class="typeahead__query">
+																  		<input class="js-typeahead" name="q" type="search" autofocus autocomplete="off" placeholder="Flying from">
+																  	</span>
+																</div>
+															</div>
+														</div>
+														<div class="flex-item">
+											    			<div class="typeahead__container">
+												    			<div class="typeahead__field ui-flight">
+																  	<span class="typeahead__query">
+																  		<input class="js-typeahead" name="q" type="search" autofocus autocomplete="off" placeholder="Flying to">
+																  	</span>
+																</div>
+															</div>
+														</div>
+														<div class="flex-item departure">
+															<input type="text" class="from" placeholder="Depart Date">
+														</div>
+														<div class="flex-item btn-search">
+															<span class="remove-flight">X</span>
+														</div>
+													</div>
+													<!-- /FLEX-CONTAINER -->
+												</div>
+												<!-- /MULTICITYCONTAINER -->
+
+												<!-- FLEX-CONTAINER -->
+												<div class="flex-container">
+											    	<div class="flight-filter">
+											    		<label class="btn-multicity">
+													      	<input id="btn__oneway" type="checkbox" checked>&nbsp;Oneway
+													    </label>
+													    <label class="btn-multicity">
+													      	<input id="btn__roundtrip" type="checkbox">&nbsp;Roundtrip
+													    </label>
+														<label class="btn-multicity">
+													      	<input id="btn__multicity" type="checkbox">&nbsp;Multi City
+													    </label> 
+													</div>
+													<div class="btn-search">
+														<button id="search-multicity" type="submit">Search Flights</button>
+													</div>
+												</div>
+												<!-- /FLEX-CONTAINER -->
+									    	</form>
+								    	</div>
+								    	<!-- /MULTICITY -->
+								    </div>
+								    <!-- /FLIGHT-SEARCH -->
+							    </div>
+							    <!-- /PILLS :: FLIGHT -->
+							</div>
+							<!-- /PILLS-TABCONTENT -->
+						</div>
+						<!-- /SEARCH-AREA -->
+					</div>
+			      	<!-- /DAS-SEARCH -->
+				</div>
+			</div>
+		</div>
+		<!-- /CONTAINER-FLUID -->
+	</section>
+	<!--==================================
+	/DASHBOARD
+	===================================-->
+
+	<!--==================================
+	FOOTER
+	===================================-->
+	<footer id="footer">
+		<!-- CONTAINER-FLUID -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2 footer-col">
+					<div class="ft-header">
+						<h4>Contact Address</h4>
+					</div>
+					<ul class="footer-list">
+						<li>Contact : 01710560323</li>
+						<li>Email : demo@demo.com</li>
+					</ul>
+				</div>
+				<div class="col-sm-2 footer-col">
+					<div class="ft-header">
+						<h4>Services</h4>
+					</div>
+					<ul class="footer-list">
+						<li><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;<a href="#">Hotel</a></li>
+						<li><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;<a href="#">Flight</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-2 footer-col">
+					<div class="ft-header">
+						<h4>About us</h4>
+					</div>
+					<ul class="footer-list">
+						<li><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;<a href="#">About us</a></li>
+						<li><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;<a href="#">Career</a></li>
+						<li><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;<a href="#">Terms of Service</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4 footer-col">
+					<div class="ft-header">
+						<h4>Policy</h4>
+					</div>
+					<div class="policy">
+						<a href="#">Privacy Policy</a>
+						<a href="#">DMCA Policy</a>
+						<a href="#">GDPR Policy</a>
+						<a href="#">Refund Policy</a>
+						<a href="#">SMS Policy</a>
+						<a href="#">Income Disclosure</a>
+						<a href="#">Anti Spam</a>
+					</div>
+				</div>
+				<div class="col-sm-2 footer-col">
+					<div class="ft-header">
+						<h4>Connects Socially</h4>
+					</div>
+					<div class="ft-gallery">
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><br>
+						<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+					</div>
+				</div>		
+			</div>
+			<!-- COPYRIGHT -->
+			<div id="copy-right">
+				<p>All Rights Reserved &copy; <a href="https://www.linkedin.com/in/feelfree009/" target="_blank"> Elias</a></p>
+			</div>
+			<!-- /COPYRIGHT -->
+		</div>
+		<!-- /CONTAINER-FLUID -->
+	</footer>
+	<!--==================================
+	/FOOTER
+	===================================-->
+
+	<!--==================================
+	SCROLL-UP
+	===================================-->
+	<div id="scroll-up">
+		<a href="#">
+			<i class="fa fa-angle-up" aria-hidden="true"></i>
+		</a>
+	</div>
+	<!--==================================
+	/SCROLL-UP
+	===================================-->
+
+	<!--==================================
+	JS PLUGIN AND SCRIPT
+	===================================-->
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/libs-ui.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/libs-select.js"></script>
+	<script type="text/javascript" src="js/jquery.typeahead.js"></script>
+	<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="js/responsiveslides.min.js"></script>
+	<script type="text/javascript" src="js/prism.js"></script>
+	<script type="text/javascript" src="js/libs.js"></script>
+	<script type="text/javascript" src="js/jquery.currency.js"></script>
+	<script type="text/javascript" src="js/jquery.flagstrap.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<!--==================================
+	/JS PLUGIN AND SCRIPT
+	===================================-->
+
+	<!--==================================
+	SCRIPT
+	===================================-->
+	<script src="js/jquery.countryselector.js"></script>
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-36251023-1']);
+		_gaq.push(['_setDomainName', 'jqueryscript.net']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+	<script>
+		var data = {
+            "ale": [
+                "Affligem Blonde", "Amsterdam Big Wheel", "Amsterdam Boneshaker IPA", "Amsterdam Downtown Brown", "Amsterdam Oranje Summer White",
+                "Anchor Liberty Ale", "Beaus Lug Tread Lagered Ale", "Beerded Lady", "Belhaven Best Ale", "Big Rock Grasshopper Wheat",
+                "Big Rock India Pale Ale", "Big Rock Traditional Ale", "Big Rock Warthog Ale", "Black Oak Nut Brown Ale", "Black Oak Pale Ale",
+                "Boddingtons Pub Ale", "Boundary Ale", "Caffreys", "Camerons Auburn Ale", "Camerons Cream Ale", "Camerons Rye Pale Ale", "Ceres Strong Ale",
+                "Cheval Blanc", "Crazy Canuck Pale Ale", "Creemore Springs Altbier", "Crosswind Pale Ale", "De Koninck", "Delirium Tremens",
+                "Erdinger Dunkel Weissbier", "Erdinger Weissbier", "Export", "Flying Monkeys Amber Ale", "Flying Monkeys Antigravity",
+                "Flying Monkeys Hoptical", "Flying Monkeys Netherworld", "Flying Monkeys Smashbomb", "Fruli", "Fullers Extra Spec Bitter",
+                "Fullers London Pride", "Granville English Bay Pale", "Granville Robson Hefeweizen", "Griffon Pale Ale", "Griffon Red Ale",
+                "Hacker-Pschorr Hefe Weisse", "Hacker-Pschorr Munchen Gold", "Hockley Dark Ale", "Hoegaarden", "Hops & Robbers IPA", "Houblon Chouffe",
+                "James Ready Original Ale", "Kawartha Cream Ale", "Kawartha Nut Brown Ale", "Kawartha Premium Pale Ale", "Kawartha Raspberry Wheat",
+                "Keiths", "Keiths Cascade Hop Ale", "Keiths Galaxy Hop Ale", "Keiths Hallertauer Hop Ale", "Keiths Hop Series Mixer",
+                "Keiths Premium White", "Keiths Red", "Kilkenny Cream Ale", "Konig Ludwig Weissbier", "Kronenbourg 1664 Blanc", "La Chouffe",
+                "La Messager Red Gluten Free", "Labatt 50 Ale", "Labatt Bass Pale Ale", "Lakeport Ale", "Leffe Blonde", "Leffe Brune",
+                "Legendary Muskoka Oddity", "Liefmans Fruitesse", "Lions Winter Ale", "Maclays", "Mad Tom IPA", "Maisels Weisse Dunkel",
+                "Maisels Weisse Original", "Maredsous Brune", "Matador 2.0 El Toro Bravo", "Mcauslan Apricot Wheat Ale", "Mcewans Scotch Ale",
+                "Mill St Belgian Wit", "Mill St Coffee Porter", "Mill St Stock Ale", "Mill St Tankhouse Ale", "Molson Stock Ale", "Moosehead Pale Ale",
+                "Mort Subite Kriek", "Muskoka Cream Ale", "Muskoka Detour IPA", "Muskoka Harvest Ale", "Muskoka Premium Dark Ale", "Newcastle Brown Ale",
+                "Niagaras Best Blonde Prem", "Okanagan Spring Pale Ale", "Old Speckled Hen", "Ommegang Belgian Pale Ale", "Ommegang Hennepin", "PC IPA",
+                "Palm Amber Ale", "Petrus Blonde", "Petrus Oud Bruin Aged Red", "Publican House Ale", "Red Cap", "Red Falcon Ale", "Rickards Dark",
+                "Rickards Original White", "Rickards Red", "Rodenbach Grand Cru", "Schofferhofer Hefeweizen", "Shock Top Belgian White",
+                "Shock Top Raspberry Wheat", "Shock Top Variety Pack", "Sleeman Cream Ale", "Sleeman Dark", "Sleeman India Pale Ale", "Smithwicks Ale",
+                "Spark House Red Ale", "St. Ambroise India Pale Ale", "St. Ambroise Oatmeal Stout", "St. Ambroise Pale Ale", "Stereovision Kristall Wheat",
+                "Stone Hammer Dark Ale", "Sunny & Share Citrus Saison", "Tetleys English Ale", "Thirsty Beaver Amber Ale", "True North Copper Altbier",
+                "True North Cream Ale", "True North India Pale Ale", "True North Strong", "True North Wunder Weisse", "Twice As Mad Tom IPA",
+                "Unibroue La Fin Du Monde", "Unibroue Maudite", "Unibroue Trois Pistoles", "Upper Canada Dark Ale", "Urthel Hop-It Tripel IPA",
+                "Waterloo IPA", "Weihenstephan Kristalweiss", "Wellington Arkell Best Bitr", "Wellington County Dark Ale", "Wellington Special Pale", "Wells IPA"
+            ],
+            "lager": [
+                "AC-DC Premium Lager", "Alpine Lager", "Amstel Light", "Amsterdam (416) Local Lager", "Amsterdam Natural Blonde", "Anchor Steam Beer",
+                "Barking Squirrel Lager", "Bavaria 8.6", "Bavaria 8.6 Red", "Bavaria Grapefruit Radler", "Bavaria Premium Beer", "Bavik Pils",
+                "Baysville Rock Cut Lager", "Becks", "Belle Gueule", "Big Rock Brewmasters Selection", "Big Rock Light Lime", "Big Rock Saaz Republic Pilz",
+                "Birra Castello", "Birra Moretti", "Bitburger", "Black Ice", "Black Label", "Blue", "Blue Light", "Bohemian", "Boris Beer",
+                "Boris Bold Strong Beer", "Boxer Ice", "Boxer Lager", "Brava", "Brava 5.5", "Brava Light", "Brouczech Premium Lager", "Bud Light",
+                "Bud Light Lime", "Bud Light Lime Labatt", "Bud Light Platinum", "Budweiser", "Budweiser Crown", "Budweiser Shot Labatt", "Busch Ice",
+                "Busch Lager", "Busch Light", "Camerons Dark266", "Camerons Lager", "Canadian", "Canadian 67", "Canadian 67 Sublime", "Canadian Coldshots",
+                "Carib Lager", "Carling Ice", "Carling Lager", "Carling Light", "Carlsberg", "Carlsberg Lite", "Cool Beer Lager", "Coors Banquet", "Coors Light",
+                "Corona", "Corona Light", "Cracked Canoe", "Creemore Collection", "Creemore Kellerbier", "Creemore Lager", "Creemore Springs Combo Pack",
+                "Creemore Trad Pilsner", "Creemore Urbock", "Crest Super", "Crystal", "Czechvar", "Dab Maibock", "Dab Original Lager", "Dead Frog Mixed Pack",
+                "Desperados Tequila Beer", "Dos Equis Amber", "Dos Equis Lager", "Dunkel Weihenstephaner", "Faxe Amber Lager", "Faxe Extra Strong - 10",
+                "Faxe Premium Lager - 5", "Faxe Red", "Faxe Strong", "Formosa Springs Draft", "Fosters Import", "Fuerstenberg Prem Pilsener", "Get2gether",
+                "Granville Summer Mingler", "Grolsch Lager 450ml", "Grolsch Premium Lager", "Guinness Black Lager", "Hacker-Pschorr Kellerbier", "Harbin Beer",
+                "Harp Lager", "Heineken", "Henninger Premium Lager", "Hockley Taster Pack", "Hofbraeu Muenchen Original", "Hogsback Vintage Lager",
+                "Hollandia Pilsner", "Holsten Festbock", "Holsten Maibock", "Holsten Premium Bier", "Hopf Weisse", "Hops Bolts India Pale Lager",
+                "James Ready 5.5", "James Ready Ice 6.0", "James Ready Lager", "James Ready Light", "Jever Pilsener", "Keiths Brewmaster", "Keiths Light",
+                "Keystone Ice", "Keystone Lager", "Keystone Light", "King Brewery Dark Lager", "King Brewery Pilsner", "King Brewery Vienna Lager", "Kokanee",
+                "Kozel", "Krombacher Dark", "Krombacher Pils", "Krombacher Weizen", "Kronenbourg 1664", "La Tabachera", "Labatt Extra Dry", "Labatt Genuine Lager",
+                "Labatt Ice", "Lakeport Honey Lager", "Lakeport Ice", "Lakeport Light", "Lakeport Pilsener", "Lakeport Red", "Laker Extra Ice", "Laker Honey",
+                "Laker Ice", "Laker Lager", "Laker Light", "Laker Red", "Laker Strong", "Lech Beer", "Lowenbrau", "Lucky Lager", "Maximum Ice", "Menabrea Blonda",
+                "Michelob Ultra", "Mill St Original Organic", "Millennium Buzz Hemp Beer", "Miller Chill Domestic", "Miller Chill Import",
+                "Miller Genuine Draft Clear", "Molson Canadian Wheat", "Molson Dry", "Molson M", "Molson XXX", "Mongozo Premium Pilsner", "Moosehead Lager",
+                "Moosehead Light", "Moosehead Light Lime", "Moskato Life", "Moskato Life Rose", "Muskoka Craft Lager", "Muskoka Summer Weiss",
+                "Muskoka Survival Pack", "Mythos Beer", "Negra Modelo", "Neustadt Lager", "Octane 7.0", "Okanagan Craft Pack", "Okanagan Springs 1516 Lager",
+                "Okocim Pilsner", "Old Milwaukee", "Old Milwaukee", "Old Milwaukee Ice", "Old Milwaukee Light", "Old Style Pilsner", "Old Vienna",
+                "PC Black Lager", "PC Cerveza", "PC Down Under Amber", "PC Dry", "PC Genuine Lager", "PC Honey Red", "PC Light", "PC Low Carb", "PC Plznr",
+                "Pabst Blue Ribbon", "Pabst Blue Ribbon 5.9", "Pabst Blue Ribbon Light", "Paulaner Hefe-Weissbier", "Pedavena Birra Dolomiti",
+                "Peroni Nastro Azzuro", "Pilsner Urquell", "Pistonhead Kustom Lager", "Poppers Party Pack", "Prison Break Pilsner", "Radeberger Pilsner",
+                "Red Baron", "Red Baron Light", "Red Baron Lime", "Red Baron Platinum Light", "Red Bull", "Red Stripe", "Rickards Blonde", "Rickards Cardigan",
+                "Rickards Fall Taster", "Rickards Lederhosen", "Rickards Oakhouse", "Rickards Shandy", "Rickards Summer Taster Pack", "Rickards Taster Pack",
+                "Rickards Winter Taster Pack", "Rolling Rock Pale Lager", "Rosarda Rose", "Saint Andre", "Samuel Adams Boston Lager", "San Miguel Premium Lager",
+                "Sapporo", "Schnitzerbrau Gluten Free Lager", "Schofferhofer Grapefruit Radlr", "Seagram Mixer Pack", "Shock Top Lemon Shandy", "Sleeman Clear 2.0",
+                "Sleeman Honey Brown Lager", "Sleeman Light", "Sleeman Original Draught", "Sleeman Seasonal Selections", "Sleeman Selections",
+                "Sleeman Silver Creek Lager", "Sol", "Spaten", "St Ambroise Premium Taster", "Staropramen", "Steam Whistle", "Steeler", "Stella Artois",
+                "Stella Legere", "Stiegl Bier", "Stiegl Grapefruit Radler", "Stone Hammer Pilsner", "Stonewall Light", "Tecate", "Tennents Export Lager",
+                "Thurn Taxis Lager", "Thurn Taxis Pilsener", "Thurn Taxis Wolfgang Dunkl", "Tiger Beer", "Trailhead Premium Lager", "True North Blonde Lager",
+                "Tuborg Gold", "Tuborg Pilsner", "Tyskie", "Unibroue Blanche Dechambly", "Upper Canada Lager", "Warsteiner Premium Dunkel", "Warsteiner Premium Verum",
+                "Waterloo Amber Lager", "Waterloo Dark", "Waterloo Grapefruit Radler", "Waterloo Kolsch Sampler", "Waterloo Pilsner", "Weihenstephan Vitus",
+                "Weihenstephaner Hefeweiss", "Wernesgruner Pils", "Winter Mingler", "Wolfgangs German Style Beer", "Xingu Black Beer", "Yanjing Beer", "Zywiec Beer"
+            ],
+            "stout": [
+                "Belhaven Black Scottish Stout", "Guinness Draught Bottle", "Guinness Extra Stout", "Guinness Pub Draught", "Murphys Irish Stout",
+                "Muskoka Chocolate Cranberry", "Sleeman Fine Porter"
+            ],
+            "malt": [
+                "Boxer Watermelon", "Bud Light Lime Lime-a-rita", "Bud Light Lime Mang-o-rita", "Bud Light Lime Straw-ber-rita", "Colt 45",
+                "DJ Trotters Flirty Daiquiri", "DJ Trotters Lolita", "Four Loko Black Cherry", "Four Loko Fruit Punch", "Four Loko Grape", "Four Loko Lemonade",
+                "Four Loko Peach", "Four Loko Watermelon", "Kensington Watermelon Wheat", "Mad Jack", "Mickeys", "Mojo Fruit Punch", "Mojo Shot Blue Lagoon",
+                "Mojo Shot Melon Ball", "Mojo Shot Sourberry", "Mojo Strawberry & Kiwi", "Mons Abbey Blonde", "Mons Abbey Witte", "Olde English 800",
+                "Pepito Sangria", "Poppers Cran Ice", "Poppers Hard Ice", "Poppers Orange Smoothie", "Poppers Pink", "Poppers Ricco Sangria", "Poppers Wild Ice",
+                "Seagram Iced Lemon Tea", "Seagram Lemon Lime", "Seagram Orange Mango", "Seagram Wildberry", "Seagram Wildberry Extra 6.9", "Twisted Tea", "Wellington Iron Duke"
+            ]
+        };
+        console.log('Type Ahead Initialization');
+        typeof $.typeahead === 'function' && $.typeahead({
+            input: ".js-typeahead",
+            minLength: 1,
+            maxItem: 15,
+            order: "asc",
+            hint: true,
+            group: {
+                template: "{{group}} beers!"
+            },
+            maxItemPerGroup: 5,
+            backdrop: {
+                "background-color": "#fff"
+            },
+            href: "/beers/{{group}}/{{display}}/",
+            dropdownFilter: "all beers",
+            emptyTemplate: 'No result for "{{query}}"',
+            source: {
+                Ale: {
+                    data: data.ale
+                },
+                lager: {
+                    data: data.lager
+                },
+                "stout and porter": {
+                    data: data.stout
+                },
+                malt: {
+                    data: data.malt
+                }
+            },
+            callback: {
+                onReady: function (node) {
+                    this.container.find('.' + this.options.selector.dropdownItem + '.group-ale a').trigger('click')
+                },
+                onDropdownFilter: function (node, query, filter, result) {
+                    console.log(query)
+                    console.log(filter)
+                    console.log(result)
+                }
+            },
+            debug: true
+        });
+	</script>
+	<!--==================================
+	/SCRIPT
+	===================================-->
+
+</body>
+</html>

@@ -1,0 +1,745 @@
+/*
+Template Name  : Personal Website HTML Template.
+Description    : HTML5 / CSS3 / JQuery Single Page.
+Author         : ITCroc Developed by Elias.
+*/
+
+/*------------------------------------------------------------------
+Table of contents :
+------------------
+
+i. INDEX PAGE  :
+	1. Header  :
+		1.1. Logo / Brand
+		1.2. Navigation / Menu Bar
+		1.3. Persons Name
+	2. Content :
+		2.1. Home Carousel
+		2.2. Demo Phone
+		2.3. Phone Feature
+		2.4. Videos
+		2.5. Support
+	7. Footer  :
+		7.1. Social Link
+		7.2. Copyright
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+Color codes :
+------------
+
+# Html Background   	       : #F4F4F4;
+# Navigation Background        : #212121;
+# Navigation Border 	       : #212121;
+# Navigation a 			       : #B5B5B5;
+# Navigation Hover 	  	       : #ED1C24;
+# Navigation Search BG         : #2C2C2C;
+# Carousel Navigation BG       : #FFFFFF;
+# Carousel Navigation Border   : #5C6978;
+# Carousel Indicator           : #77808D;
+# Carousel Indicator Active    : #E10013;
+# Carousel Navigation          : #0d1a29;
+# Demo Phone Border    	       : #E3E3E3;
+# Demo Phone Heading           : #ED1C24;
+# Phone Feature Heading        : #E10013;
+# Phone Feature Li BG          : #E10013;
+# Videos Heading               : #E10013;
+# Play Button Background       : #1C1C1D;
+# Support Heading              : #FCE3E4;
+# Footer Backgrond             : #252525;
+# Footer Color                 : #9F9F9F;
+# Footer Social Li BG          : #878787;
+# Footer Copyright Backgrond   : #171717;
+# Content Footer Color         : #424242;;
+# Content Active		       : #414141;
+# Header h5    			       : #414141;
+# Header h4    			       : #616161;
+# Label,small			       : #0087D6;
+# Figcaption			       : #414141;
+# Video Header Background      : #EDEEEF;
+# Video Footer a,span          : #FF7D37;
+# Footer Background            : #333333;
+# Footer Social Border         : #919191;
+# Footer Social Hover          : #0087D6;
+# Button Color                 : #FF7D37;
+# Button Hover                 : #F06817;
+# a (standard) 			       : #818181;
+# a (visited)  			       : #414141;
+# a (active)   			       : #414141;
+-------------------------------------------------------------------*/
+
+/*
+GOOGLE FONTS
+--------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* ==========================================================================
+BASE STYLES: 
+=============================================================================*/
+html{
+   color 			              : #818181;
+   background-color             : #ffffff;
+   font-size   	              : 16px;
+   line-height 	              : 1.3333333;
+   -webkit-box-sizing           : border-box;
+   -moz-box-sizing              : border-box;
+   box-sizing                   : border-box;
+}
+
+*, 
+*:before, 
+*:after {
+   -webkit-box-sizing           : inherit;
+   -moz-box-sizing              : inherit;
+   box-sizing                   : inherit;
+}
+
+hr {
+   display    		              : block;
+   height     		              : 1px;
+   border     		              : 0;
+   border-top 		              : 1px solid #CCCCCC;
+   margin     		              : 1em 0;
+   padding    		              : 0;
+}
+
+/*
+   * Remove the gap between images, videos, audio and canvas
+*/
+
+audio,
+canvas,
+img,
+video {
+   vertical-align               : middle;
+}
+
+a,
+a:active,
+a:focus,
+a:active {
+   text-decoration              : none !important;
+   outline                      : none
+}
+
+a {
+   color                        : #000;
+   text-decoration              : none;
+   -webkit-transition           : all 0.2s ease 0s;
+   transition                   : all 0.2s ease 0s;
+}
+
+a:hover,
+a:focus {
+   color                        : #414141;
+   text-decoration              : underline;
+   font-weight                  : normal;
+   -webkit-transition           : all 0.2s ease 0s;
+   -moz-transition              : all 0.2s ease 0s;
+   transition                   : all 0.2s ease 0s;
+}
+
+ul {
+   margin     		              : 0 !important;
+   padding    		              : 0 !important;
+   list-style 		              : none;
+}
+
+.h1,h1,
+.h2,h2,
+.h3,h3,
+.h4,h4,
+.h5,h5,
+.h6,h6 {
+   font-family                  : 'Raleway', sans-serif;
+   color                        : #000000;
+   margin                       : 0;
+   padding                      : 0;
+}
+
+.h1 {
+   font-size                    : 65px;
+   font-weight                  : 800;
+}
+.h2 {
+   font-size                    : 50px;
+}
+.h3 {
+	font-size                    : 40px;
+   font-weight                  : 700;
+}
+.h4 {
+	font-size                    : 32px;
+}
+.h5 {
+	font-size                    : 26px;
+   font-weight                  : 700;
+}
+.h6 {
+   font-size                    : 18px;
+   font-family                  : 'Roboto', sans-serif;
+   font-weight                  : 700; 
+}
+
+p {
+   margin                       : 0;
+   padding                      : 0;
+   color                        : #777777;
+   font-family                  : 'Roboto', sans-serif;
+   font-size                    : 16px;
+}
+
+button,
+button:hover,
+button:focus {
+   border                       : 0;
+   background                   : none;
+   outline                      : none;
+   font-size                    : 16px !important;
+   font-family                  : 'Roboto', sans-serif;
+   font-weight                  : 500 !important;
+}
+
+figure {
+   text-align:                  : center;
+}
+
+figcaption{
+	color                        : #ED1C24;
+	font-family                  : 'Rajdhani', sans-serif;
+	font-size                    : 18px;
+	font-weight                  : 700;
+}
+
+label{
+	color                        : #0087D6;
+	font-size                    : 21px;
+	font-family                  : 'Source Sans Pro', sans-serif;
+	margin:                      : 0px;
+	padding-left                 : 10px;
+}
+
+label small{
+	font-size                    : 18px;
+}
+
+body {
+   color                        : #BDBDBD;
+   font-family                  : 'Roboto', sans-serif;
+   font-size                    : 16px;
+   line-height                  : 1.33333;
+   font-weight                  : 400;
+   background-color             : #ffffff;
+   -webkit-text-size-adjust     : 100%;
+   -webkit-overflow-scrolling   : touch;
+   -webkit-font-smoothing       : antialiased !important;
+}
+
+footer, 
+footer a,
+footer i {
+    color: #9F9F9F;
+}
+/*
+GLOBAL CLASS DESIGN FOR ALL PAGES:
+-----------------------------------------------------*/
+.clearfix:after {
+   visibility                 : hidden;
+   display                    : block;
+   font-size                  : 0;
+   content                    : " ";
+   clear                      : both;
+   height                     : 0;
+}
+.clearfix {
+   display                    : inline-block;
+}
+* html .clearfix {
+   height                     : 1%;
+}
+.clearfix {
+   display                    : block;
+}
+
+.img {
+   width                      : 100%;
+   max-height                 : 241.75px;
+}
+
+.affix-top {
+  position                     : relative;
+}
+
+.affix {
+  top                          : 20px;
+}
+.affix, 
+.affix-bottom {
+    width                      : 213px;
+}
+
+.affix-bottom {
+  position                     : absolute;
+}
+#about-me,
+#experience,
+#portfolio,
+#contact {
+   padding                     : 124px 0;
+}
+.button-hire-me {
+   padding                     : 18px 70px;
+   background-color            : #ff2b4a;
+   color                       : #ffffff;
+   border                      : 2px solid #ff2b4a;
+   border-radius               : 0;
+   outline                     : 0;
+   transition                  : all 0.2s ease 0s;
+}
+.button-hire-me:hover,
+.button-hire-me:focus {
+   background-color            : #ffffff;
+   color                       : #ed203e;
+   border                      : 2px solid #ed203e;
+   border-radius               : 0;
+   outline                     : 0;
+   transition                  : all 0.2s ease 0s;
+}
+.button-align {
+   text-align                  : left;
+}
+.border {
+   border                      : 2px solid #ED1C24;
+}
+.heading {
+   margin-top                  : 60px;
+   margin-bottom               : 60px;
+   text-align                  : center;
+}
+.heading p {
+   padding                     : 40px;
+   color                       : #494949;
+   font-weight                 : 600;
+}
+.sub-heading {
+   padding-top                 : 55px;
+   padding-bottom              : 30px;
+}
+.sub-heading h5 {
+   color                       : #ffffff;
+}
+
+/* ==========================================================================
+INDEX DESIGN: 
+=============================================================================*/
+/*
+NAVBAR DESIGN :
+-----------------------------------------------------*/
+/*
+HEADER DESIGN :
+-----------------------------------------------------*/
+#header {
+   display                     : table;
+   width                       : 100%;
+   height                      : auto;
+   padding                     : 150px 0;
+   text-align                  : center;
+   color                       : #fff;
+  	background                  : linear-gradient(90deg,rgba(124,107,123,0.5),rgba(48,105,125,0.5)),url(../images/welcome.jpg);
+  	background-position         : center center;
+  	background-repeat           : no-repeat;
+  	/*background-attachment      : fixed;*/
+   -webkit-background-size     : cover;
+   -moz-background-size        : cover;
+   -o-background-size          : cover;
+  	background-size             : cover;
+  	background-color            :#464646;
+  	
+  	/* SHORTHAND CSS NOTATION
+   	* background             : url(background-photo.jpg) center center cover no-repeat fixed;
+   	*/
+}
+/*
+ABOUT-ME DESIGN :
+-----------------------------------------------------*/
+#text-about-me h6 {
+   padding                     : 45px 0;
+}
+#text-about-me p {
+   padding-bottom              : 45px;
+}
+#working-process {
+   margin-right                : -7.5px;
+   margin-left                 : -7.5px;
+}
+#working-process .col-sm-3 {
+   padding-right               : 7.5px;
+   padding-left                : 7.5px;
+}
+#working-process .thumbnail {
+   margin-bottom               : 0;
+   padding                     : 90px 0;
+   text-align                  : center;
+   border                      : 0;
+   border-radius               : 0;
+}
+#working-process .thumbnail i {
+   color                       : #ffffff;
+}
+#working-process .thumbnail h4{
+   color                       : #ffffff;
+   font-weight                 : 700;
+}
+#working-process .col-sm-3:nth-child(2) .thumbnail{
+   background-color            : #10c6fc;
+}
+#working-process .col-sm-3:nth-child(3) .thumbnail{
+   background-color            : #835aeb;
+}
+#working-process .col-sm-3:nth-child(4) .thumbnail{
+   background-color            : #002453;
+}
+#working-process .col-sm-3:nth-child(5) .thumbnail{
+   background-color            : #ff2b4a;
+}
+/*
+EXPERIENCE DESIGN :
+-----------------------------------------------------*/
+#experience {
+   background                  : linear-gradient(90deg,rgba(0,0,123,0.5),rgba(0,0,125,0.5)),url(../images/experience-bg.jpg);
+   background-position         : center center;
+   background-repeat           : no-repeat;
+   /*background-attachment      : fixed;*/
+   -webkit-background-size     : cover;
+   -moz-background-size        : cover;
+   -o-background-size          : cover;
+   background-size             : cover;
+   background-color            :#464646;
+}
+#work-experience,
+#education {
+   padding                     : 0px 30px;
+   background                  : linear-gradient(to right, rgba(98,101,125,0.5), rgba(98,101,125,0.5));
+   opacity                     : ;
+}
+#work-experience h6,
+#education h6 {
+   color                       : #ffffff;
+}
+#work-experience p,
+#education p {
+   padding                     : 20px 0;
+   color                       : #cdd1d8;
+}
+#work-experience p:nth-child(3),
+#work-experience p:nth-child(7),
+#education p:nth-child(3),
+#education p:nth-child(7) {
+   padding-top                 : 20px;
+   padding-bottom              : 0;
+   font-weight                 : 600;
+}
+/*
+PORTFOLIO DESIGN :
+-----------------------------------------------------*/
+#portfolio .heading {
+   margin-top                  : 0;
+}
+#gallery {
+   margin-right                : -7.5px;
+   margin-left                 : -7.5px;
+}
+#gallery .col-sm-3,
+#gallery .col-sm-6 {
+   padding-right               : 7.5px;
+   padding-left                : 7.5px;
+}
+#gallery .thumbnail {
+   padding                     : 0;
+   margin-bottom               : 15px;
+   border                      : 0;
+   border-radius               : 0;
+}
+.hovereffect {
+   position                    : relative;
+   width                       : 100%;
+   height                      : 100%;
+   float                       : left;
+   overflow                    : hidden;
+   text-align                  : center;
+   cursor                      : default;
+}
+
+.hovereffect .overlay {
+   position                    : absolute;
+   overflow                    : hidden;
+   width                       : 100%;
+   height                      : 100%;
+   top                         : 0;
+   left                        : 0;
+   -webkit-transition          : opacity 0.35s, -webkit-transform 0.35s;
+   transition                  : opacity 0.35s, transform 0.35s;
+   -webkit-transform           : scale(0,1);
+   -ms-transform               : scale(0,1);
+   transform                   : scale(0,1);
+}
+
+.hovereffect .overlay-caption {
+   position                    : absolute;
+   overflow                    : hidden;
+   width                       : 80%;
+   height                      : 80%;
+   top                         : 10%;
+   left                        : 10%;
+   -webkit-transition          : opacity 0.35s, -webkit-transform 0.35s;
+   transition                  : opacity 0.35s, transform 0.35s;
+   -webkit-transform           : scale(0,1);
+   -ms-transform               : scale(0,1);
+   transform                   : scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+   background                  : rgba(255, 43, 74, .8); /* For browsers that do not support gradients */
+   background                  : -webkit-linear-gradient(rgba(255, 43, 74, .8));
+   background                  : -o-linear-gradient(rgba(255, 43, 74, .8));
+   background                  : linear-gradient(rgba(255, 43, 74, .8)); /* For Safari 5.1 to 6.0 */ /* For Opera 11.1 to 12.0 */ /* For Firefox 3.6 to 15 */
+   -webkit-transform           : scale(1);
+   -ms-transform               : scale(1);
+   transform                   : scale(1);
+}
+.hovereffect:hover .overlay-caption {
+   border-top                  : 1px solid #ffffff;
+   border-bottom               : 1px solid #ffffff;
+   -webkit-transform           : scale(1);
+   -ms-transform               : scale(1);
+   transform                   : scale(1);
+}
+.hovereffect img {
+   display                     : block;
+   position                    : relative;
+   -webkit-transition          : all 0.35s;
+   transition                  : all 0.35s;
+}
+
+.hovereffect h2 {
+   text-transform              : uppercase;
+   text-align                  : center;
+   position                    : relative;
+   font-size                   : 17px;
+   background-color            : transparent;
+   color                       : #ffffff;
+   padding                     : 1em 0;
+   opacity                     : 0;
+   filter                      : alpha(opacity=0);
+   -webkit-transition          : opacity 0.35s, -webkit-transform 0.35s;
+   transition                  : opacity 0.35s, transform 0.35s;
+   -webkit-transform           : translate3d(0,-100%,0);
+   transform                   : translate3d(0,-100%,0);
+}
+
+.hovereffect p { 
+   padding                     : 1em 0;
+   color                       : #ffffff;
+   opacity                     : 0;
+   filter                      : alpha(opacity=0);
+   -webkit-transition          : opacity 0.35s, -webkit-transform 0.35s;
+   transition                  : opacity 0.35s, transform 0.35s;
+   -webkit-transform           : translate3d(0,100%,0);
+   transform                   : translate3d(0,100%,0);
+}
+.hovereffect a {  
+   padding                     : 1em 1em;
+   color                       : #ffffff;
+   font-size                   : 14px;
+   opacity                     : 0;
+   filter                      : alpha(opacity=0);
+   -webkit-transition          : opacity 0.35s, -webkit-transform 0.35s;
+   transition                  : opacity 0.35s, transform 0.35s;
+   -webkit-transform           : translate3d(0,100%,0);
+   transform                   : translate3d(0,100%,0);
+}
+.btn-view-project {
+   border                      : 1px solid #ffffff;
+}
+.hovereffect:hover a, 
+.hovereffect:hover p, 
+.hovereffect:hover h2 {
+   opacity                     : 1;
+   filter                      : alpha(opacity=100);
+   -webkit-transform           : translate3d(0,0,0);
+   transform                   : translate3d(0,0,0);
+}
+/*
+CLIENT DESIGN :
+-----------------------------------------------------*/
+#client {
+   background-color            : #dcdeea;
+}
+#quote {
+   margin                      : 100px 0;
+}
+#quote i {
+   color: #6D809E;
+   margin-bottom               : 25px;
+}
+#quote p {
+   margin                      : 5px 0;
+}
+#quote p:nth-child(2) {
+   margin-bottom               : 20px;
+}
+#quote h6:nth-child(4) {
+   margin-top                  : 10px;
+}
+/*
+CONTACT DESIGN :
+-----------------------------------------------------*/
+#contact {
+   background                  : linear-gradient(90deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/contact-bg.jpg);
+   background-position         : center center;
+   background-repeat           : no-repeat;
+   /*background-attachment      : fixed;*/
+   -webkit-background-size     : cover;
+   -moz-background-size        : cover;
+   -o-background-size          : cover;
+   background-size             : cover;
+   background-color            :#464646;
+}
+#message {
+   height                      : 581px;
+   max-height                  : 581px;
+   padding-top                 : 30px;
+   padding-right               : 30px;
+   padding-bottom              : 30px;
+   padding-left                : 30px;
+   background                  : linear-gradient(to right, rgba(98,101,125,0.5), rgba(98,101,125,0.5));
+}
+#message .sub-heading {
+   padding-top                 : 20px;
+   padding-bottom              : 30px;
+}
+#message .form-group {
+   margin-bottom               : 20px;
+}
+#message .form-control {
+   height                      : 44px;
+   border                      : 0;
+   border-radius               : 0;
+}
+#message textarea.form-control {
+   height                      : auto;
+}
+#message .button-align {
+   text-align                  : right;
+}
+#contact-details {
+   max-height                  : ;
+}
+#address,
+#phone,
+#web {
+   height                      : 180.4px;
+   max-height                  : 180.4px;
+   margin-bottom               : 20px;
+   padding                     : 30px;
+   padding-right               : 30px;
+   padding-left                : 30px;
+   padding-bottom              : 30px;
+   background                  : linear-gradient(to right, rgba(98,101,125,0.5), rgba(98,101,125,0.5));
+}
+#address .sub-heading,
+#phone .sub-heading,
+#web .sub-heading {
+   padding-top                 : 20px;
+   padding-bottom              : 29px;
+}
+#web {
+   margin-bottom               : 0px !important;
+}
+/*
+FOOTER DESIGN :
+-----------------------------------------------------*/
+#footer{
+   padding                     : 60px 0;
+   background-color            : #222222;
+   border-bottom               : 10px solid #323232;
+}
+#social li i:hover,
+#social li i:focus {
+   color                       : #ff2b4a;
+}
+/*
+DESKTOP RESPONSIVE DESIGN :
+-----------------------------------------------------*/
+@media(min-width:768px) {
+   #header {
+      height                   : 100%;
+      padding                  : 0;
+      text-align               : left;
+      color                    : #fff;
+   }
+   #header-text {
+      padding                  : 286px 0;
+   }
+}
+@media all and (max-width: 1199px) and (min-width: 992px){
+   #text-about-me p {
+      padding-bottom           : 31px;
+   }
+   #quote {
+      margin                   : 62px 0; 
+   }
+}
+@media all and (max-width: 991px) and (min-width: 768px){
+   #text-about-me h6{
+      padding                  : 18px 0;
+   }
+   #text-about-me p {
+      font-size                : 13px;
+      padding-bottom           : 14px;
+   }
+   #quote {
+      margin                   : 12px 0; 
+   }
+   #quote p {
+      font-size                : 13px;
+   }
+}
+/*
+MOBILE RESPONSIVE DESIGN :
+-----------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+   #header {
+      background               : url(../images/welcome-mobile.jpg);
+   }
+   /*ABOUT-ME
+   ----------------------------------------*/
+   #introduce-me .col-xs-12 {
+      text-align               : center;
+   }
+   #introduce-me .col-xs-12 img {
+      display                  : initial;
+   }
+   #working-process .thumbnail {
+      margin-bottom            : 15px;
+   }
+   /*EXPERIENCE
+   ----------------------------------------*/
+   #work-experience {
+      margin-bottom            : 15px;
+   }
+   /*PORTFOLIO
+   ----------------------------------------*/
+   #gallery .thumbnail .img {
+      max-height               : 336.33px;
+   }
+   /*CLIENT
+   ----------------------------------------*/
+   #client-img {
+      text-align               : center;
+   }
+   #client-img img {
+      display                  : initial;
+   }
+}

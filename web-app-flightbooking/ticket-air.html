@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="eng">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <![endif]-->
+    <meta name="keywords" content="HTML5 Template" />
+	<title>Air Ticket</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="Personal Web Template" content="Air ticket booking site" />
+	<meta name="Site Description" content="WEBSITE DESCRIPTION" />
+
+	<link rel="icon" type="image/png" href="images/icon/title-icon.png" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/themify-icons.css" />
+	<!--[if lt IE 8]><!-->
+	<link rel="stylesheet" type="text/css" href="css/ie7.css">
+	<!--<![endif]-->
+	<link rel="stylesheet" type="text/css" href="css/libs-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/libs-select.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.typeahead.css">
+	<link rel="stylesheet" type="text/css" href="css/responsiveslides.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-countryselector.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/datatables.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/prism.css">
+    <link rel="stylesheet" type="text/css" href="css/intlTelInput.css?1551697588835">
+    <link rel="stylesheet" type="text/css" href="css/cellValid.css?1551697588835">
+    <link rel="stylesheet" type="text/css" href="css/isValidNumber.css?1551697588835">
+    <link rel="stylesheet" type="text/css" href="css/flags.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+	<script type="text/javascript" src="js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<!--==================================
+	PRELOADER
+	===================================-->
+	<div id="st-preloader">
+		<div id="pre-status">
+			<div class="preload-placeholder"></div>
+		</div>
+	</div>
+	<!--==================================
+	/PRELOADER
+	===================================-->
+	
+	<!--==================================
+	DAS-NAVBAR
+	===================================-->
+	<section id="das-navbar">
+		<div class="container-fluid">
+			<div class="das-navbar">
+				<a href="index.html" class="ds__logo">
+					<img src="images/logo.png" alt="Image Missing">
+				</a>
+				<div class="ds__myaccount my__account">
+					<div class="dropdown">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account <span class="caret"></span></a>
+					    <ul class="booking-theme dropdown-menu">
+					        <li>
+					        	<div class="geo-cash">
+					        		<h6>Welcome!</h6>
+					        		<div class="geo-box">
+					        			<h4>Your Balance <strong>500</strong> BDT</h4>
+					        			<p>You can use them on your next booking</p>
+					        		</div>
+					        	</div>
+					        </li>
+					        <li><a href="dashboard.html">My Account</a></li>
+					        <li><a href="dashboard.html">Topup Your Balance</a></li>
+					        <li><a href="#">Logout</a></li>
+					    </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--==================================
+	/DAS-NAVBAR
+	===================================-->
+	
+	<!--==================================
+	TICKET
+	===================================-->
+	<section id="ticket">
+		<!-- CONTAINER-FLUID -->
+		<div class="container-fluid">
+			<div class="btn-ticket">
+				<a href="dashboard.html"><i class="ti-back-left"></i>Go Back Dashboard</a>
+				<button type="submit" id="btn-tct-i"><i class="ti-email"></i>Email Ticket</button>
+				<button type="submit" id="btn-tct-ii"><i class="ti-email"></i>Email without Price</button>
+				<button type="submit" id="btn-tct-iii"><i class="ti-printer"></i>Print Ticket</button>
+				<button type="submit" id="btn-tct-iv"><i class="ti-printer"></i>Print without Price</button>
+				<button type="submit" id="btn-tct-v"><i class="ti-import"></i> Download Ticket</button>
+			</div>
+			<!-- TICKET-CONTAINER -->
+			<div class="ticket-container">
+				<div class="ticket-header">
+					<div class="row">
+						<div class="xs-device col-xs-4">
+							<div class="ticket-logo">
+								<img src="images/logo.png" alt="Image Missing">
+							</div>
+						</div>
+						<div class="xs-device col-xs-4">
+							<div class="ticket-title">
+								<h3>Air Ticket</h3>
+							</div>
+						</div>
+						<div class="xs-device col-xs-4">
+							<div class="agency-address">
+								<p>DESHIFLIGHT.COM</p>
+								<p>House#1, Floor#2B, Road#3</p>
+								<p>Emai: support@deshiflight.com</p>
+								<p>Mobile : 01710560323</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /TICKET-HEADER -->
+
+				<!-- TICKET -->
+				<div class="ticket">
+					<div class="tct-heading">
+						<h5>Booking ID : <span>Fjk81521215</span></h5>
+						<h5>Booking Date : <span>August, 18, 2018</span></h5>
+					</div>
+					<table class="table table-bordered">
+						<tbody>
+							<tr>
+								<td>
+									<h6 class="col-header">Passenger Information</h6>
+									<ol class="tct-passenger-list">
+										<li>
+											<div class="ticket-info">
+												<ul>
+													<li>Name</li>
+													<li>Mobile</li>
+													<li>Date of Birth</li>
+													<li>Passport No</li>
+													<li>Date of Expiry</li>
+												</ul>
+												<ul>
+													<li>Md. Elias Chowdhury</li>
+													<li>01710560323</li>
+													<li>Dec 30, 1991</li>
+													<li>BJ856423</li>
+													<li>Mar 10, 2021</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<div class="ticket-info">
+												<ul>
+													<li>Name</li>
+													<li>Mobile</li>
+													<li>Date of Birth</li>
+													<li>Passport No</li>
+													<li>Date of Expiry</li>
+												</ul>
+												<ul>
+													<li>Md. Elias Chowdhury</li>
+													<li>01710560323</li>
+													<li>Dec 30, 1991</li>
+													<li>BJ856423</li>
+													<li>Mar 10, 2021</li>
+												</ul>
+											</div>
+										</li>
+									</ol>
+								</td>
+								<td>
+									<h6 class="col-header">Ticket Information</h6>
+									<div class="ticket-info">
+										<ul>
+											<li>PNR</li>
+											<li>E-Tickets</li>
+											<li>Status</li>
+											<li>Flying Date</li>
+											<li>Cabin Type</li>
+										</ul>
+										<ul>
+											<li>OHORCM</li>
+											<li>855 1055 111 365</li>
+											<li>Confirmed</li>
+											<li><span class="t-date">Aug 19, 2018</span>/<span class="t-time">07:45am</span></li>
+											<li>Premium Economy </li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<h6 class="col-header">Flight Information</h6>
+									<div class="tct-i e-r-row">
+										<!-- E-HEADER-ROW -->
+										<div class="row e-header-row">
+											<div class="col-xs-3">
+												<h6 class="e-tb-header">Airlines</h6>
+											</div>
+											<div class="col-xs-3">
+												<h6 class="e-tb-header">Departure</h6>
+											</div>
+											<div class="col-xs-3">
+												<h6 class="e-tb-header">Arrival</h6>
+											</div>
+											<div class="col-xs-3">
+												<h6 class="e-tb-header"><!-- Time --></h6>
+											</div>
+										</div>
+										<!-- /E-HEADER-ROW -->
+
+										<!-- E-CONTENT-ROW -->
+										<div class="row tct-i e-content-row">
+											<div class="col-xs-3">
+												<div class="e-tb-col">
+													<figure><img src="images/airlines/OD.gif" alt="Airlines Icon Missing"></figure>
+													<figcaption>Malinda Air OD161</figcaption>
+												</div>
+											</div>
+											<div class="col-xs-3">
+												<div class="e-tb-col">
+													<p>Dhaka (DAC)</p>
+													<h6>28 Mar 2018 01:10</h6>
+												</div>
+											</div>
+											<div class="col-xs-3">
+												<div class="e-tb-col">
+													<p>Bangkok (BNK)</p>
+													<h6>28 Mar 2018 03:10</h6>
+												</div>
+											</div>
+											<div class="col-xs-3">
+												<div class="e-tb-col">
+													<p>0 Stop</p>
+													<p>1h 50m</p>
+													<p>Non-Refundable</p>
+												</div>
+											</div>
+										</div>
+										<!-- E-CONTENT-ROW -->
+										
+										<!-- LAYOVER -->
+										<div class="layover">
+											<h5><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;Layover <span>07h 35m</span></h5>
+										</div>
+										<!-- /LAYOVER -->
+
+										<!-- E-CONTENT-ROW -->
+										<div class="row tct-i e-content-row">
+											<div class="col-xs-3">
+												<div class="e-tb-col">
+													<figure><img src="images/airlines/OD.gif" alt="Airlines Icon Missing"></figure>
+													<figcaption>Malinda Air OD181</figcaption>
+												</div>
+											</div>
+											<div class="col-xs-3">
+												<div class="e-tb-col">
+													<p>Bangkok (BNK)</p>
+													<h6>01 Apr 2018 01:10</h6>
+												</div>
+											</div>
+											<div class="col-xs-3">
+												<div class="e-tb-col">
+													<p>Dhaka (DAC)</p>
+													<h6>01 Apr 2018 03:10</h6>
+												</div>
+											</div>
+											<div class="col-xs-3">
+												<div class="e-tb-col">
+													<p>0 Stop</p>
+													<p>1h 50m</p>
+													<p>Non-Refundable</p>
+												</div>
+											</div>
+										</div>
+										<!-- E-CONTENT-ROW -->
+									</div>
+									<!-- /E-R-ROW -->
+								</td>
+							</tr>
+							<tr>
+								<td class="tct-payment">
+									<h6 class="col-header">Payment Details</h6>
+									<div class="fare-details">
+										<ul>
+											<li>Base Fare </li>
+											<li>Tax </li>
+											<li>Voucher</li>
+											<li>Payment Fee</li>
+											<li>Total Amount</li>
+										</ul>
+										<ul>
+											<li>BDT 30000</li>
+											<li>BDT 4000</li>
+											<li>BDT 200</li>
+											<li>BDT 350</li>
+											<li>BDT 34550</li>
+										</ul>
+									</div>
+								</td>
+								<td class="tct-baggage">
+									<h6 class="col-header">Flight Inclusions</h6>
+									<span class="tic-tab-header">Cabin Baggage</span>
+									<p>9W-393, 9W-276</p>
+									<p><span>Adult :</span>&nbsp;<span>7 kg</span></p>
+									<span class="tic-tab-header">9W-393</span>
+									<p><span>Meals :</span>&nbsp;&nbsp;<span>Included</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2"><span class="powered-by">Powered By : <a href="https://eliassoft.xyz/">www.eliassoft.xyz</a></span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- /TICKET -->
+
+				<!-- AIR-RULES -->
+				<div class="air-rules">
+					<h4>Important Informations</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus cupiditate animi iure magni rerum libero facere soluta qui veniam magnam.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, dicta.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, ex numquam sequi nobis, autem dolorem?</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis odit, aliquid delectus at ea vitae, debitis molestiae quae nam quaerat maxime. Maxime, autem consequatur beatae.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae harum adipisci eaque soluta ipsum ex nesciunt nam fugit, itaque reiciendis officia. Soluta quia at consequatur facilis adipisci rerum tempora tempore.</p>
+				</div>
+				<!-- /AIR-RULES -->
+			</div>
+			<!-- TICKET-CONTAINER -->
+		</div>
+		<!-- CONTAINER-FLUID -->
+	</section>
+	<!--==================================
+	/TICKET
+	===================================-->
+
+	<!--==================================
+	EMAIL-TICKET :: POPUP
+	===================================-->
+	<!-- MODAL -->
+	<div class="modal">
+		<div class="modal-content animate">
+			<div class="modal-header">
+				<span class="close" title="Close Modal">X</span>
+				<h3>Email Your Ticket</h3>
+			</div>
+			<!-- MODAL-WRAPPER -->
+			<div class="modal-wrapper">
+				<!-- COMPLAIN -->
+				<form action="" class="complain">
+					<div class="row">
+						<div class="col-xs-8">
+							<div class="form-group">
+								<input id="form_subject" type="email" name="subject" class="form-control" required="required" data-error="Valid email is required." placeholder="Enter email">
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+						<div class="col-xs-4">
+							<div class="form-group">
+								<input type="submit" class="btn-tct-send form-control" value="Send Email">
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+					</div>
+				</form>
+				<!-- /COMPLAIN -->
+			</div>
+			<!-- /MODAL-WRAPPER -->
+		</div>
+	</div>
+	<!-- /MODAL -->
+	<!--==================================
+	EMAIL-TICKET :: POPUP
+	===================================-->
+	
+	<!--==================================
+	FOOTER
+	===================================-->
+	<footer id="footer">
+		<!-- CONTAINER-FLUID -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2 footer-col">
+					<div class="ft-header">
+						<h4>Contact Address</h4>
+					</div>
+					<ul class="footer-list">
+						<li>Contact : 01710560323</li>
+						<li>Email : demo@demo.com</li>
+					</ul>
+				</div>
+				<div class="col-sm-2 footer-col">
+					<div class="ft-header">
+						<h4>Services</h4>
+					</div>
+					<ul class="footer-list">
+						<li><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;<a href="#">Hotel</a></li>
+						<li><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;<a href="#">Flight</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-2 footer-col">
+					<div class="ft-header">
+						<h4>About us</h4>
+					</div>
+					<ul class="footer-list">
+						<li><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;<a href="#">About us</a></li>
+						<li><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;<a href="#">Career</a></li>
+						<li><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;<a href="#">Terms of Service</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4 footer-col">
+					<div class="ft-header">
+						<h4>Policy</h4>
+					</div>
+					<div class="policy">
+						<a href="#">Privacy Policy</a>
+						<a href="#">DMCA Policy</a>
+						<a href="#">GDPR Policy</a>
+						<a href="#">Refund Policy</a>
+						<a href="#">SMS Policy</a>
+						<a href="#">Income Disclosure</a>
+						<a href="#">Anti Spam</a>
+					</div>
+				</div>
+				<div class="col-sm-2 footer-col">
+					<div class="ft-header">
+						<h4>Connects Socially</h4>
+					</div>
+					<div class="ft-gallery">
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><br>
+						<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+					</div>
+				</div>		
+			</div>
+			<!-- COPYRIGHT -->
+			<div id="copy-right">
+				<p>All Rights Reserved &copy; <a href="https://www.linkedin.com/in/feelfree009/" target="_blank"> Elias</a></p>
+			</div>
+			<!-- /COPYRIGHT -->
+		</div>
+		<!-- /CONTAINER-FLUID -->
+	</footer>
+	<!--==================================
+	/FOOTER
+	===================================-->
+
+	<!--==================================
+	SCROLL-UP
+	===================================-->
+	<div id="scroll-up">
+		<a href="#">
+			<i class="fa fa-angle-up" aria-hidden="true"></i>
+		</a>
+	</div>
+	<!--==================================
+	/SCROLL-UP
+	===================================-->
+
+	<!--==================================
+	JS PLUGIN AND SCRIPT
+	===================================-->
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/libs-ui.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/libs-select.js"></script>
+	<script type="text/javascript" src="js/jquery.typeahead.js"></script>
+	<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="js/responsiveslides.min.js"></script>
+	<script type="text/javascript" src="js/prism.js"></script>
+	<script type="text/javascript" src="js/libs.js"></script>
+	<script type="text/javascript" src="js/jquery.currency.js"></script>
+	<script type="text/javascript" src="js/jquery.flagstrap.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<!--==================================
+	/JS PLUGIN AND SCRIPT
+	===================================-->
+
+	<!--==================================
+	SCRIPT
+	===================================-->
+</body>
+</html>

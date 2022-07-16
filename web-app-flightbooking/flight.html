@@ -1,0 +1,3190 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <![endif]-->
+    <meta name="keywords" content="HTML5 Template" />
+	<title>Deshi Flight Search Result</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="Personal Web Template" content="Air ticket booking site" />
+	<meta name="Site Description" content="WEBSITE DESCRIPTION" />
+
+	<link rel="icon" type="image/png" href="images/icon/title-icon.png" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/themify-icons.css" />
+	<!--[if lt IE 8]><!-->
+	<link rel="stylesheet" type="text/css" href="css/ie7.css">
+	<!--<![endif]-->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" type="text/css" href="css/libs-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/libs-select.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.typeahead.css">
+	<link rel="stylesheet" type="text/css" href="css/responsiveslides.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	
+	<script type="text/javascript" src="js/modernizr.custom.js"></script>
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<!-- PRELOADER -->
+	<div id="st-preloader">
+		<div id="pre-status">
+			<div class="preload-placeholder"></div>
+		</div>
+	</div>
+	<!-- /PRELOADER -->
+
+	<!--==================================
+	NAVBAR
+	===================================-->
+	<nav class="navbar">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.png" alt="Image Missing">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="flight.html">Flights</a></li>
+					<li><a href="fl-traveller.html">Book Flight</a></li>
+					<li><a href="review-info.html">Review Form</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Other Pages <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="email-login.html">Email Login</a></li>
+							<li><a href="ticket-progress.html">Ticket Processing</a></li>
+							<li><a href="ticket-air.html">Air Ticket</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Dashboard <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="dashboard.html">Dashboard</a></li>
+							<li><a href="d-profile.html">Profile</a></li>
+							<li><a href="d-booking.html">Booking</a></li>
+							<li><a href="d-travellerinfo.html">My Traveller</a></li>
+							<li><a href="d-forms.html">Travel Form</a></li>
+							<li><a href="d-accounts.html">Accounts</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+						<div class="customize-dropdown dropdown-menu">
+							<form class="dropdown-cover" action="#">
+								<!-- SIGN-IN -->
+								<div class="sign-in">
+									<div class="df-user-ask">
+										<a class="open-signup-form"><span>Not account?</span><span>Sign Up</span></a>
+									</div>
+									<div class="row">
+										<div class="col-xs-6">
+											<div class="df-grp-by form-group">
+												<input type="number" name="user-id" class="booking-theme form-control" required="required" placeholder="Phone number">
+												<div class="help-block with-errors"></div>
+											</div>
+											<div class="df-grp-by form-group">
+												<input type="password" name="user-id" class="booking-theme form-control" required="required" placeholder="Password">
+												<div class="help-block with-errors"></div>
+											</div>
+											<button type="submit" class="btn-login">Sign In</button>
+											<a class="forget-pass">Forgot password?</a>
+										</div>
+										<div class="col-xs-6">
+											<p>Or use your social account login</p>
+											<div class="login-with-acc">
+												<a href="#" class="fb">Login with facebook</a>
+											</div>
+											<div class="login-with-acc">
+												<a href="#" class="gm">Login with google</a>
+											</div>
+										</div>
+									</div>
+									<div class="agent-sign-in">
+										<a href="#">Agent Login</a>
+									</div>
+								</div>
+								<!-- /SIGN-IN -->
+
+								<!-- SIGN-UP -->
+								<div class="sign-up">
+									<div class="su-header">
+										<h5>Traveller Sign Up</h5>
+									</div>
+									<div class="row">
+										<div class="col-xs-6">
+											<div class="df-grp-by form-group">
+												<input type="email" name="user-id" class="form-control" required="required" placeholder="Email">
+												<div class="help-block with-errors"></div>
+											</div>
+											<div class="df-grp-by form-group">
+												<input type="password" name="user-id" class="form-control" required="required" placeholder="Password">
+												<div class="help-block with-errors"></div>
+											</div>
+											<p class="pass-aleart">Password must be atleast 8 characters long.</p>
+										</div>
+										<div class="col-xs-6">
+											<div class="row">
+												<div class="col-sm-6">
+													<div class="df-grp-by form-group">
+														<input type="text" name="user-id" class="form-control" required="required" placeholder="First name">
+														<div class="help-block with-errors"></div>
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="df-grp-by form-group">
+														<input type="text" name="user-id" class="form-control" required="required" placeholder="Last name">
+														<div class="help-block with-errors"></div>
+													</div>
+												</div>
+											</div>
+											<div class="df-grp-by form-group">
+												<input type="number" name="user-id" class="form-control" required="required" placeholder="Mobile number">
+												<div class="help-block with-errors"></div>
+											</div>
+										</div>
+									</div>
+									<div class="cus-sign-up">
+										<div class="row">
+											<div class="col-xs-6">
+												<div class="sign-in-return">
+													<a><span>Have an account?</span> <span>Sing In</span></a>
+												</div>
+											</div>
+											<div class="col-xs-6">
+												<div class="btn-container">
+													<button class="btn-login" type="submit">Sign Up</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /SIGN-UP -->
+
+								<!-- PASS-RESET -->
+								<div class="pass-reset">
+									<div class="su-header">
+										<h5>Enter your email or mobile to get an OTP!</h5>
+									</div>
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="df-grp-by form-group">
+												<input type="text" name="user-id" class="form-control" required="required" placeholder="Email/Mobile">
+												<div class="help-block with-errors"></div>
+											</div>
+										</div>
+									</div>
+									<div class="cus-sign-up">
+										<div class="row">
+											<div class="col-xs-6">
+												<div class="otp-to-sign-in">
+													<a><span>Have an account?</span><span>Sing In</span></a>
+												</div>
+											</div>
+											<div class="col-xs-6">
+												<div class="btn-container">
+													<button class="btn-login" type="submit">Send OTP</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /PASS-RESET -->
+							</form>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--==================================
+	/NAVBAR
+	===================================-->
+
+	<!--==================================
+	SEARCH-HEADER
+	===================================-->
+	<section id="search-header">
+		<!-- CONTAINER-FLUID -->
+		<div class="container-fluid">
+			<div class="modify-search">
+				<div class="mod-col-1">
+					<div class="search-notify">
+						<div class="mod-icon material-icons">&#xe195;</div>
+						<div>
+							<h4 class="notification">Dhaka to Kualampur</h4>
+							<h5 class="trip-name">Round Trip</h5>
+						</div>
+					</div>
+					<div class="mod-col-2">
+						<div class="inline-col">
+							<p><i class="fa fa-calendar"></i>&nbsp;Departure</p>
+							<p>Wed, 05, Feb</p>
+						</div>
+						<div class="inline-col">
+							<p><i class="fa fa-calendar"></i>&nbsp;Return</p>
+							<p>Fri, 07, Feb</p>
+						</div>
+					</div>
+					<div class="mod-col-3">
+						<div class="inline-col">
+							<p>Adult</p>
+							<p>5</p>
+						</div>
+						<div class="inline-col">
+							<p>Child</p>
+							<p>2</p>
+						</div>
+						<div class="inline-col">
+							<p>Infant</p>
+							<p>2</p>
+						</div>
+					</div>
+				</div>
+				<div class="mod-col-4">
+					<button class="btn-submit" data-toggle="collapse" type="button" data-target="#edit-search" aria-expanded="false" aria-controls="edit-search">
+						Modify Search <i class="ti-arrow-down"></i>
+					</button>
+				</div>	
+			</div>
+		</div>
+		<!-- /CONTAINER-FLUID -->
+	</section>
+	<!--==================================
+	/SEARCH-HEADER
+	===================================-->
+
+	<!--==================================
+	RESET-SEARCH
+	===================================-->
+	<section id="reset-search">
+		<!-- CONTAINER-FLUID -->
+		<div class="container-fluid">
+			<div class="collapse" id="edit-search">
+				<!-- FLIGHT -->
+				<div id="flight" class="tab-pane fade in active">
+					<!-- FLIGHT-FILTER -->
+					<div class="flight-filter">
+						<label>
+							<input id="btn-oneway" type="checkbox" checked>&nbsp;Oneway
+						</label>
+						<label>
+							<input id="btn-roundtrip" type="checkbox">&nbsp;Roundtrip
+						</label>
+						<label>
+							<input id="btn-multicity" type="checkbox">&nbsp;Multi City
+						</label>
+					</div>
+					<!-- /FLIGHT-FILTER -->
+
+					<!-- FLIGHT-SEARCH -->
+					<div class="flight-search">
+						<!-- MULTICITY -->
+						<div id="multicity">
+							<form class="search-form" action="#">
+								<!-- FLEX-CONTAINER -->
+								<div class="flex-container">
+									<div class="flex-item">
+										<div class="typeahead__container ">
+											<div class="typeahead__field ui-widget ui-flight">
+												<span class="typeahead__query">
+													<input class="js-typeahead" name="q" type="search" autocomplete="off" placeholder="Flying from">
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="flex-item">
+										<div class="typeahead__container ">
+											<div class="typeahead__field ui-widget ui-flight">
+												<span class="typeahead__query">
+													<input class="js-typeahead" name="q" type="search" autocomplete="off" placeholder="Flying to">
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="flex-item departure">
+										<input type="text" class="call-calendar from" id="mcity-departure-date" placeholder="Depart Date">
+									</div>
+									<div class="flex-item return">
+										<input type="text" class="call-calendar return to" placeholder="Return date" required="required">
+									</div>
+									<div class="flex-item journey-type">
+										<!-- DROPLIST -->
+										<div class="droplist" id="js-select-special">
+											<input class="droplist-input info" type="text" name="traveller" value="1 Travellers, Economy" disabled="disabled" id="info">
+											<a class="droplist-toggle"><span class="droplist-toggle-span">1</span> Traveller <span class="cabin-class-name">Economy</span></a>
+											<!-- DROPLIST-MENU -->
+											<div class="droplist-menu">
+												<!-- ADD-TRAVELLER -->
+												<ul class="add-traveller">
+													<li class="list-person_item_1">
+														<span class="trv-category">Adult</span>
+														<div class="spin-quantity quantity1">
+															<span class="btn-spin-minus">
+																<span class="fa fa-minus" aria-hidden="true"></span>
+															</span>
+															<input class="inputQty" type="number" min="1" max="9" value="1">
+															<span class="btn-spin-plus">
+																<span class="fa fa-plus" aria-hidden="true"></span>
+															</span>
+														</div>
+													</li>
+													<li class="list-person_item_2">
+														<span class="trv-category">Child <small>2-12 Years</small></span>
+														<div class="spin-quantity quantity2">
+															<span class="btn-spin-minus">
+																<span class="fa fa-minus" aria-hidden="true"></span>
+															</span>
+															<input class="inputQty" type="number" min="0" max="9" value="0">
+															<span class="btn-spin-plus">
+																<span class="fa fa-plus" aria-hidden="true"></span>
+															</span>
+														</div>
+													</li>
+													<li class="list-person_item_3">
+														<span class="trv-category">Infant <small>Below 2 Years</small></span>
+														<div class="spin-quantity quantity3">
+															<span class="btn-spin-minus">
+																<span class="fa fa-minus" aria-hidden="true"></span>
+															</span>
+															<input class="inputQty" type="number" min="0" max="9" value="0">
+															<span class="btn-spin-plus">
+																<span class="fa fa-plus" aria-hidden="true"></span>
+															</span>
+														</div>
+													</li>
+												</ul>
+												<!-- /ADD-TRAVELLER -->
+
+												<!-- JOURNEY-CATEGORY -->
+												<div class="journey-category">
+													<div class="category-list">
+														<label class="category-name">
+															<input type="radio" name="category-name" checked="checked">&nbsp;Economy
+														</label>
+													</div>
+													<div class="category-list">
+														<label class="category-name">
+															<input type="radio" name="category-name">&nbsp;Premium Economy
+														</label>
+													</div>
+													<div class="category-list">
+														<label class="category-name">
+															<input type="radio" name="category-name">&nbsp;Business
+														</label>
+													</div>
+													<div class="category-list">
+														<label class="category-name">
+															<input type="radio" name="category-name">&nbsp;First Class
+														</label>
+													</div>
+												</div>
+												<!-- /JOURNEY-CATEGORY -->
+
+												<div class="spin-submit">
+													<span>Done</span>
+												</div>
+											</div>
+											<!-- /DROPLIST-MENU -->
+										</div>
+										<!-- /DROP-LIST -->
+									</div>
+									<div class="flex-item">
+										<!-- BTN SEARCH -->
+										<div class="btn-search">
+											<button id="search-multicity" type="submit">Search</button>
+										</div>
+										<!-- /BTN SEARCH -->
+									</div>
+								</div>
+								<!-- /FLEX-CONTAINER -->
+								
+								<!-- MULTICITYCONTAINER -->
+								<div class="multicityContainer">
+									<!-- FLEX-CONTAINER -->
+									<div class="flex-container add_multicity">
+										<div class="flex-item">
+											<div class="typeahead__container ">
+												<div class="typeahead__field ui-widget ui-flight">
+													<span class="typeahead__query">
+														<input class="js-typeahead" name="q" type="search" autocomplete="off" placeholder="Airport name">
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="flex-item">
+											<div class="typeahead__container ">
+												<div class="typeahead__field ui-widget ui-flight">
+													<span class="typeahead__query">
+														<input class="js-typeahead" name="q" type="search" autocomplete="off" placeholder="Airport name">
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="flex-item departure">
+											<input type="text" class="call-calendar from mcity-inc-departure-date" placeholder="Departure Date">
+										</div>
+										<div class="increment flex-item btn-search">
+											<button id="add-flight_1" class="add-flight"><i class="fa fa-plus-square" aria-hidden="true"></i>&nbsp;&nbsp;Add City</button>
+										</div>
+										<div class="flex-item">
+										</div>
+										<div class="flex-item flex-item__toggle">
+										</div>
+									</div>
+									<!-- /FLEX-CONTAINER -->
+
+									<!-- FLEX-CONTAINER -->
+									<div id="form-1" class="flex-container formFlex">
+										<div class="flex-item">
+											<div class="typeahead__container ">
+												<div class="typeahead__field ui-widget ui-flight">
+													<span class="typeahead__query">
+														<input class="js-typeahead" name="q" type="search" autocomplete="off" placeholder="Airport name">
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="flex-item">
+											<div class="typeahead__container ">
+												<div class="typeahead__field ui-widget ui-flight">
+													<span class="typeahead__query">
+														<input class="js-typeahead" name="q" type="search" autocomplete="off" placeholder="Airport name">
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="flex-item departure">
+											<input type="text" class="call-calendar from mcity-inc-departure-date" placeholder="Departure Date">
+										</div>
+										<div class="increment flex-item btn-search">
+											<span id="remove-flight-1" class="remove-flight">X</span>
+										</div>
+										<div class="flex-item">
+										</div>
+										<div class="flex-item flex-item__toggle">
+										</div>
+									</div>
+									<!-- /FLEX-CONTAINER -->
+
+									<!-- FLEX-CONTAINER -->
+									<div id="form-2" class="flex-container formFlex">
+										<div class="flex-item">
+											<div class="typeahead__container ">
+												<div class="typeahead__field ui-widget ui-flight">
+													<span class="typeahead__query">
+														<input class="js-typeahead" name="q" type="search" autocomplete="off" placeholder="Airport name">
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="flex-item">
+											<div class="typeahead__container ">
+												<div class="typeahead__field ui-widget ui-flight">
+													<span class="typeahead__query">
+														<input class="js-typeahead" name="q" type="search" autocomplete="off" placeholder="Airport name">
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="flex-item departure">
+											<input type="text" class="call-calendar from mcity-inc-departure-date" placeholder="Departure Date">
+										</div>
+										<div class="increment flex-item btn-search">
+											<span class="remove-flight">X</span>
+										</div>
+										<div class="flex-item">
+										</div>
+										<div class="flex-item flex-item__toggle">
+										</div>
+									</div>
+									<!-- /FLEX-CONTAINER -->
+
+									<!-- FLEX-CONTAINER -->
+									<div id="form-3" class="flex-container formFlex">
+										<div class="flex-item">
+											<div class="typeahead__container ">
+												<div class="typeahead__field ui-widget ui-flight">
+													<span class="typeahead__query">
+														<input class="js-typeahead" name="q" type="search" autocomplete="off" placeholder="Airport name">
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="flex-item">
+											<div class="typeahead__container ">
+												<div class="typeahead__field ui-widget ui-flight">
+													<span class="typeahead__query">
+														<input class="js-typeahead" name="q" type="search" autocomplete="off" placeholder="Airport name">
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="flex-item departure">
+											<input type="text" class="call-calendar from mcity-inc-departure-date" placeholder="Departure Date">
+										</div>
+										<div class="increment flex-item btn-search">
+											<span class="remove-flight">X</span>
+										</div>
+										<div class="flex-item">
+										</div>
+										<div class="flex-item flex-item__toggle">
+										</div>
+									</div>
+									<!-- /FLEX-CONTAINER -->
+
+									<!-- FLEX-CONTAINER -->
+									<div id="form-4" class="flex-container formFlex">
+										<div class="flex-item">
+											<div class="typeahead__container ">
+												<div class="typeahead__field ui-widget ui-flight">
+													<span class="typeahead__query">
+														<input class="js-typeahead" name="q" type="search" autocomplete="off" placeholder="Airport name">
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="flex-item">
+											<div class="typeahead__container ">
+												<div class="typeahead__field ui-widget ui-flight">
+													<span class="typeahead__query">
+														<input class="js-typeahead" name="q" type="search" autocomplete="off" placeholder="Airport name">
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="flex-item departure">
+											<input type="text" class="call-calendar from mcity-inc-departure-date" placeholder="Departure Date">
+										</div>
+										<div class="increment flex-item btn-search">
+											<span class="remove-flight">X</span>
+										</div>
+										<div class="flex-item">
+										</div>
+										<div class="flex-item flex-item__toggle">
+										</div>
+									</div>
+									<!-- /FLEX-CONTAINER -->
+
+									<!-- FLEX-CONTAINER -->
+									<div id="form-5" class="flex-container formFlex">
+										<div class="flex-item">
+											<div class="typeahead__container ">
+												<div class="typeahead__field ui-widget ui-flight">
+													<span class="typeahead__query">
+														<input class="js-typeahead" name="q" type="search" autocomplete="off" placeholder="Airport name">
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="flex-item">
+											<div class="typeahead__container ">
+												<div class="typeahead__field ui-widget ui-flight">
+													<span class="typeahead__query">
+														<input class="js-typeahead" name="q" type="search" autocomplete="off" placeholder="Airport name">
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="flex-item departure">
+											<input type="text" class="call-calendar from mcity-inc-departure-date" placeholder="Departure Date">
+										</div>
+										<div class="increment flex-item btn-search">
+											<span class="remove-flight">X</span>
+										</div>
+										<div class="flex-item">
+										</div>
+										<div class="flex-item flex-item__toggle">
+										</div>
+									</div>
+									<!-- /FLEX-CONTAINER -->
+								</div>
+								<!-- /MULTICITYCONTAINER -->
+							</form>
+						</div>
+						<!-- /MULTICITY -->
+					</div>
+					<!-- /FLIGHT-SEARCH -->
+				</div>
+				<!-- /FLIGHT -->
+			</div>
+		</div>
+		<!-- /CONTAINER-FLUID -->
+	</section>
+	<!--==================================
+	/RESET-SEARCH
+	===================================-->
+
+	<!--==================================
+	FLIGHT-SEARCH
+	===================================-->
+	<section id="flight-search">
+		<!-- CONTAINER-FLUID -->
+		<div class="container-fluid">
+			<div class="btnFilter">
+				<i class="ti-filter"></i>
+			</div>
+			<!-- FILTER -->
+			<aside id="filter" class="col-xs-3">
+				<div class="row filter">
+					<div class="fl-header">
+						<h4><span class="ti-filter"></span>Filter Results</h4>
+						<p class="filter-close">&times;</p>
+					</div>
+					<!-- ALL FILTERBOX -->
+					<div class="allfilterBox">
+						<div class="fl-btn-reset">
+							<span class="ti-reload"></span>
+							<button class="btn-reset">Reset All</button>
+						</div>
+						<!-- RANGERBOX -->
+						<div class="rangerbox">
+							<button id="btn-range-01" class="btn-collapse" type="button" data-toggle="rangeCollapse" data-target="#collapse_01" aria-expanded="false" aria-controls="collapse_01">Price</button>
+							<div class="rangeCollapse" id="collapse_01">
+								<p>
+									<input type="text" id="amount" />
+								</p>
+								<div id="slider-container"></div>
+								<div id="slider-range"></div>
+							</div>
+						</div>
+						<!-- /RANGERBOX -->
+						<div class="separator"></div>
+						<!-- RANGERBOX -->
+						<div class="rangerbox">
+							<button id="btn-range-02" class="btn-collapse" type="button" data-toggle="rangeCollapse" data-target="#collapse_02" aria-expanded="false" aria-controls="collapse_02">No. of Stops</button>
+							<div class="rangeCollapse" id="collapse_02">
+								<div class="stopage-row filterStopage">
+									<div class="stopage-col btn-filter--focus">
+										<input type="checkbox" class="hideCheck" value="st0">
+										<div class="stopage-header">
+											<div class="stopCount">0<span>Stop</span></div>
+											<span class="stopage-footer">-</span>
+										</div>
+									</div>
+									<div class="stopage-col btn-filter--focus">
+										<input type="checkbox" class="hideCheck" value="st1">
+										<div class="stopage-header">
+											<div class="stopCount">1<span>Stop</span></div>
+											<span class="stopage-footer">-</span>
+										</div>
+									</div>
+									<div class="stopage-col btn-filter--focus">
+										<input type="checkbox" class="hideCheck" value="st2">
+										<div class="stopage-header">
+											<div class="stopCount">1+<span>Stops</span>
+											</div>
+											<span class="stopage-footer">-</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /RANGERBOX -->
+						<div class="separator"></div>
+						<!-- RANGERBOX -->
+						<div class="rangerbox">
+							<button id="btn-range-03" class="btn-collapse" type="button" data-toggle="rangeCollapse" data-target="#collapse_03" aria-expanded="false" aria-controls="collapse_03">Departure Time</button>
+							<div class="rangeCollapse" id="collapse_03">
+								<div class="time stopage-row departureFilter">
+									<div class="time-1 btn-filter--focus">
+										<input type="checkbox" class="hideCheck" value="dt0">
+										<div class="stopage-header">
+											<div class="timeIcon icon1"></div>
+											<span class="stopage-footer">12-6AM</span>
+										</div>
+									</div>
+									<div class="time-2 btn-filter--focus">
+										<input type="checkbox" class="hideCheck" value="dt1">
+										<div class="stopage-header">
+											<div class="timeIcon icon2"></div>
+											<span class="stopage-footer">6-12PM</span>
+										</div>
+									</div>
+									<div class="time-3 btn-filter--focus">
+										<input type="checkbox" class="hideCheck" value="dt2">
+										<div class="stopage-header">
+											<div class="timeIcon icon3"></div>
+											<span class="stopage-footer">12-6PM</span>
+										</div>
+									</div>
+									<div class="time-4 btn-filter--focus">
+										<input type="checkbox" class="hideCheck" value="dt3">
+										<div class="stopage-header">
+											<div class="timeIcon icon4"></div>
+											<span class="stopage-footer">6-12AM</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /RANGERBOX -->
+						<div class="separator"></div>
+						<!-- RANGERBOX -->
+						<div class="rangerbox">
+							<button id="btn-range-04" class="btn-collapse" type="button" data-toggle="rangeCollapse" data-target="#collapse_04" aria-expanded="false" aria-controls="collapse_04">Arrival Time</button>
+							<div class="rangeCollapse" id="collapse_04">
+								<div class="time stopage-row arrivalFilter">
+									<div class="time-1 btn-filter--focus">
+										<input type="checkbox" class="hideCheck" value="at0">
+										<div class="stopage-header">
+											<div class="timeIcon icon1"></div>
+											<span class="stopage-footer">12-6AM</span>
+										</div>
+									</div>
+									<div class="time-2 btn-filter--focus">
+										<input type="checkbox" class="hideCheck" value="at1">
+										<div class="stopage-header">
+											<div class="timeIcon icon2"></div>
+											<span class="stopage-footer">6-12PM</span>
+										</div>
+									</div>
+									<div class="time-3 btn-filter--focus">
+										<input type="checkbox" class="hideCheck" value="at2">
+										<div class="stopage-header">
+											<div class="timeIcon icon3"></div>
+											<span class="stopage-footer">12-6PM</span>
+										</div>
+									</div>
+									<div class="time-4 btn-filter--focus">
+										<input type="checkbox" class="hideCheck" value="at3">
+										<div class="stopage-header">
+											<div class="timeIcon icon4"></div>
+											<span class="stopage-footer">6-12AM</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /RANGERBOX -->
+						<div class="separator"></div>
+						<!-- RANGERBOX -->
+						<div class="rangerbox">
+							<button id="btn-range-05" class="btn-collapse" type="button" data-toggle="rangeCollapse" data-target="#collapse_05" aria-expanded="false" aria-controls="collapse_05">Fare Type</button>
+							<div class="rangeCollapse" id="collapse_05">
+								<div class="checkbox-row" id="faretype">
+									<ul class="faretype">
+										<li>
+											<div class="refundable">
+												<input type="checkbox" value="r" class="faretypecheck" id="squaredSelection1">
+												<label for="squaredSelection1"></label>        
+											</div>
+											<label for="squaredSelection1" class="selectionLabel">
+												<span class="ref_sortlbl"><span class="fare_namesearch">Refundable</span></span>
+											</label>
+										</li>
+										<li>
+											<div class="non-refundable">
+												<input type="checkbox" value="nr" class="faretypecheck" id="squaredSelection2">
+												<label for="squaredSelection2"></label>
+											</div>
+											<label for="squaredSelection2" class="selectionLabel">
+												<span class="ref_sortlbl"><span class="fare_namesearch">Non-Refundable</span></span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /RANGERBOX -->
+						<div class="separator"></div>
+						<!-- RANGERBOX -->
+						<div class="rangerbox">
+							<button id="btn-range-06" class="btn-collapse" type="button" data-toggle="rangeCollapse" data-target="#collapse_06" aria-expanded="false" aria-controls="collapse_06">Airlines</button>
+							<div class="rangeCollapse" id="collapse_06">
+								<div class="checkbox-row" id="airlinesFilter">
+									<ul class="airlinesFilter">
+										<li>
+											<div class="squaredSelection airlinesSort">
+												<input type="checkbox" value="em_air" id="airSelection1">
+												<label for="airSelection1"></label>        
+											</div>
+											<label for="airSelection1" class="selectionLabel">
+												<span class="img_sortlbl"><img src="images/airlines/EK.gif" alt="Image Missing"></span>
+												<span class="airlines_namesearch">Emirates Airlines</span>
+											</label>
+										</li>
+										<li>
+											<div class="squaredSelection airlinesSort">
+												<input type="checkbox" value="et_air" id="airSelection2">
+												<label for="airSelection2"></label>
+											</div>
+											<label for="airSelection2" class="selectionLabel">
+												<span class="img_sortlbl"><img src="images/airlines/EY.gif" alt="Image Missing"></span>
+												<span class="airlines_namesearch">Etihad Airways</span>
+											</label>
+										</li>
+										<li>
+											<div class="squaredSelection airlinesSort">
+												<input type="checkbox" value="mal_air" id="airSelection3">
+												<label for="airSelection3"></label>
+											</div>
+											<label for="airSelection3" class="selectionLabel">
+												<span class="img_sortlbl"><img src="images/airlines/MH.gif" alt="Image Missing"></span>
+												<span class="airlines_namesearch">Malaysian Airline</span>
+											</label>
+										</li>
+										<li>
+											<div class="squaredSelection airlinesSort">
+												<input type="checkbox" value="mld_air" id="airSelection4">
+												<label for="airSelection4"></label>
+											</div>
+											<label for="airSelection4" class="selectionLabel">
+												<span class="img_sortlbl"><img src="images/airlines/OD.gif" alt="Image Missing"></span>
+												<span class="airlines_namesearch">Malindo Air</span>
+											</label>
+										</li>
+										<li>
+											<div class="squaredSelection airlinesSort">
+												<input type="checkbox" value="qt_air" id="airSelection5">
+												<label for="airSelection5"></label>
+											</div>
+											<label for="airSelection5" class="selectionLabel">
+												<span class="img_sortlbl"><img src="images/airlines/QR.gif" alt="Image Missing"></span>
+												<span class="airlines_namesearch">Qatar Airways</span>
+											</label>
+										</li>
+										<li>
+											<div class="squaredSelection airlinesSort">
+												<input type="checkbox" value="sp_air" id="airSelection6">
+												<label for="airSelection6"></label>
+											</div>
+											<label for="airSelection6" class="selectionLabel">
+												<span class="img_sortlbl"><img src="images/airlines/SQ.gif" alt="Image Missing"></span>
+												<span class="airlines_namesearch">Singapore Airways</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /RANGERBOX -->
+						<div class="separator"></div>
+					</div>
+					<!-- /ALL FILTERBOX -->
+				</div>
+			</aside>
+			<!-- /FILTER -->
+
+			<!-- FLIGHT-SCHEDULE -->
+			<div class="col-sm-12 col-md-9">
+				<div class="row">
+					<!-- ALL FLIGHTS -->
+					<div class="allFlights">
+						<div class="prev__next">
+							<h5>Total 200 Fligts are available.</h5>
+							<div>
+								<a class="perv" href="#">Prev Day</a>
+								<select name="#">
+									<option value="onward">Onward</option>
+									<option value="return">Return</option>
+								</select>
+								<a class="next" href="#">Next Day</a>
+							</div>
+						</div>
+
+						<div class="all-fl-header"></div>
+
+						<!-- MATRIX CAROUSEL -->
+						<div class="matrixCarousel">
+							<div class="filter-carousel">
+								<div class="item fltr-controls">
+									<input class="airlineFilter" type="checkbox" value="sl_em">
+									<img src="images/airlines/EK.gif" alt="Image Missing">
+									<p class="fl-airlines-name">
+										<span>Emirates</span><br>
+										<span class="available__flight">1 Flight</span><br>
+										<small class="fl-fare-cost">150000&nbsp;BDT</small>
+									</p>           
+								</div>
+								<div class="item fltr-controls">
+									<input class="airlineFilter" type="checkbox" value="sl_et">
+									<img src="images/airlines/EY.gif" alt="Image Missing">
+									<p class="fl-airlines-name">
+										<span>Emirates</span><br>
+										<span class="available__flight">2 Flight</span><br>
+										<small class="fl-fare-cost">150000&nbsp;BDT</small>
+									</p>           
+								</div>
+								<div class="item fltr-controls">
+									<input class="airlineFilter" type="checkbox" value="sl_mal">
+									<img src="images/airlines/MH.gif" alt="Image Missing">
+									<p class="fl-airlines-name">
+										<span>Emirates</span><br>
+										<span class="available__flight">4 Flight</span><br>
+										<small class="fl-fare-cost">150000&nbsp;BDT</small>
+									</p>
+								</div>
+								<div class="item fltr-controls">
+									<input class="airlineFilter" type="checkbox" value="sl_mld">
+									<img src="images/airlines/OD.gif" alt="Image Missing">
+									<p class="fl-airlines-name">
+										<span>Emirates</span><br>
+										<span class="available__flight">6 Flight</span><br>
+										<small class="fl-fare-cost">150000&nbsp;BDT</small>
+									</p>
+								</div>
+								<div class="item fltr-controls">
+									<input class="airlineFilter" type="checkbox" value="sl_qt">
+									<img src="images/airlines/QR.gif" alt="Image Missing">
+									<p class="fl-airlines-name">
+										<span>Emirates</span><br>
+										<span class="available__flight">8 Flight</span><br>
+										<small class="fl-fare-cost">150000&nbsp;BDT</small>
+									</p>	
+								</div>
+								<div class="item fltr-controls">
+									<input class="airlineFilter" type="checkbox" value="sl_sp">
+									<img src="images/airlines/SQ.gif" alt="Image Missing">
+									<p class="fl-airlines-name">
+										<span>Emirates</span><br>
+										<span class="available__flight">10 Flight</span><br>
+										<small class="fl-fare-cost">150000&nbsp;BDT</small>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- /MATRIX CAROUSEL -->
+
+						<!-- FLIGHT CONTAINER -->
+						<div id="flight-container" class="filtr-1">
+							<!-- LABEL__CONTAINER -->
+							<div class="label__container">
+								<div class="flcontainer__body">
+									<div class="oneway__wrapper">
+										<div class="airlines">
+											<p>Airline</p>
+										</div>
+										<div class="depart-time">
+											<p>Depart</p>
+										</div>
+										<div class="arrive-time">
+											<p>Arrive</p>
+										</div>
+										<div class="duration">
+											<p>Duration</p>
+										</div>
+									</div>
+									<div class="book-container">
+										<p>Price</p>
+									</div>
+								</div>
+							</div>
+							<!-- /LABEL__CONTAINER -->
+
+							<!-- FL FLEX CONTAINER || ONEWAY -->
+							<div class="fl-flex-container" data-price="10000" data-category="st2 dt0 nr em_air sl_em">
+								<div class="flcontainer__body">
+									<div class="oneway__wrapper">
+										<div class="airlines">
+											<img src="images/airlines/EK.gif" alt="Image Missing">
+											<span>Emirates</span>
+										</div>
+										<div class="depart-time">
+											<time datetime="12:55">12:55</time>
+											<p>Dhaka</p>
+										</div>
+										<div class="arrive-time">
+											<time datetime="12:55">5:20</time>
+											<p>Bangkok</p>
+										</div>
+										<div class="duration">
+											<time datetime="12:55">5h 20m</time>
+											<p class="num-stop">Stop: 2</p>
+										</div>
+									</div>
+									<div class="book-container">
+										<div class="trip-price">
+											<h4>BDT 19520</h4>
+											<div class="all-price">
+												<h5 class="prc-header">Fare Breakup</h5>
+												<p class="prc-tag">Adult:<span>19520</span></p>
+												<p class="prc-tag">Child:<span>9520</span></p>
+												<p class="prc-tag">Infant:<span>3850</span></p>	
+											</div>
+											<p class="fare-type">Non Refundable</p>
+										</div>
+										<div class="book">
+											<button>Book Now</button>
+										</div>
+									</div>
+								</div>
+								<div class="fl__separator"></div>
+								<div class="fl__footer">
+									<div class="ft__row">
+										<div class="ft__col">
+											<div class="fare__terminal">
+												<div class="x-fare">
+													<span>Fare Class:</span>
+													<span>XYZ007</span>
+												</div>
+												<div class="x-terminal">
+													<span>Terminal:</span>
+													<span>M01</span>
+												</div>
+											</div>
+										</div>
+										<div class="ft__col">
+											<div class="btn__details">
+												<a href="#collapse-box__1" class="btn-fl-details" data-toggle="collapse">Flight Details</a>
+												<a href="#fair-rule__1" class="btn-fl-rules" data-toggle="collapse">Fare Rules</a>
+												<a href="#" class="btn-inclusions">Inclusions</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="collapse-box__1" class="collapse flightDetail__wrapper">
+									<div class="seat-plan--wrapper">
+										<div class="seatplan-container">
+											<div class="seatplan-col-1">
+												<div class="seat-plan-header">
+													<h4>Dhaka <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Bangkok <small>( 18h 30min )</small></h4>
+												</div>
+												<div class="seatplan-wrapper">
+													<div class="sp-airlines">
+														<img src="images/airlines/EK.gif" alt="Image Missing">
+														<p>Emirates</p>
+														<p>Air OD 163</p>
+													</div>
+													<div class="sp-depart-time">
+														<time datetime="12:55">12.55</time>
+														<h5>14 Feb 2018</h5>
+														<p>Dhaka</p>
+														<p>Terminal 1</p>
+													</div>
+													<div class="sp-arrive-time">
+														<time datetime="17:20">5:20</time>
+														<h5>14 Feb 2018</h5>
+														<p>Bangkok</p>
+														<p>Terminal 1</p>
+													</div>
+													<div class="sp-duration">
+														<p>5hrs 20mins</p>
+														<p class="num-stop">Stop:<em>0</em></p>
+														<p><i class="fa fa-suitcase bag_icon"></i><em>35 kg</em></p>
+														<p><img src="images/icon/airplane-seat.png" alt="Icon Missing"><em>5 seats left</em></p>
+													</div>
+												</div>
+											</div>
+											<div class="seatplan-col-2">
+												<div class="seatplan-wrappe">
+													<div class="total">
+														<span>Total Base Fare :</span>
+														<span>BDT 42200</span>
+													</div>
+													<div class="tax">
+														<table class="table">
+															<thead>
+																<tr>
+																	<th>Taxes & Fees :</th>
+																	<th class="align-item">Amount</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>Bd</td>
+																	<td class="align-item">BDT 500</td>
+																</tr>
+																<tr>
+																	<td>E5</td>
+																	<td class="align-item">BDT 75</td>
+																</tr>
+																<tr>
+																	<td>Ow</td>
+																	<td class="align-item">BDT 2000</td>
+																</tr>
+																<tr>
+																	<td>Ut</td>
+																	<td class="align-item">BDT 3000</td>
+																</tr>
+																<tr>
+																	<td>E7</td>
+																	<td class="align-item">BDT 184</td>
+																</tr>
+																<tr>
+																	<td>G8</td>
+																	<td class="align-item">BDT 80</td>
+																</tr>
+																<tr>
+																	<td>Ts</td>
+																	<td class="align-item">BDT 1828</td>
+																</tr>
+																<tr>
+																	<td>Ait</td>
+																	<td class="align-item"> 127</td>
+																</tr>
+																<tr>
+																	<td>Total Taxes</td>
+																	<td class="align-item">BDT 7667</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="grand-total">
+														<span>Grand Total</span>
+														<span>50000</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="fair-rule__1" class="fairRule__wrapper collapse">
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+								</div>
+							</div>
+							<!-- /FL FLEX CONTAINER -->
+
+							<!-- FL FLEX CONTAINER || ONEWAY -->
+							<div class="fl-flex-container" data-price="30000" data-category="st2 dt1 nr et_air sl_et">
+								<div class="flcontainer__body">
+									<div class="oneway__wrapper">
+										<div class="airlines">
+											<img src="images/airlines/EY.gif" alt="Image Missing">
+											<span>Etihad</span>
+										</div>
+										<div class="depart-time">
+											<time datetime="12:55">12:55</time>
+											<p>Dhaka</p>
+										</div>
+										<div class="arrive-time">
+											<time datetime="17:20">5:20</time>
+											<p>Bangkok</p>
+										</div>
+										<div class="duration">
+											<time>5h 20m</time>
+											<p class="num-stop">Stop: 2</p>
+										</div>
+									</div>
+									<div class="book-container">
+										<div class="trip-price">
+											<h4>BDT 19520</h4>
+											<div class="all-price">
+												<h5 class="prc-header">Fare Breakup</h5>
+												<p class="prc-tag">Adult:<span>19520</span></p>
+												<p class="prc-tag">Child:<span>9520</span></p>
+												<p class="prc-tag">Infant:<span>3850</span></p>	
+											</div>
+											<p class="fare-type">Non Refundable</p>
+										</div>
+										<div class="book">
+											<button>Book Now</button>
+										</div>
+									</div>
+								</div>
+								<div class="fl__separator"></div>
+								<div class="fl__footer">
+									<div class="ft__row">
+										<div class="ft__col">
+											<div class="fare__terminal">
+												<div class="x-fare">
+													<span>Fare Class:</span>
+													<span>XYZ007</span>
+												</div>
+												<div class="x-terminal">
+													<span>Terminal:</span>
+													<span>M01</span>
+												</div>
+											</div>
+										</div>
+										<div class="ft__col">
+											<div class="btn__details">
+												<a href="#collapse-box__2" class="btn-fl-details" data-toggle="collapse">Flight Details</a>
+												<a href="#fair-rule__2" class="btn-fl-rules" data-toggle="collapse">Fare Rules</a>
+												<a href="#" class="btn-inclusions">Inclusions</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="collapse-box__2" class="collapse flightDetail__wrapper">
+									<div class="seat-plan--wrapper">
+										<div class="seatplan-container">
+											<div class="seatplan-col-1">
+												<div class="seat-plan-header">
+													<h4>Dhaka <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Bangkok <small>( 18h 30min )</small></h4>
+												</div>
+												<div class="seatplan-wrapper">
+													<div class="sp-airlines">
+														<img src="images/airlines/EY.gif" alt="Image Missing">
+														<p>Emirates</p>
+														<p>Air OD 163</p>
+													</div>
+													<div class="sp-depart-time">
+														<time datetime="12:55">12.55</time>
+														<h5>14 Feb 2018</h5>
+														<p>Dhaka</p>
+														<p>Terminal 1</p>
+													</div>
+													<div class="sp-arrive-time">
+														<time datetime="17:20">5:20</time>
+														<h5>14 Feb 2018</h5>
+														<p>Bangkok</p>
+														<p>Terminal 1</p>
+													</div>
+													<div class="sp-duration">
+														<p>5hrs 20mins</p>
+														<p class="num-stop">Stop:<em>0</em></p>
+														<p><i class="fa fa-suitcase bag_icon"></i><em>35 kg</em></p>
+														<p><img src="images/icon/airplane-seat.png" alt="Icon Missing"><em>5 seats left</em></p>
+													</div>
+												</div>
+												<div class="layover">
+													<h5><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;Layover <span>07h 35m</span></h5>
+												</div>
+												<div class="seatplan-wrapper">
+													<div class="sp-airlines">
+														<img src="images/airlines/EY.gif" alt="Image Missing">
+														<p>Emirates</p>
+														<p>Air OD 163</p>
+													</div>
+													<div class="sp-depart-time">
+														<time datetime="12:55">12.55</time>
+														<h5>14 Feb 2018</h5>
+														<p>Dhaka</p>
+														<p>Terminal 2</p>
+													</div>
+													<div class="sp-arrive-time">
+														<time datetime="17:20">5:20</time>
+														<h5>14 Feb 2018</h5>
+														<p>Bangkok</p>
+														<p>Terminal 2</p>
+													</div>
+													<div class="sp-duration">
+														<p>5hrs 20mins</p>
+														<p class="num-stop">Stop:<em>0</em></p>
+														<p><i class="fa fa-suitcase bag_icon"></i><em>35 kg</em></p>
+														<p><img src="images/icon/airplane-seat.png" alt="Icon Missing"><em>5 seats left</em></p>
+													</div>
+												</div>
+											</div>
+											<div class="seatplan-col-2">
+												<div class="seatplan-wrappe">
+													<div class="total">
+														<span>Total Base Fare :</span>
+														<span>BDT 42200</span>
+													</div>
+													<div class="tax">
+														<table class="table">
+															<thead>
+																<tr>
+																	<th>Taxes & Fees :</th>
+																	<th class="align-item">Amount</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>Bd</td>
+																	<td class="align-item">BDT 500</td>
+																</tr>
+																<tr>
+																	<td>E5</td>
+																	<td class="align-item">BDT 75</td>
+																</tr>
+																<tr>
+																	<td>Ow</td>
+																	<td class="align-item">BDT 2000</td>
+																</tr>
+																<tr>
+																	<td>Ut</td>
+																	<td class="align-item">BDT 3000</td>
+																</tr>
+																<tr>
+																	<td>E7</td>
+																	<td class="align-item">BDT 184</td>
+																</tr>
+																<tr>
+																	<td>G8</td>
+																	<td class="align-item">BDT 80</td>
+																</tr>
+																<tr>
+																	<td>Ts</td>
+																	<td class="align-item">BDT 1828</td>
+																</tr>
+																<tr>
+																	<td>Ait</td>
+																	<td class="align-item"> 127</td>
+																</tr>
+																<tr>
+																	<td>Total Taxes</td>
+																	<td class="align-item">BDT 7667</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="grand-total">
+														<span>Grand Total</span>
+														<span>50000</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="fair-rule__2" class="fairRule__wrapper collapse">
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+								</div>
+							</div>
+							<!-- /FL FLEX CONTAINER -->
+
+							<!-- FL FLEX CONTAINER || ONEWAY  -->
+							<div class="fl-flex-container" data-price="140000" data-category="st0 at2 r mal_air sl_mal">
+								<div class="flcontainer__body">
+									<div class="oneway__wrapper">
+										<div class="airlines">
+											<img src="images/airlines/MH.gif" alt="Image Missing">
+											<span>Malayasian Air</span>
+										</div>
+										<div class="depart-time">
+											<time datetime="12:55">12:55</time>
+											<p>Dhaka</p>
+										</div>
+										<div class="arrive-time">
+											<time datetime="17:20">5:20</time>
+											<p>Bangkok</p>
+										</div>
+										<div class="duration">
+											<time>5h 20m</time>
+											<p class="num-stop">Stop: 0</p>
+										</div>
+									</div>
+									<div class="book-container">
+										<div class="trip-price">
+											<h4>BDT 19520</h4>
+											<div class="all-price">
+												<h5 class="prc-header">Fare Breakup</h5>
+												<p class="prc-tag">Adult:<span>19520</span></p>
+												<p class="prc-tag">Child:<span>9520</span></p>
+												<p class="prc-tag">Infant:<span>3850</span></p>	
+											</div>
+											<p class="fare-type">Refundable</p>
+										</div>
+										<div class="book">
+											<button>Book Now</button>
+										</div>
+									</div>
+								</div>
+								<div class="fl__separator"></div>
+								<div class="fl__footer">
+									<div class="ft__row">
+										<div class="ft__col">
+											<div class="fare__terminal">
+												<div class="x-fare">
+													<span>Fare Class:</span>
+													<span>XYZ007</span>
+												</div>
+												<div class="x-terminal">
+													<span>Terminal:</span>
+													<span>M01</span>
+												</div>
+											</div>
+										</div>
+										<div class="ft__col">
+											<div class="btn__details">
+												<a href="#collapse-box__3" class="btn-fl-details" data-toggle="collapse">Flight Details</a>
+												<a href="#fair-rule__3" class="btn-fl-rules" data-toggle="collapse">Fare Rules</a>
+												<a href="#" class="btn-inclusions">Inclusions</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="collapse-box__3" class="collapse flightDetail__wrapper">
+									<div class="seat-plan--wrapper">
+										<div class="seatplan-container">
+											<div class="seatplan-col-1">
+												<div class="seat-plan-header">
+													<h4>Dhaka <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Bangkok <small>( 18h 30min )</small></h4>
+												</div>
+												<div class="seatplan-wrapper">
+													<div class="sp-airlines">
+														<img src="images/airlines/MH.gif" alt="Image Missing">
+														<p>Malayasian Air</p>
+														<p>Air OD 163</p>
+													</div>
+													<div class="sp-depart-time">
+														<time datetime="12:55">12.55</time>
+														<h5>14 Feb 2018</h5>
+														<p>Dhaka</p>
+														<p>Terminal 1</p>
+													</div>
+													<div class="sp-arrive-time">
+														<time datetime="17:20">5:20</time>
+														<h5>14 Feb 2018</h5>
+														<p>Bangkok</p>
+														<p>Terminal 1</p>
+													</div>
+													<div class="sp-duration">
+														<p>5hrs 20mins</p>
+														<p class="num-stop">Stop:<em>0</em></p>
+														<p><i class="fa fa-suitcase bag_icon"></i><em>35 kg</em></p>
+														<p><img src="images/icon/airplane-seat.png" alt="Icon Missing"><em>5 seats left</em></p>
+													</div>
+												</div>
+											</div>
+											<div class="seatplan-col-2">
+												<div class="seatplan-wrappe">
+													<div class="total">
+														<span>Total Base Fare :</span>
+														<span>BDT 42200</span>
+													</div>
+													<div class="tax">
+														<table class="table">
+															<thead>
+																<tr>
+																	<th>Taxes & Fees :</th>
+																	<th class="align-item">Amount</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>Bd</td>
+																	<td class="align-item">BDT 500</td>
+																</tr>
+																<tr>
+																	<td>E5</td>
+																	<td class="align-item">BDT 75</td>
+																</tr>
+																<tr>
+																	<td>Ow</td>
+																	<td class="align-item">BDT 2000</td>
+																</tr>
+																<tr>
+																	<td>Ut</td>
+																	<td class="align-item">BDT 3000</td>
+																</tr>
+																<tr>
+																	<td>E7</td>
+																	<td class="align-item">BDT 184</td>
+																</tr>
+																<tr>
+																	<td>G8</td>
+																	<td class="align-item">BDT 80</td>
+																</tr>
+																<tr>
+																	<td>Ts</td>
+																	<td class="align-item">BDT 1828</td>
+																</tr>
+																<tr>
+																	<td>Ait</td>
+																	<td class="align-item"> 127</td>
+																</tr>
+																<tr>
+																	<td>Total Taxes</td>
+																	<td class="align-item">BDT 7667</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="grand-total">
+														<span>Grand Total</span>
+														<span>50000</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="fair-rule__3" class="fairRule__wrapper collapse">
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+								</div>
+							</div>
+							<!-- /FL FLEX CONTAINER -->
+
+							<!-- FL FLEX CONTAINER || ROUNDTRIP  -->
+							<div class="fl-flex-container __roundtrip" data-price="80000" data-category="st1 dt3 r mld_air sl_mld">
+								<div class="flcontainer__header">
+									<div class="airlines">
+										<img src="images/airlines/OD.gif" alt="Image Missing">
+										<span>Malindo Air</span>
+									</div>
+									<div class="book-container">
+										<div class="trip-price">
+											<h4>BDT 19520</h4>
+											<div class="all-price">
+												<h5 class="prc-header">Fare Breakup</h5>
+												<p class="prc-tag">Adult:<span>19520</span></p>
+												<p class="prc-tag">Child:<span>9520</span></p>
+												<p class="prc-tag">Infant:<span>3850</span></p>	
+											</div>
+											<p class="fare-type">Refundable</p>
+										</div>
+									</div>
+								</div>
+								<div class="flcontainer__body">
+									<div class="roundtrip__wrapper">
+										<div class="depart-time">
+											<time datetime="12:55">12:55</time>
+											<p>Dhaka</p>
+										</div>
+										<div class="arrive-time">
+											<time datetime="17:20">5:20</time>
+											<p>Bangkok</p>
+										</div>
+										<div class="duration">
+											<time>5h 20m</time>
+											<p class="num-stop">Stop: 1</p>
+										</div>
+									</div>
+									<div class="__direction"><i class="fa fa-arrows-h" aria-hidden="true"></i></div>
+									<div class="roundtrip__wrapper">
+										<div class="depart-time">
+											<time datetime="12:55">12:55</time>
+											<p>Dhaka</p>
+										</div>
+										<div class="arrive-time">
+											<time datetime="17:20">5:20</time>
+											<p>Bangkok</p>
+										</div>
+										<div class="duration">
+											<time>5h 20m</time>
+											<p class="num-stop">Stop: 1</p>
+										</div>
+									</div>
+									<div class="book-container">
+										<div class="book">
+											<button>Book Now</button>
+										</div>
+									</div>
+								</div>
+								<div class="fl__separator"></div>
+								<div class="fl__footer">
+									<div class="ft__row">
+										<div class="ft__col">
+											<div class="fare__terminal">
+												<div class="x-fare">
+													<span>Fare Class:</span>
+													<span>XYZ007</span>
+												</div>
+												<div class="x-terminal">
+													<span>Terminal:</span>
+													<span>M01</span>
+												</div>
+											</div>
+										</div>
+										<div class="ft__col">
+											<div class="btn__details">
+												<a href="#collapse-box__4" class="btn-fl-details" data-toggle="collapse">Flight Details</a>
+												<a href="#fair-rule__4" class="btn-fl-rules" data-toggle="collapse">Fare Rules</a>
+												<a href="#" class="btn-inclusions">Inclusions</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="collapse-box__4" class="collapse flightDetail__wrapper">
+									<div class="seat-plan--wrapper">
+										<div class="seatplan-container">
+											<div class="seatplan-col-1">
+												<div class="seat-plan-header">
+													<h4>Dhaka <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Bangkok <small>( 18h 30min )</small></h4>
+												</div>
+												<div class="seatplan-wrapper">
+													<div class="sp-airlines">
+														<img src="images/airlines/OD.gif" alt="Image Missing">
+														<p>Emirates</p>
+														<p>Air OD 163</p>
+													</div>
+													<div class="sp-depart-time">
+														<time datetime="12:55">12.55</time>
+														<h5>14 Feb 2018</h5>
+														<p>Dhaka</p>
+														<p>Terminal 1</p>
+													</div>
+													<div class="sp-arrive-time">
+														<time datetime="17:20">5:20</time>
+														<h5>14 Feb 2018</h5>
+														<p>Bangkok</p>
+														<p>Terminal 1</p>
+													</div>
+													<div class="sp-duration">
+														<p>5hrs 20mins</p>
+														<p class="num-stop">Stop:<em>0</em></p>
+														<p><i class="fa fa-suitcase bag_icon"></i><em>35 kg</em></p>
+														<p><img src="images/icon/airplane-seat.png" alt="Icon Missing"><em>5 seats left</em></p>
+													</div>
+												</div>
+												<div class="layover">
+													<h5><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;Layover <span>07h 35m</span></h5>
+												</div>
+												<div class="seatplan-wrapper">
+													<div class="sp-airlines">
+														<img src="images/airlines/OD.gif" alt="Image Missing">
+														<p>Emirates</p>
+														<p>Air OD 163</p>
+													</div>
+													<div class="sp-depart-time">
+														<time datetime="12:55">12.55</time>
+														<h5>14 Feb 2018</h5>
+														<p>Dhaka</p>
+														<p>Terminal 2</p>
+													</div>
+													<div class="sp-arrive-time">
+														<time datetime="17:20">5:20</time>
+														<h5>14 Feb 2018</h5>
+														<p>Bangkok</p>
+														<p>Terminal 2</p>
+													</div>
+													<div class="sp-duration">
+														<p>5hrs 20mins</p>
+														<p class="num-stop">Stop:<em>0</em></p>
+														<p><i class="fa fa-suitcase bag_icon"></i><em>35 kg</em></p>
+														<p><img src="images/icon/airplane-seat.png" alt="Icon Missing"><em>5 seats left</em></p>
+													</div>
+												</div>
+											</div>
+											<div class="seatplan-col-2">
+												<div class="seatplan-wrappe">
+													<div class="total">
+														<span>Total Base Fare :</span>
+														<span>BDT 42200</span>
+													</div>
+													<div class="tax">
+														<table class="table">
+															<thead>
+																<tr>
+																	<th>Taxes & Fees :</th>
+																	<th class="align-item">Amount</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>Bd</td>
+																	<td class="align-item">BDT 500</td>
+																</tr>
+																<tr>
+																	<td>E5</td>
+																	<td class="align-item">BDT 75</td>
+																</tr>
+																<tr>
+																	<td>Ow</td>
+																	<td class="align-item">BDT 2000</td>
+																</tr>
+																<tr>
+																	<td>Ut</td>
+																	<td class="align-item">BDT 3000</td>
+																</tr>
+																<tr>
+																	<td>E7</td>
+																	<td class="align-item">BDT 184</td>
+																</tr>
+																<tr>
+																	<td>G8</td>
+																	<td class="align-item">BDT 80</td>
+																</tr>
+																<tr>
+																	<td>Ts</td>
+																	<td class="align-item">BDT 1828</td>
+																</tr>
+																<tr>
+																	<td>Ait</td>
+																	<td class="align-item"> 127</td>
+																</tr>
+																<tr>
+																	<td>Total Taxes</td>
+																	<td class="align-item">BDT 7667</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="grand-total">
+														<span>Grand Total</span>
+														<span>50000</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="fair-rule__4" class="fairRule__wrapper collapse">
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+								</div>
+							</div>
+							<!-- /FL FLEX CONTAINER -->
+
+							<!-- FL FLEX CONTAINER || ROUNDTRIP-->
+							<div class="fl-flex-container __roundtrip" data-price="140000" data-category="st0 at1 r qt_air sl_qt">
+								<div class="flcontainer__header">
+									<div class="airlines">
+										<img src="images/airlines/QR.gif" alt="Image Missing">
+										<span>Qatar Air</span>
+									</div>
+									<div class="book-container">
+										<div class="trip-price">
+											<h4>BDT 19520</h4>
+											<div class="all-price">
+												<h5 class="prc-header">Fare Breakup</h5>
+												<p class="prc-tag">Adult:<span>19520</span></p>
+												<p class="prc-tag">Child:<span>9520</span></p>
+												<p class="prc-tag">Infant:<span>3850</span></p>	
+											</div>
+											<p class="fare-type">Non Refundable</p>
+										</div>
+									</div>
+								</div>
+								<div class="flcontainer__body">
+									<div class="roundtrip__wrapper">
+										<div class="depart-time">
+											<time datetime="12:55">12:55</time>
+											<p>Dhaka</p>
+										</div>
+										<div class="arrive-time">
+											<time datetime="17:20">5:20</time>
+											<p>Bangkok</p>
+										</div>
+										<div class="duration">
+											<time>5h 20m</time>
+											<p class="num-stop">Stop: 0</p>
+										</div>
+									</div>
+									<div class="__direction"><i class="fa fa-arrows-h" aria-hidden="true"></i></div>
+									<div class="roundtrip__wrapper">
+										<div class="depart-time">
+											<time datetime="12:55">12:55</time>
+											<p>Dhaka</p>
+										</div>
+										<div class="arrive-time">
+											<time datetime="17:20">5:20</time>
+											<p>Bangkok</p>
+										</div>
+										<div class="duration">
+											<time>5h 20m</time>
+											<p class="num-stop">Stop: 0</p>
+										</div>
+									</div>
+									<div class="book-container">
+										<div class="book">
+											<button>Book Now</button>
+										</div>
+									</div>
+								</div>
+								<div class="fl__separator"></div>
+								<div class="fl__footer">
+									<div class="ft__row">
+										<div class="ft__col">
+											<div class="fare__terminal">
+												<div class="x-fare">
+													<span>Fare Class:</span>
+													<span>XYZ007</span>
+												</div>
+												<div class="x-terminal">
+													<span>Terminal:</span>
+													<span>M01</span>
+												</div>
+											</div>
+										</div>
+										<div class="ft__col">
+											<div class="btn__details">
+												<a href="#collapse-box__5" class="btn-fl-details" data-toggle="collapse">Flight Details</a>
+												<a href="#fair-rule__5" class="btn-fl-rules" data-toggle="collapse">Fare Rules</a>
+												<a href="#" class="btn-inclusions">Inclusions</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="collapse-box__5" class="collapse flightDetail__wrapper">
+									<div class="seat-plan--wrapper">
+										<div class="seatplan-container">
+											<div class="seatplan-col-1">
+												<div class="seat-plan-header">
+													<h4>Dhaka <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Bangkok <small>( 18h 30min )</small></h4>
+												</div>
+												<div class="seatplan-wrapper">
+													<div class="sp-airlines">
+														<img src="images/airlines/QR.gif" alt="Image Missing">
+														<p>Emirates</p>
+														<p>Air OD 163</p>
+													</div>
+													<div class="sp-depart-time">
+														<time datetime="12:55">12.55</time>
+														<h5>14 Feb 2018</h5>
+														<p>Dhaka</p>
+														<p>Terminal 1</p>
+													</div>
+													<div class="sp-arrive-time">
+														<time datetime="17:20">5:20</time>
+														<h5>14 Feb 2018</h5>
+														<p>Bangkok</p>
+														<p>Terminal 1</p>
+													</div>
+													<div class="sp-duration">
+														<p>5hrs 20mins</p>
+														<p class="num-stop">Stop:<em>0</em></p>
+														<p><i class="fa fa-suitcase bag_icon"></i><em>35 kg</em></p>
+														<p><img src="images/icon/airplane-seat.png" alt="Icon Missing"><em>5 seats left</em></p>
+													</div>
+												</div>
+												<div class="layover">
+													<h5><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;Layover <span>07h 35m</span></h5>
+												</div>
+												<div class="seatplan-wrapper">
+													<div class="sp-airlines">
+														<img src="images/airlines/QR.gif" alt="Image Missing">
+														<p>Emirates</p>
+														<p>Air OD 163</p>
+													</div>
+													<div class="sp-depart-time">
+														<time datetime="12:55">12.55</time>
+														<h5>14 Feb 2018</h5>
+														<p>Dhaka</p>
+														<p>Terminal 2</p>
+													</div>
+													<div class="sp-arrive-time">
+														<time datetime="17:20">5:20</time>
+														<h5>14 Feb 2018</h5>
+														<p>Bangkok</p>
+														<p>Terminal 2</p>
+													</div>
+													<div class="sp-duration">
+														<p>5hrs 20mins</p>
+														<p class="num-stop">Stop:<em>0</em></p>
+														<p><i class="fa fa-suitcase bag_icon"></i><em>35 kg</em></p>
+														<p><img src="images/icon/airplane-seat.png" alt="Icon Missing"><em>5 seats left</em></p>
+													</div>
+												</div>
+											</div>
+											<div class="seatplan-col-2">
+												<div class="seatplan-wrappe">
+													<div class="total">
+														<span>Total Base Fare :</span>
+														<span>BDT 42200</span>
+													</div>
+													<div class="tax">
+														<table class="table">
+															<thead>
+																<tr>
+																	<th>Taxes & Fees :</th>
+																	<th class="align-item">Amount</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>Bd</td>
+																	<td class="align-item">BDT 500</td>
+																</tr>
+																<tr>
+																	<td>E5</td>
+																	<td class="align-item">BDT 75</td>
+																</tr>
+																<tr>
+																	<td>Ow</td>
+																	<td class="align-item">BDT 2000</td>
+																</tr>
+																<tr>
+																	<td>Ut</td>
+																	<td class="align-item">BDT 3000</td>
+																</tr>
+																<tr>
+																	<td>E7</td>
+																	<td class="align-item">BDT 184</td>
+																</tr>
+																<tr>
+																	<td>G8</td>
+																	<td class="align-item">BDT 80</td>
+																</tr>
+																<tr>
+																	<td>Ts</td>
+																	<td class="align-item">BDT 1828</td>
+																</tr>
+																<tr>
+																	<td>Ait</td>
+																	<td class="align-item"> 127</td>
+																</tr>
+																<tr>
+																	<td>Total Taxes</td>
+																	<td class="align-item">BDT 7667</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="grand-total">
+														<span>Grand Total</span>
+														<span>50000</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="fair-rule__5" class="fairRule__wrapper collapse">
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+								</div>
+							</div>
+							<!-- /FL FLEX CONTAINER -->
+
+							<!-- FL FLEX CONTAINER || ROUNDTRIP-->
+							<div class="fl-flex-container __roundtrip" data-price="140000" data-category="st0 at3 nr sp_air sl_sp">
+								<div class="flcontainer__header">
+									<div class="airlines">
+										<img src="images/airlines/SQ.gif" alt="Image Missing">
+										<span>Singapore Air</span>
+									</div>
+									<div class="book-container">
+										<div class="trip-price">
+											<h4>BDT 19520</h4>
+											<div class="all-price">
+												<h5 class="prc-header">Fare Breakup</h5>
+												<p class="prc-tag">Adult:<span>19520</span></p>
+												<p class="prc-tag">Child:<span>9520</span></p>
+												<p class="prc-tag">Infant:<span>3850</span></p>	
+											</div>
+											<p class="fare-type">Non Refundable</p>
+										</div>
+									</div>
+								</div>
+								<div class="flcontainer__body">
+									<div class="roundtrip__wrapper">
+										<div class="depart-time">
+											<time datetime="12:55">12:55</time>
+											<p>Dhaka</p>
+										</div>
+										<div class="arrive-time">
+											<time datetime="17:20">5:20</time>
+											<p>Bangkok</p>
+										</div>
+										<div class="duration">
+											<time>5h 20m</time>
+											<p class="num-stop">Stop: 0</p>
+										</div>
+									</div>
+									<div class="__direction"><i class="fa fa-arrows-h" aria-hidden="true"></i></div>
+									<div class="roundtrip__wrapper">
+										<div class="depart-time">
+											<time datetime="12:55">12:55</time>
+											<p>Dhaka</p>
+										</div>
+										<div class="arrive-time">
+											<time datetime="17:20">5:20</time>
+											<p>Bangkok</p>
+										</div>
+										<div class="duration">
+											<time>5h 20m</time>
+											<p class="num-stop">Stop: 0</p>
+										</div>
+									</div>
+									<div class="book-container">
+										<div class="book">
+											<button>Book Now</button>
+										</div>
+									</div>
+								</div>
+								<div class="fl__separator"></div>
+								<div class="fl__footer">
+									<div class="ft__row">
+										<div class="ft__col">
+											<div class="fare__terminal">
+												<div class="x-fare">
+													<span>Fare Class:</span>
+													<span>XYZ007</span>
+												</div>
+												<div class="x-terminal">
+													<span>Terminal:</span>
+													<span>M01</span>
+												</div>
+											</div>
+										</div>
+										<div class="ft__col">
+											<div class="btn__details">
+												<a href="#collapse-box__6" class="btn-fl-details" data-toggle="collapse">Flight Details</a>
+												<a href="#fair-rule__6" class="btn-fl-rules" data-toggle="collapse">Fare Rules</a>
+												<a href="#" class="btn-inclusions">Inclusions</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="collapse-box__6" class="collapse flightDetail__wrapper">
+									<div class="seat-plan--wrapper">
+										<div class="seatplan-container">
+											<div class="seatplan-col-1">
+												<div class="seat-plan-header">
+													<h4>Dhaka <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Bangkok <small>( 18h 30min )</small></h4>
+												</div>
+												<div class="seatplan-wrapper">
+													<div class="sp-airlines">
+														<img src="images/airlines/SQ.gif" alt="Image Missing">
+														<p>Emirates</p>
+														<p>Air OD 163</p>
+													</div>
+													<div class="sp-depart-time">
+														<time datetime="12:55">12.55</time>
+														<h5>14 Feb 2018</h5>
+														<p>Dhaka</p>
+														<p>Terminal 1</p>
+													</div>
+													<div class="sp-arrive-time">
+														<time datetime="17:20">5:20</time>
+														<h5>14 Feb 2018</h5>
+														<p>Bangkok</p>
+														<p>Terminal 1</p>
+													</div>
+													<div class="sp-duration">
+														<p>5hrs 20mins</p>
+														<p class="num-stop">Stop:<em>0</em></p>
+														<p><i class="fa fa-suitcase bag_icon"></i><em>35 kg</em></p>
+														<p><img src="images/icon/airplane-seat.png" alt="Icon Missing"><em>5 seats left</em></p>
+													</div>
+												</div>
+												<div class="layover">
+													<h5><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;Layover <span>07h 35m</span></h5>
+												</div>
+												<div class="seatplan-wrapper">
+													<div class="sp-airlines">
+														<img src="images/airlines/SQ.gif" alt="Image Missing">
+														<p>Emirates</p>
+														<p>Air OD 163</p>
+													</div>
+													<div class="sp-depart-time">
+														<time datetime="12:55">12.55</time>
+														<h5>14 Feb 2018</h5>
+														<p>Dhaka</p>
+														<p>Terminal 2</p>
+													</div>
+													<div class="sp-arrive-time">
+														<time datetime="17:20">5:20</time>
+														<h5>14 Feb 2018</h5>
+														<p>Bangkok</p>
+														<p>Terminal 2</p>
+													</div>
+													<div class="sp-duration">
+														<p>5hrs 20mins</p>
+														<p class="num-stop">Stop:<em>0</em></p>
+														<p><i class="fa fa-suitcase bag_icon"></i><em>35 kg</em></p>
+														<p><img src="images/icon/airplane-seat.png" alt="Icon Missing"><em>5 seats left</em></p>
+													</div>
+												</div>
+											</div>
+											<div class="seatplan-col-2">
+												<div class="seatplan-wrappe">
+													<div class="total">
+														<span>Total Base Fare :</span>
+														<span>BDT 42200</span>
+													</div>
+													<div class="tax">
+														<table class="table">
+															<thead>
+																<tr>
+																	<th>Taxes & Fees :</th>
+																	<th class="align-item">Amount</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>Bd</td>
+																	<td class="align-item">BDT 500</td>
+																</tr>
+																<tr>
+																	<td>E5</td>
+																	<td class="align-item">BDT 75</td>
+																</tr>
+																<tr>
+																	<td>Ow</td>
+																	<td class="align-item">BDT 2000</td>
+																</tr>
+																<tr>
+																	<td>Ut</td>
+																	<td class="align-item">BDT 3000</td>
+																</tr>
+																<tr>
+																	<td>E7</td>
+																	<td class="align-item">BDT 184</td>
+																</tr>
+																<tr>
+																	<td>G8</td>
+																	<td class="align-item">BDT 80</td>
+																</tr>
+																<tr>
+																	<td>Ts</td>
+																	<td class="align-item">BDT 1828</td>
+																</tr>
+																<tr>
+																	<td>Ait</td>
+																	<td class="align-item"> 127</td>
+																</tr>
+																<tr>
+																	<td>Total Taxes</td>
+																	<td class="align-item">BDT 7667</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="grand-total">
+														<span>Grand Total</span>
+														<span>50000</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="fair-rule__6" class="fairRule__wrapper collapse">
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+								</div>
+							</div>
+							<!-- /FL FLEX CONTAINER -->
+
+							<!-- FL FLEX CONTAINER  || MULTICITY -->
+							<div class="fl-flex-container __multicity" data-price="140000" data-category="st0 at2 r mal_air sl_mal">
+								<div class="flcontainer__body">
+									<div class="multicity__box">
+										<div class="multicity__wrapper">
+											<div class="airlines">
+												<img src="images/airlines/MH.gif" alt="Image Missing">
+												<span>Malayasian Air</span>
+											</div>
+											<div class="depart-time">
+												<time datetime="12:55">12:55</time>
+												<p>Dhaka</p>
+											</div>
+											<div class="arrive-time">
+												<time datetime="17:20">5:20</time>
+												<p>Bangkok</p>
+											</div>
+											<div class="duration">
+												<time>5h 20m</time>
+												<p class="num-stop">Stop: 0</p>
+											</div>
+										</div>
+										<div class="multicity__wrapper">
+											<div class="airlines">
+												<img src="images/airlines/MH.gif" alt="Image Missing">
+												<span>Malayasian Air</span>
+											</div>
+											<div class="depart-time">
+												<time datetime="12:55">12:55</time>
+												<p>Dhaka</p>
+											</div>
+											<div class="arrive-time">
+												<time datetime="17:20">5:20</time>
+												<p>Bangkok</p>
+											</div>
+											<div class="duration">
+												<time>5h 20m</time>
+												<p class="num-stop">Stop: 0</p>
+											</div>
+										</div>
+										<div class="multicity__wrapper">
+											<div class="airlines">
+												<img src="images/airlines/MH.gif" alt="Image Missing">
+												<span>Malayasian Air</span>
+											</div>
+											<div class="depart-time">
+												<time datetime="12:55">12:55</time>
+												<p>Dhaka</p>
+											</div>
+											<div class="arrive-time">
+												<time datetime="17:20">5:20</time>
+												<p>Bangkok</p>
+											</div>
+											<div class="duration">
+												<time>5h 20m</time>
+												<p class="num-stop">Stop: 0</p>
+											</div>
+										</div>
+									</div>
+									<div class="book-container">
+										<div class="trip-price">
+											<h4>BDT 19520</h4>
+											<div class="all-price">
+												<h5 class="prc-header">Fare Breakup</h5>
+												<p class="prc-tag">Adult:<span>19520</span></p>
+												<p class="prc-tag">Child:<span>9520</span></p>
+												<p class="prc-tag">Infant:<span>3850</span></p>	
+											</div>
+											<p class="fare-type">Refundable</p>
+										</div>
+										<div class="book">
+											<button>Book Now</button>
+										</div>
+									</div>
+								</div>
+								<div class="fl__separator"></div>
+								<div class="fl__footer">
+									<div class="ft__row">
+										<div class="ft__col">
+											<div class="fare__terminal">
+												<div class="x-fare">
+													<span>Fare Class:</span>
+													<span>XYZ007</span>
+												</div>
+												<div class="x-terminal">
+													<span>Terminal:</span>
+													<span>M01</span>
+												</div>
+											</div>
+										</div>
+										<div class="ft__col">
+											<div class="btn__details">
+												<a href="#collapse-box__7" class="btn-fl-details" data-toggle="collapse">Flight Details</a>
+												<a href="#fair-rule__7" class="btn-fl-rules" data-toggle="collapse">Fare Rules</a>
+												<a href="#" class="btn-inclusions">Inclusions</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="collapse-box__7" class="collapse flightDetail__wrapper">
+									<div class="seat-plan--wrapper">
+										<div class="seatplan-container">
+											<div class="seatplan-col-1">
+												<div class="seat-plan-header">
+													<h4>Dhaka <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Bangkok <small>( 18h 30min )</small></h4>
+												</div>
+												<div class="seatplan-wrapper">
+													<div class="sp-airlines">
+														<img src="images/airlines/MH.gif" alt="Image Missing">
+														<p>Emirates</p>
+														<p>Air OD 163</p>
+													</div>
+													<div class="sp-depart-time">
+														<time datetime="12:55">12.55</time>
+														<h5>14 Feb 2018</h5>
+														<p>Dhaka</p>
+														<p>Terminal 1</p>
+													</div>
+													<div class="sp-arrive-time">
+														<time datetime="17:20">5:20</time>
+														<h5>14 Feb 2018</h5>
+														<p>Bangkok</p>
+														<p>Terminal 1</p>
+													</div>
+													<div class="sp-duration">
+														<p>5hrs 20mins</p>
+														<p class="num-stop">Stop:<em>0</em></p>
+														<p><i class="fa fa-suitcase bag_icon"></i><em>35 kg</em></p>
+														<p><img src="images/icon/airplane-seat.png" alt="Icon Missing"><em>5 seats left</em></p>
+													</div>
+												</div>
+												<div class="layover">
+													<h5><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;Layover <span>07h 35m</span></h5>
+												</div>
+												<div class="seatplan-wrapper">
+													<div class="sp-airlines">
+														<img src="images/airlines/MH.gif" alt="Image Missing">
+														<p>Emirates</p>
+														<p>Air OD 163</p>
+													</div>
+													<div class="sp-depart-time">
+														<time datetime="12:55">12.55</time>
+														<h5>14 Feb 2018</h5>
+														<p>Dhaka</p>
+														<p>Terminal 2</p>
+													</div>
+													<div class="sp-arrive-time">
+														<time datetime="17:20">5:20</time>
+														<h5>14 Feb 2018</h5>
+														<p>Bangkok</p>
+														<p>Terminal 2</p>
+													</div>
+													<div class="sp-duration">
+														<p>5hrs 20mins</p>
+														<p class="num-stop">Stop:<em>0</em></p>
+														<p><i class="fa fa-suitcase bag_icon"></i><em>35 kg</em></p>
+														<p><img src="images/icon/airplane-seat.png" alt="Icon Missing"><em>5 seats left</em></p>
+													</div>
+												</div>
+												<div class="layover">
+													<h5><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;Layover <span>07h 35m</span></h5>
+												</div>
+												<div class="seatplan-wrapper">
+													<div class="sp-airlines">
+														<img src="images/airlines/EY.gif" alt="Image Missing">
+														<p>Emirates</p>
+														<p>Air OD 163</p>
+													</div>
+													<div class="sp-depart-time">
+														<time datetime="12:55">12.55</time>
+														<h5>14 Feb 2018</h5>
+														<p>Dhaka</p>
+														<p>Terminal 3</p>
+													</div>
+													<div class="sp-arrive-time">
+														<time datetime="17:20">5:20</time>
+														<h5>14 Feb 2018</h5>
+														<p>Bangkok</p>
+														<p>Terminal 3</p>
+													</div>
+													<div class="sp-duration">
+														<p>5hrs 20mins</p>
+														<p class="num-stop">Stop:<em>0</em></p>
+														<p><i class="fa fa-suitcase bag_icon"></i><em>35 kg</em></p>
+														<p><img src="images/icon/airplane-seat.png" alt="Icon Missing"><em>5 seats left</em></p>
+													</div>
+												</div>
+											</div>
+											<div class="seatplan-col-2">
+												<div class="seatplan-wrappe">
+													<div class="total">
+														<span>Total Base Fare :</span>
+														<span>BDT 42200</span>
+													</div>
+													<div class="tax">
+														<table class="table">
+															<thead>
+																<tr>
+																	<th>Taxes & Fees :</th>
+																	<th class="align-item">Amount</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>Bd</td>
+																	<td class="align-item">BDT 500</td>
+																</tr>
+																<tr>
+																	<td>E5</td>
+																	<td class="align-item">BDT 75</td>
+																</tr>
+																<tr>
+																	<td>Ow</td>
+																	<td class="align-item">BDT 2000</td>
+																</tr>
+																<tr>
+																	<td>Ut</td>
+																	<td class="align-item">BDT 3000</td>
+																</tr>
+																<tr>
+																	<td>E7</td>
+																	<td class="align-item">BDT 184</td>
+																</tr>
+																<tr>
+																	<td>G8</td>
+																	<td class="align-item">BDT 80</td>
+																</tr>
+																<tr>
+																	<td>Ts</td>
+																	<td class="align-item">BDT 1828</td>
+																</tr>
+																<tr>
+																	<td>Ait</td>
+																	<td class="align-item"> 127</td>
+																</tr>
+																<tr>
+																	<td>Total Taxes</td>
+																	<td class="align-item">BDT 7667</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="grand-total">
+														<span>Grand Total</span>
+														<span>50000</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="fair-rule__7" class="fairRule__wrapper collapse">
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+								</div>
+							</div>
+							<!-- /FL FLEX CONTAINER -->
+
+							<!-- FL FLEX CONTAINER -->
+							<div class="fl-flex-container __multicity" data-price="140000" data-category="st0 at3 nr sp_air sl_sp">
+								<div class="flcontainer__body">
+									<div class="multicity__box">
+										<div class="multicity__wrapper">
+											<div class="airlines">
+												<img src="images/airlines/SQ.gif" alt="Image Missing">
+												<span>Singapore Air</span>
+											</div>
+											<div class="depart-time">
+												<time datetime="12:55">12:55</time>
+												<p>Dhaka</p>
+											</div>
+											<div class="arrive-time">
+												<time datetime="17:20">5:20</time>
+												<p>Bangkok</p>
+											</div>
+											<div class="duration">
+												<time>5h 20m</time>
+												<p class="num-stop">Stop: 0</p>
+											</div>
+										</div>
+										<div class="multicity__wrapper">
+											<div class="airlines">
+												<img src="images/airlines/SQ.gif" alt="Image Missing">
+												<span>Singapore Air</span>
+											</div>
+											<div class="depart-time">
+												<time datetime="12:55">12:55</time>
+												<p>Dhaka</p>
+											</div>
+											<div class="arrive-time">
+												<time datetime="17:20">5:20</time>
+												<p>Bangkok</p>
+											</div>
+											<div class="duration">
+												<time>5h 20m</time>
+												<p class="num-stop">Stop: 0</p>
+											</div>
+										</div>
+										<div class="multicity__wrapper">
+											<div class="airlines">
+												<img src="images/airlines/SQ.gif" alt="Image Missing">
+												<span>Singapore Air</span>
+											</div>
+											<div class="depart-time">
+												<time datetime="12:55">12:55</time>
+												<p>Dhaka</p>
+											</div>
+											<div class="arrive-time">
+												<time datetime="17:20">5:20</time>
+												<p>Bangkok</p>
+											</div>
+											<div class="duration">
+												<time>5h 20m</time>
+												<p class="num-stop">Stop: 0</p>
+											</div>
+										</div>
+									</div>
+									<div class="book-container">
+										<div class="trip-price">
+											<h4>BDT 19520</h4>
+											<div class="all-price">
+												<h5 class="prc-header">Fare Breakup</h5>
+												<p class="prc-tag">Adult:<span>19520</span></p>
+												<p class="prc-tag">Child:<span>9520</span></p>
+												<p class="prc-tag">Infant:<span>3850</span></p>	
+											</div>
+											<p class="fare-type">Non Refundable</p>
+										</div>
+										<div class="book">
+											<button>Book Now</button>
+										</div>
+									</div>
+								</div>
+								<div class="fl__separator"></div>
+								<div class="fl__footer">
+									<div class="ft__row">
+										<div class="ft__col">
+											<div class="fare__terminal">
+												<div class="x-fare">
+													<span>Fare Class:</span>
+													<span>XYZ007</span>
+												</div>
+												<div class="x-terminal">
+													<span>Terminal:</span>
+													<span>M01</span>
+												</div>
+											</div>
+										</div>
+										<div class="ft__col">
+											<div class="btn__details">
+												<a href="#collapse-box__8" class="btn-fl-details" data-toggle="collapse">Flight Details</a>
+												<a href="#fair-rule__8" class="btn-fl-rules" data-toggle="collapse">Fare Rules</a>
+												<a href="#" class="btn-inclusions">Inclusions</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="collapse-box__8" class="collapse flightDetail__wrapper">
+									<div class="seat-plan--wrapper">
+										<div class="seatplan-container">
+											<div class="seatplan-col-1">
+												<div class="seat-plan-header">
+													<h4>Dhaka <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Bangkok <small>( 18h 30min )</small></h4>
+												</div>
+												<div class="seatplan-wrapper">
+													<div class="sp-airlines">
+														<img src="images/airlines/SQ.gif" alt="Image Missing">
+														<p>Emirates</p>
+														<p>Air OD 163</p>
+													</div>
+													<div class="sp-depart-time">
+														<time datetime="12:55">12.55</time>
+														<h5>14 Feb 2018</h5>
+														<p>Dhaka</p>
+														<p>Terminal 1</p>
+													</div>
+													<div class="sp-arrive-time">
+														<time datetime="17:20">5:20</time>
+														<h5>14 Feb 2018</h5>
+														<p>Bangkok</p>
+														<p>Terminal 1</p>
+													</div>
+													<div class="sp-duration">
+														<p>5hrs 20mins</p>
+														<p class="num-stop">Stop:<em>0</em></p>
+														<p><i class="fa fa-suitcase bag_icon"></i><em>35 kg</em></p>
+														<p><img src="images/icon/airplane-seat.png" alt="Icon Missing"><em>5 seats left</em></p>
+													</div>
+												</div>
+												<div class="layover">
+													<h5><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;Layover <span>07h 35m</span></h5>
+												</div>
+												<div class="seatplan-wrapper">
+													<div class="sp-airlines">
+														<img src="images/airlines/SQ.gif" alt="Image Missing">
+														<p>Emirates</p>
+														<p>Air OD 163</p>
+													</div>
+													<div class="sp-depart-time">
+														<time datetime="12:55">12.55</time>
+														<h5>14 Feb 2018</h5>
+														<p>Dhaka</p>
+														<p>Terminal 2</p>
+													</div>
+													<div class="sp-arrive-time">
+														<time datetime="17:20">5:20</time>
+														<h5>14 Feb 2018</h5>
+														<p>Bangkok</p>
+														<p>Terminal 2</p>
+													</div>
+													<div class="sp-duration">
+														<p>5hrs 20mins</p>
+														<p class="num-stop">Stop:<em>0</em></p>
+														<p><i class="fa fa-suitcase bag_icon"></i><em>35 kg</em></p>
+														<p><img src="images/icon/airplane-seat.png" alt="Icon Missing"><em>5 seats left</em></p>
+													</div>
+												</div>
+												<div class="layover">
+													<h5><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;Layover <span>07h 35m</span></h5>
+												</div>
+												<div class="seatplan-wrapper">
+													<div class="sp-airlines">
+														<img src="images/airlines/SQ.gif" alt="Image Missing">
+														<p>Emirates</p>
+														<p>Air OD 163</p>
+													</div>
+													<div class="sp-depart-time">
+														<time datetime="12:55">12.55</time>
+														<h5>14 Feb 2018</h5>
+														<p>Dhaka</p>
+														<p>Terminal 3</p>
+													</div>
+													<div class="sp-arrive-time">
+														<time datetime="17:20">5:20</time>
+														<h5>14 Feb 2018</h5>
+														<p>Bangkok</p>
+														<p>Terminal 3</p>
+													</div>
+													<div class="sp-duration">
+														<p>5hrs 20mins</p>
+														<p class="num-stop">Stop:<em>0</em></p>
+														<p><i class="fa fa-suitcase bag_icon"></i><em>35 kg</em></p>
+														<p><img src="images/icon/airplane-seat.png" alt="Icon Missing"><em>5 seats left</em></p>
+													</div>
+												</div>
+											</div>
+											<div class="seatplan-col-2">
+												<div class="seatplan-wrappe">
+													<div class="total">
+														<span>Total Base Fare :</span>
+														<span>BDT 42200</span>
+													</div>
+													<div class="tax">
+														<table class="table">
+															<thead>
+																<tr>
+																	<th>Taxes & Fees :</th>
+																	<th class="align-item">Amount</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>Bd</td>
+																	<td class="align-item">BDT 500</td>
+																</tr>
+																<tr>
+																	<td>E5</td>
+																	<td class="align-item">BDT 75</td>
+																</tr>
+																<tr>
+																	<td>Ow</td>
+																	<td class="align-item">BDT 2000</td>
+																</tr>
+																<tr>
+																	<td>Ut</td>
+																	<td class="align-item">BDT 3000</td>
+																</tr>
+																<tr>
+																	<td>E7</td>
+																	<td class="align-item">BDT 184</td>
+																</tr>
+																<tr>
+																	<td>G8</td>
+																	<td class="align-item">BDT 80</td>
+																</tr>
+																<tr>
+																	<td>Ts</td>
+																	<td class="align-item">BDT 1828</td>
+																</tr>
+																<tr>
+																	<td>Ait</td>
+																	<td class="align-item"> 127</td>
+																</tr>
+																<tr>
+																	<td>Total Taxes</td>
+																	<td class="align-item">BDT 7667</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="grand-total">
+														<span>Grand Total</span>
+														<span>50000</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="fair-rule__8" class="fairRule__wrapper collapse">
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+									<div class="fair-rule-para">
+										<h4>Lorrem</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia rerum, architecto molestias ipsam, quia tempore quod!</p>
+									</div>
+								</div>
+							</div>
+							<!-- /FL FLEX CONTAINER -->
+						</div>
+						<!-- /FLIGHT CONTAINER -->
+					</div>
+					<!-- /ALL FLIGHTS -->
+				</div>
+			</div>
+			<!-- /FLIGHT-SCHEDULE -->
+		</div>
+		<!-- /CONTAINER-FLUID -->
+	</section>
+	<!--==================================
+	/FLIGHT-SEARCH
+	===================================-->
+
+	<!--==================================
+	INCLUSIONS :: POPUP
+	===================================-->
+	<section id="inclusions">
+		<!-- MODAL -->
+		<div class="modal">
+			<div class="modal-content animate">
+				<div class="modal-header">
+					<span class="close" title="Close Modal">X</span>
+					<h3>Inclusions</h3>
+				</div>
+				<!-- MODAL-WRAPPER -->
+				<div class="modal-wrapper">
+					<table class="inclusions table table-bordered">
+					    <thead>
+					      	<tr>
+						        <th>Sector/Flight</th>
+						        <th>Check in Baggage</th>
+						        <th>Cabin Baggage</th>
+						        <th>Meal</th>
+						        <th>Seat</th>
+						        <th>Fare Basis</th>
+					      	</tr>
+					    </thead>
+					    <tbody>
+					      	<tr>
+						        <td>BKK-CCU</td>
+						        <td>20kg (Adult)</td>
+						        <td>7kg (Adult)</td>
+						        <td>Paid</td>
+						        <td>1 Seats Left</td>
+						        <td>USAVER</td>
+					      	</tr>
+					      	<tr>
+						        <td>CCU-BKK</td>
+						        <td>20kg (Adult)</td>
+						        <td>7kg (Adult)</td>
+						        <td>Paid</td>
+						        <td>1 Seats Left</td>
+						        <td>USAVER</td>
+					      	</tr>
+					      	<tr>
+						        <td>BKK-SPC</td>
+						        <td>20kg (Adult)</td>
+						        <td>7kg (Adult)</td>
+						        <td>Paid</td>
+						        <td>1 Seats Left</td>
+						        <td>USAVER</td>
+					      	</tr>
+					    </tbody>
+					</table>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ratione rem officia molestiae tempore magnam, voluptatum nihil cumque, odit autem impedit optio reprehenderit eum. Suscipit veritatis voluptatem iste, veniam doloremque unde quaerat doloribus, modi autem maiores sunt. Commodi, veritatis, fugit.</p>
+				</div>
+				<!-- /MODAL-WRAPPER -->
+				<div class="modal-footer">
+					<span class="close" title="Close Modal">Close</span>
+				</div>
+			</div>
+		</div>
+		<!-- /MODAL -->
+	</section>
+	<!--==================================
+	/INCLUSION
+	===================================-->
+
+	<!--==================================
+	FOOTER
+	===================================-->
+	<footer id="footer">
+		<!-- CONTAINER-FLUID -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2 footer-col">
+					<div class="ft-header">
+						<h4>Contact Address</h4>
+					</div>
+					<ul class="footer-list">
+						<li>Contact : +88 01710560323</li>
+						<li>Email : eliasmail09@gmail.com</li>
+					</ul>
+				</div>
+				<div class="col-sm-2 footer-col">
+					<div class="ft-header">
+						<h4>Services</h4>
+					</div>
+					<ul class="footer-list">
+						<li><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;<a href="#">Hotel</a></li>
+						<li><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;<a href="#">Flight</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-2 footer-col">
+					<div class="ft-header">
+						<h4>About us</h4>
+					</div>
+					<ul class="footer-list">
+						<li><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;<a href="#">About us</a></li>
+						<li><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;<a href="#">Career</a></li>
+						<li><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;<a href="#">Terms of Service</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4 footer-col">
+					<div class="ft-header">
+						<h4>Policy</h4>
+					</div>
+					<div class="policy">
+						<a href="#">Privacy Policy</a>
+						<a href="#">DMCA Policy</a>
+						<a href="#">GDPR Policy</a>
+						<a href="#">Refund Policy</a>
+						<a href="#">SMS Policy</a>
+						<a href="#">Income Disclosure</a>
+						<a href="#">Anti Spam</a>
+					</div>
+				</div>
+				<div class="col-sm-2 footer-col">
+					<div class="ft-header">
+						<h4>Connects Socially</h4>
+					</div>
+					<div class="ft-gallery">
+						<a href="https://www.facebook.com/elias.chowdhury3"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="https://www.linkedin.com/in/feelfree009/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+						<a href="https://twitter.com/feelfree009"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+					</div>
+				</div>		
+			</div>
+			<!-- COPYRIGHT -->
+			<div id="copy-right">
+				<p>All Rights Reserved &copy; <a href="https://www.linkedin.com/in/feelfree009/" target="_blank"> Elias</a></p>
+			</div>
+			<!-- /COPYRIGHT -->
+		</div>
+		<!-- /CONTAINER-FLUID -->
+	</footer>
+	<!--==================================
+	/FOOTER
+	===================================-->
+
+	<!--==================================
+	SCROLL-UP
+	===================================-->
+	<div id="scroll-up">
+		<a href="#">
+			<i class="fa fa-angle-up" aria-hidden="true"></i>
+		</a>
+	</div>
+	<!--==================================
+	/SCROLL-UP
+	===================================-->
+
+	<!--==================================
+	JS PLUGIN AND SCRIPT
+	===================================-->
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/libs-ui.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/libs-select.js"></script>
+	<script type="text/javascript" src="js/jquery.typeahead.js"></script>
+	<script type="text/javascript" src="js/responsiveslides.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/controls.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/libs.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<!--==================================
+	/JS PLUGIN AND SCRIPT
+	===================================-->
+
+	<!--==================================
+	SCRIPT
+	===================================-->
+	<script>
+		$('.filter-carousel').slick({
+		  	dots: false,
+		  	infinite: false,
+		  	speed: 300,
+		  	slidesToShow: 5,
+		  	slidesToScroll: 5,
+		  	responsive: [
+		    	{
+		      		breakpoint: 1024,
+		      		settings: {
+		      			settings: "unslick",
+			        	slidesToShow: 5,
+			        	slidesToScroll: 4,
+			        	infinite: true,
+			        	dots: false,
+		      		}
+		    	},
+		    	{
+			      	breakpoint: 991,
+			      	settings: {
+			      		settings: "unslick",
+				        slidesToShow: 4,
+				        slidesToScroll: 4,
+				        dots: false,
+		      		}
+		    	},
+		    	{
+			      	breakpoint: 767,
+			      	settings: {
+			      		settings: "unslick",
+				        slidesToShow: 3,
+				        slidesToScroll: 3,
+				        dots: false,
+		      		}
+		    	},
+		    	{
+			      	breakpoint: 575,
+			      	settings: {
+			      		settings: "unslick",
+				        slidesToShow: 2,
+				        slidesToScroll: 2,
+				        dots: false,
+		      		}
+		    	}
+			]
+		});
+	</script>
+	<!-- OWL CAROUSEL -->
+	<script>
+	$(document).ready(function() {
+	    var owl = $('.owl-carousel');
+	    // console.log('Elias');
+	    owl.owlCarousel({
+	        items: 5,
+	        loop: false,
+	        nav: true,
+	        margin: 10,
+	        autoplay: false,
+	        autoplayTimeout: 1000,
+	        autoplayHoverPause: true,
+	        responsiveClass: true,
+	        responsive:{
+	        	0:{
+	        		items: 1,
+	        		nav: false,
+	        	},
+	        	490:{
+	        		items: 2,
+	        	},
+	        	630:{
+	        		items: 3,
+	        	},
+	        	768:{
+	        		items: 4,
+	        	}
+	        }
+	    });
+	    $('.play').on('click', function() {
+	        owl.trigger('play.owl.autoplay', [1000])
+	    })
+	    $('.stop').on('click', function() {
+	        owl.trigger('stop.owl.autoplay')
+	    })
+	})
+	</script>
+
+	<!-- FILTER -->
+	<script>
+	var data = {
+            "ale": [
+                "Affligem Blonde", "Amsterdam Big Wheel", "Amsterdam Boneshaker IPA", "Amsterdam Downtown Brown", "Amsterdam Oranje Summer White",
+                "Anchor Liberty Ale", "Beaus Lug Tread Lagered Ale", "Beerded Lady", "Belhaven Best Ale", "Big Rock Grasshopper Wheat",
+                "Big Rock India Pale Ale", "Big Rock Traditional Ale", "Big Rock Warthog Ale", "Black Oak Nut Brown Ale", "Black Oak Pale Ale",
+                "Boddingtons Pub Ale", "Boundary Ale", "Caffreys", "Camerons Auburn Ale", "Camerons Cream Ale", "Camerons Rye Pale Ale", "Ceres Strong Ale",
+                "Cheval Blanc", "Crazy Canuck Pale Ale", "Creemore Springs Altbier", "Crosswind Pale Ale", "De Koninck", "Delirium Tremens",
+                "Erdinger Dunkel Weissbier", "Erdinger Weissbier", "Export", "Flying Monkeys Amber Ale", "Flying Monkeys Antigravity",
+                "Flying Monkeys Hoptical", "Flying Monkeys Netherworld", "Flying Monkeys Smashbomb", "Fruli", "Fullers Extra Spec Bitter",
+                "Fullers London Pride", "Granville English Bay Pale", "Granville Robson Hefeweizen", "Griffon Pale Ale", "Griffon Red Ale",
+                "Hacker-Pschorr Hefe Weisse", "Hacker-Pschorr Munchen Gold", "Hockley Dark Ale", "Hoegaarden", "Hops & Robbers IPA", "Houblon Chouffe",
+                "James Ready Original Ale", "Kawartha Cream Ale", "Kawartha Nut Brown Ale", "Kawartha Premium Pale Ale", "Kawartha Raspberry Wheat",
+                "Keiths", "Keiths Cascade Hop Ale", "Keiths Galaxy Hop Ale", "Keiths Hallertauer Hop Ale", "Keiths Hop Series Mixer",
+                "Keiths Premium White", "Keiths Red", "Kilkenny Cream Ale", "Konig Ludwig Weissbier", "Kronenbourg 1664 Blanc", "La Chouffe",
+                "La Messager Red Gluten Free", "Labatt 50 Ale", "Labatt Bass Pale Ale", "Lakeport Ale", "Leffe Blonde", "Leffe Brune",
+                "Legendary Muskoka Oddity", "Liefmans Fruitesse", "Lions Winter Ale", "Maclays", "Mad Tom IPA", "Maisels Weisse Dunkel",
+                "Maisels Weisse Original", "Maredsous Brune", "Matador 2.0 El Toro Bravo", "Mcauslan Apricot Wheat Ale", "Mcewans Scotch Ale",
+                "Mill St Belgian Wit", "Mill St Coffee Porter", "Mill St Stock Ale", "Mill St Tankhouse Ale", "Molson Stock Ale", "Moosehead Pale Ale",
+                "Mort Subite Kriek", "Muskoka Cream Ale", "Muskoka Detour IPA", "Muskoka Harvest Ale", "Muskoka Premium Dark Ale", "Newcastle Brown Ale",
+                "Niagaras Best Blonde Prem", "Okanagan Spring Pale Ale", "Old Speckled Hen", "Ommegang Belgian Pale Ale", "Ommegang Hennepin", "PC IPA",
+                "Palm Amber Ale", "Petrus Blonde", "Petrus Oud Bruin Aged Red", "Publican House Ale", "Red Cap", "Red Falcon Ale", "Rickards Dark",
+                "Rickards Original White", "Rickards Red", "Rodenbach Grand Cru", "Schofferhofer Hefeweizen", "Shock Top Belgian White",
+                "Shock Top Raspberry Wheat", "Shock Top Variety Pack", "Sleeman Cream Ale", "Sleeman Dark", "Sleeman India Pale Ale", "Smithwicks Ale",
+                "Spark House Red Ale", "St. Ambroise India Pale Ale", "St. Ambroise Oatmeal Stout", "St. Ambroise Pale Ale", "Stereovision Kristall Wheat",
+                "Stone Hammer Dark Ale", "Sunny & Share Citrus Saison", "Tetleys English Ale", "Thirsty Beaver Amber Ale", "True North Copper Altbier",
+                "True North Cream Ale", "True North India Pale Ale", "True North Strong", "True North Wunder Weisse", "Twice As Mad Tom IPA",
+                "Unibroue La Fin Du Monde", "Unibroue Maudite", "Unibroue Trois Pistoles", "Upper Canada Dark Ale", "Urthel Hop-It Tripel IPA",
+                "Waterloo IPA", "Weihenstephan Kristalweiss", "Wellington Arkell Best Bitr", "Wellington County Dark Ale", "Wellington Special Pale", "Wells IPA"
+            ],
+            "lager": [
+                "AC-DC Premium Lager", "Alpine Lager", "Amstel Light", "Amsterdam (416) Local Lager", "Amsterdam Natural Blonde", "Anchor Steam Beer",
+                "Barking Squirrel Lager", "Bavaria 8.6", "Bavaria 8.6 Red", "Bavaria Grapefruit Radler", "Bavaria Premium Beer", "Bavik Pils",
+                "Baysville Rock Cut Lager", "Becks", "Belle Gueule", "Big Rock Brewmasters Selection", "Big Rock Light Lime", "Big Rock Saaz Republic Pilz",
+                "Birra Castello", "Birra Moretti", "Bitburger", "Black Ice", "Black Label", "Blue", "Blue Light", "Bohemian", "Boris Beer",
+                "Boris Bold Strong Beer", "Boxer Ice", "Boxer Lager", "Brava", "Brava 5.5", "Brava Light", "Brouczech Premium Lager", "Bud Light",
+                "Bud Light Lime", "Bud Light Lime Labatt", "Bud Light Platinum", "Budweiser", "Budweiser Crown", "Budweiser Shot Labatt", "Busch Ice",
+                "Busch Lager", "Busch Light", "Camerons Dark266", "Camerons Lager", "Canadian", "Canadian 67", "Canadian 67 Sublime", "Canadian Coldshots",
+                "Carib Lager", "Carling Ice", "Carling Lager", "Carling Light", "Carlsberg", "Carlsberg Lite", "Cool Beer Lager", "Coors Banquet", "Coors Light",
+                "Corona", "Corona Light", "Cracked Canoe", "Creemore Collection", "Creemore Kellerbier", "Creemore Lager", "Creemore Springs Combo Pack",
+                "Creemore Trad Pilsner", "Creemore Urbock", "Crest Super", "Crystal", "Czechvar", "Dab Maibock", "Dab Original Lager", "Dead Frog Mixed Pack",
+                "Desperados Tequila Beer", "Dos Equis Amber", "Dos Equis Lager", "Dunkel Weihenstephaner", "Faxe Amber Lager", "Faxe Extra Strong - 10",
+                "Faxe Premium Lager - 5", "Faxe Red", "Faxe Strong", "Formosa Springs Draft", "Fosters Import", "Fuerstenberg Prem Pilsener", "Get2gether",
+                "Granville Summer Mingler", "Grolsch Lager 450ml", "Grolsch Premium Lager", "Guinness Black Lager", "Hacker-Pschorr Kellerbier", "Harbin Beer",
+                "Harp Lager", "Heineken", "Henninger Premium Lager", "Hockley Taster Pack", "Hofbraeu Muenchen Original", "Hogsback Vintage Lager",
+                "Hollandia Pilsner", "Holsten Festbock", "Holsten Maibock", "Holsten Premium Bier", "Hopf Weisse", "Hops Bolts India Pale Lager",
+                "James Ready 5.5", "James Ready Ice 6.0", "James Ready Lager", "James Ready Light", "Jever Pilsener", "Keiths Brewmaster", "Keiths Light",
+                "Keystone Ice", "Keystone Lager", "Keystone Light", "King Brewery Dark Lager", "King Brewery Pilsner", "King Brewery Vienna Lager", "Kokanee",
+                "Kozel", "Krombacher Dark", "Krombacher Pils", "Krombacher Weizen", "Kronenbourg 1664", "La Tabachera", "Labatt Extra Dry", "Labatt Genuine Lager",
+                "Labatt Ice", "Lakeport Honey Lager", "Lakeport Ice", "Lakeport Light", "Lakeport Pilsener", "Lakeport Red", "Laker Extra Ice", "Laker Honey",
+                "Laker Ice", "Laker Lager", "Laker Light", "Laker Red", "Laker Strong", "Lech Beer", "Lowenbrau", "Lucky Lager", "Maximum Ice", "Menabrea Blonda",
+                "Michelob Ultra", "Mill St Original Organic", "Millennium Buzz Hemp Beer", "Miller Chill Domestic", "Miller Chill Import",
+                "Miller Genuine Draft Clear", "Molson Canadian Wheat", "Molson Dry", "Molson M", "Molson XXX", "Mongozo Premium Pilsner", "Moosehead Lager",
+                "Moosehead Light", "Moosehead Light Lime", "Moskato Life", "Moskato Life Rose", "Muskoka Craft Lager", "Muskoka Summer Weiss",
+                "Muskoka Survival Pack", "Mythos Beer", "Negra Modelo", "Neustadt Lager", "Octane 7.0", "Okanagan Craft Pack", "Okanagan Springs 1516 Lager",
+                "Okocim Pilsner", "Old Milwaukee", "Old Milwaukee", "Old Milwaukee Ice", "Old Milwaukee Light", "Old Style Pilsner", "Old Vienna",
+                "PC Black Lager", "PC Cerveza", "PC Down Under Amber", "PC Dry", "PC Genuine Lager", "PC Honey Red", "PC Light", "PC Low Carb", "PC Plznr",
+                "Pabst Blue Ribbon", "Pabst Blue Ribbon 5.9", "Pabst Blue Ribbon Light", "Paulaner Hefe-Weissbier", "Pedavena Birra Dolomiti",
+                "Peroni Nastro Azzuro", "Pilsner Urquell", "Pistonhead Kustom Lager", "Poppers Party Pack", "Prison Break Pilsner", "Radeberger Pilsner",
+                "Red Baron", "Red Baron Light", "Red Baron Lime", "Red Baron Platinum Light", "Red Bull", "Red Stripe", "Rickards Blonde", "Rickards Cardigan",
+                "Rickards Fall Taster", "Rickards Lederhosen", "Rickards Oakhouse", "Rickards Shandy", "Rickards Summer Taster Pack", "Rickards Taster Pack",
+                "Rickards Winter Taster Pack", "Rolling Rock Pale Lager", "Rosarda Rose", "Saint Andre", "Samuel Adams Boston Lager", "San Miguel Premium Lager",
+                "Sapporo", "Schnitzerbrau Gluten Free Lager", "Schofferhofer Grapefruit Radlr", "Seagram Mixer Pack", "Shock Top Lemon Shandy", "Sleeman Clear 2.0",
+                "Sleeman Honey Brown Lager", "Sleeman Light", "Sleeman Original Draught", "Sleeman Seasonal Selections", "Sleeman Selections",
+                "Sleeman Silver Creek Lager", "Sol", "Spaten", "St Ambroise Premium Taster", "Staropramen", "Steam Whistle", "Steeler", "Stella Artois",
+                "Stella Legere", "Stiegl Bier", "Stiegl Grapefruit Radler", "Stone Hammer Pilsner", "Stonewall Light", "Tecate", "Tennents Export Lager",
+                "Thurn Taxis Lager", "Thurn Taxis Pilsener", "Thurn Taxis Wolfgang Dunkl", "Tiger Beer", "Trailhead Premium Lager", "True North Blonde Lager",
+                "Tuborg Gold", "Tuborg Pilsner", "Tyskie", "Unibroue Blanche Dechambly", "Upper Canada Lager", "Warsteiner Premium Dunkel", "Warsteiner Premium Verum",
+                "Waterloo Amber Lager", "Waterloo Dark", "Waterloo Grapefruit Radler", "Waterloo Kolsch Sampler", "Waterloo Pilsner", "Weihenstephan Vitus",
+                "Weihenstephaner Hefeweiss", "Wernesgruner Pils", "Winter Mingler", "Wolfgangs German Style Beer", "Xingu Black Beer", "Yanjing Beer", "Zywiec Beer"
+            ],
+            "stout": [
+                "Belhaven Black Scottish Stout", "Guinness Draught Bottle", "Guinness Extra Stout", "Guinness Pub Draught", "Murphys Irish Stout",
+                "Muskoka Chocolate Cranberry", "Sleeman Fine Porter"
+            ],
+            "malt": [
+                "Boxer Watermelon", "Bud Light Lime Lime-a-rita", "Bud Light Lime Mang-o-rita", "Bud Light Lime Straw-ber-rita", "Colt 45",
+                "DJ Trotters Flirty Daiquiri", "DJ Trotters Lolita", "Four Loko Black Cherry", "Four Loko Fruit Punch", "Four Loko Grape", "Four Loko Lemonade",
+                "Four Loko Peach", "Four Loko Watermelon", "Kensington Watermelon Wheat", "Mad Jack", "Mickeys", "Mojo Fruit Punch", "Mojo Shot Blue Lagoon",
+                "Mojo Shot Melon Ball", "Mojo Shot Sourberry", "Mojo Strawberry & Kiwi", "Mons Abbey Blonde", "Mons Abbey Witte", "Olde English 800",
+                "Pepito Sangria", "Poppers Cran Ice", "Poppers Hard Ice", "Poppers Orange Smoothie", "Poppers Pink", "Poppers Ricco Sangria", "Poppers Wild Ice",
+                "Seagram Iced Lemon Tea", "Seagram Lemon Lime", "Seagram Orange Mango", "Seagram Wildberry", "Seagram Wildberry Extra 6.9", "Twisted Tea", "Wellington Iron Duke"
+            ]
+        };
+
+        typeof $.typeahead === 'function' && $.typeahead({
+            input: ".js-typeahead",
+            minLength: 1,
+            maxItem: 15,
+            order: "asc",
+            hint: true,
+            group: {
+                template: "{{group}} beers!"
+            },
+            maxItemPerGroup: 5,
+            backdrop: {
+                "background-color": "#fff"
+            },
+            href: "/beers/{{group}}/{{display}}/",
+            dropdownFilter: "all beers",
+            emptyTemplate: 'No result for "{{query}}"',
+            source: {
+                Ale: {
+                    data: data.ale
+                },
+                lager: {
+                    data: data.lager
+                },
+                "stout and porter": {
+                    data: data.stout
+                },
+                malt: {
+                    data: data.malt
+                }
+            },
+            callback: {
+                onReady: function (node) {
+                    this.container.find('.' + this.options.selector.dropdownItem + '.group-ale a').trigger('click')
+                },
+                onDropdownFilter: function (node, query, filter, result) {
+                    console.log(query)
+                    console.log(filter)
+                    console.log(result)
+                }
+            },
+            debug: true
+        });
+	</script>
+	<!--==================================
+	/SCRIPT
+	===================================-->
+</body>
+</html>
