@@ -1,0 +1,673 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+	<meta name="color-scheme" content="light dark">
+	<meta name="supported-color-schemes" content="light dark only">
+    <title>Yes! Assistant</title>
+
+	<link rel="icon" type="image/png" href="images/titleicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+    <!-- CSS RESET : BEGIN -->
+    <style>
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+		body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			height: 100% !important;
+			width: 100% !important;
+			background: #f1f1f1;
+		}
+
+		/* What it does: Stops email clients resizing small text. */
+		* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		/* What it does: Centers email on Android 4.4 */
+		div[style*="margin: 16px 0"] {
+			margin: 0 !important;
+		}
+
+		/* What it does: Stops Outlook from adding extra spacing to tables. */
+		table,
+		td {
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+		}
+
+		/* What it does: Fixes webkit padding issue. */
+		table {
+			border-spacing: 0 !important;
+			border-collapse: separate !important;
+			table-layout: fixed !important;
+			margin: 0 auto !important;
+		}
+
+		/* What it does: Uses a better rendering method when resizing images in IE. */
+		img {
+			-ms-interpolation-mode:	bicubic;
+		}
+
+		/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+		a {
+			text-decoration: none !important;
+		}
+
+		/* What it does: A work-around for email clients meddling in triggered links. */
+		*[x-apple-data-detectors],  /* iOS */
+		.unstyle-auto-detected-links *,
+		.aBn {
+			border-bottom: 0 !important;
+			cursor: default !important;
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
+
+		/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+		.a6S {
+			display: none !important;
+			opacity: 0.01 !important;
+		}
+
+		/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+		.im {
+			color: inherit !important;
+		}
+
+		/* If the above doesn't work, add a .g-img class to any image in question. */
+		img.g-img + div {
+			display: none !important;
+		}
+
+		/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+		/* Create one of these media queries for each additional viewport size you'd like to fix */
+
+		/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+		@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+			u ~ div .email-container {
+				min-width: 320px !important;
+			}
+		}
+		/* iPhone 6, 6S, 7, 8, and X */
+		@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+			u ~ div .email-container {
+				min-width: 375px !important;
+			}
+		}
+		/* iPhone 6+, 7+, and 8+ */
+		@media only screen and (min-device-width: 414px) {
+			u ~ div .email-container {
+				min-width: 414px !important;
+			}
+		}
+    </style>
+    <!-- CSS RESET : END -->
+
+	<!-- Allow for better image rendering on Windows hi-DPI displays. -->
+	<!--[if mso]>
+	<noscript>
+		<xml>
+			<o:OfficeDocumentSettings>
+			<o:AllowPNG/>
+			<o:PixelsPerInch>96</o:PixelsPerInch>
+			</o:OfficeDocumentSettings>
+		</xml>
+	</noscript>
+	<![endif]-->
+
+	<style>
+		.& .herobanner{ background-image: url('images/herobanner.png') !important; background-size: 100% 100% !important; background-repeat: no-repeat !important; }
+	</style>
+	<style>
+		[class~="x_herobanner"]{ background-image: url('images/herobanner.png') !important; background-size: 100% 100% !important; background-repeat: no-repeat !important; }
+	</style>
+	<style>
+		body[data-outlook-cycle] .herobanner { background-image: url('images/herobanner.png') !important; background-size: 100% 100% !important; background-repeat: no-repeat !important; }
+	</style>
+
+    <!-- PROGRESSIVE ENHANCEMENTS : BEGIN -->
+    <style>
+		body {
+			color: #3d3d3d;
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 1.8;
+			font-family: 'Poppins', sans-serif;
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin: 0;
+			padding: 0;
+			color: #353535;
+			font-family: 'Poppins', sans-serif;
+			font-weight: 400;
+		}
+		p {
+			margin: 0;
+			padding: 0;
+			color: #1b1441;
+			font-size: 14px;
+			font-family: 'Poppins', sans-serif;
+			font-weight: 4;
+		}
+		a {
+			color: #353535;
+			font-family: 'Poppins', sans-serif;
+		}
+		@media screen and (max-width: 637px) {	
+			.smartviews .fullwidth {
+				width: 100% !important;
+			}
+			.smartviews .fullheight {
+				height: 100% !important;
+			}
+			.smartviews .fullwidthblock {
+				display: block !important;
+				width: 100% !important;
+			}
+			.smartviews .widthauto {
+				width: auto !important;
+			}
+			.smartviews .fullcenter {
+				text-align: center !important;
+			}
+		}
+    </style>
+	<!-- PROGRESSIVE ENHANCEMENTS : END -->
+</head>
+
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #e5e5e5; overflow-x: hidden;">
+	<div style="display: none;font-size: 0;line-height: 1px;color: #353535;max-width: 0;max-height: 0;overflow: hidden;">Yes! Assistant</div>
+	<div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+		&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+	</div>
+	<table role="presentation" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" bgcolor="#e5e5e5">
+		<tr>
+			<td class="smartviews" align="center" valign="top" bgcolor="#e5e5e5">
+				<!--[if gte mso 9]>
+					<v:background class="herobanner" xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+						<v:fill type="frame" color="rgba(0, 0, 0, 0.7)" src=""/>
+					</v:background>
+				<![endif]-->
+
+				<table class="row row__1" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td align="center" valign="top">
+							<table class="fullwidth" role="presentation" width="720" align="center" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td width="100%" align="center" valign="top" bgcolor="#ffffff" style="padding: 40px 30px;">
+										<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td width="100%" align="center" valign="top">
+													<table align="center" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="middle" style="font-size: 0;">
+																<a href="https://www.upwork.com/freelancers/mdeliaschowdhury" style="margin: 0;padding: 0;display: inline-block;width: 100%;">
+																	<img src="images/logo.png" alt="Logo Missing" width="" style="display: inline-block;max-width: 259px;vertical-align: middle;">
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table><!-- end row -->
+
+				<table class="row row__2" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td align="center" valign="top">
+							<table class="fullwidth" role="presentation" width="720" align="center" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td width="100%" align="center" valign="top" bgcolor="#ffffff" style="padding: 0;">
+										<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td class="hero" width="100%" height="380" align="center" valign="top" bgcolor="#c8faf6">
+													<div class="herobanner" style="height: 100%;background: url(images/herobanner.png);background-size: cover; background-position: center center;background-repeat: no-repeat;">
+														<table role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+															<tr>
+																<td class="herobanner" width="100%" height="380" align="center" valign="top" bgcolor="#c8faf6" background="" style="background: url(images/herobanner.png); background-size: cover; background-position: center center;background-repeat: no-repeat;height: 380px;">
+																	<table width="100%" height="380" align="center" cellspacing="0" cellpadding="0" border="0">
+																		<tr>
+																			<td height="320" align="center" valign="top" style="padding: 30px;">
+																				<table class="fullheight" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																					<tr>
+																						<td align="center" valign="middle">
+																							<table class="fullwidth" align="right" cellspacing="0" cellpadding="0" border="0">
+																								<tr>
+																									<td align="center" valign="top">
+																										<p class="hero-text" style="color: #ffffff;font-size: 30px;font-weight: 600;font-family: 'Poppins', sans-serif;letter-spacing: 0;line-height: 1;text-align: center;text-transform: uppercase;">
+																											Simple & Modern
+																										</p>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td align="center" valign="top" style="padding-top: 16px;">
+																										<p class="hero-text" style="color: #ffffff;font-size: 16px;font-weight: 500;font-family: 'Poppins', sans-serif;letter-spacing: 0;line-height: 1;text-align: center;text-transform: uppercase;text-decoration: none;">
+																											Business card design
+																										</p>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td align="center" valign="top" style="padding-top: 16px;">
+																										<div>
+																											<!--[if mso]>
+																											<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:36px;v-text-anchor:middle;width:150px;border:5px solid #da2e29" arcsize="5%" stroke="f" fillcolor="#da2e29">
+																											<w:anchorlock/>
+																											<center>
+																											<![endif]-->
+																											<a href="http://useyourdesiredlink.com" style="background: #da2e29;border-radius: 5px;color:#ffffff;display: inline-block;padding: 0;font-size: 15px; font-family: 'Poppins', sans-serif;font-weight: 600;line-height: 36px;text-align: center;text-transform: uppercase;text-decoration: none;width: 150px;-webkit-text-size-adjust: none;">
+																												Learn More
+																											</a>
+																											<!--[if mso]>
+																											</center>
+																											</v:roundrect>
+																											<![endif]-->
+																										</div>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table><!-- end row -->
+
+				<table class="row row__3" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td align="center" valign="top">
+							<table class="fullwidth" role="presentation" width="720" align="center" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td width="100%" align="center" valign="top" bgcolor="#ffffff" style="padding: 40px 30px;">
+										<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td align="center" valign="middle" style="font-size: 0;">
+													<h3 style="color: #da2e29;font-size: 30px;font-weight: 500;font-family: 'Poppins', sans-serif;letter-spacing: 0;line-height: 30px;text-transform: capitalize;">
+														Business Card Design Portfolio
+													</h3>
+												</td>
+											</tr>
+											<tr>
+												<td align="center" valign="middle" style="font-size: 0;padding-top: 15px;">
+													<p style="color: #1b1441;font-size: 16px;font-weight: 400;font-family: 'Poppins', sans-serif;letter-spacing: 0;line-height: 22px;">
+														We understand that you would want to see the quality of our services before making a decision. So, have a look at the business cards we have designed and make a decision yourself!
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table><!-- end row -->
+
+				<table class="row row__4" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td align="center" valign="top">
+							<table class="fullwidth" role="presentation" width="720" align="center" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td align="center" valign="top" bgcolor="#ffffff">
+										<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td width="100%" align="center" valign="top" bgcolor="#ffffff" style="padding: 0 15px;">
+													<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td class="fullwidthblock" align="center" valign="top">
+																<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td align="center" valign="top" style="padding: 0 15px 30px;">
+																			<table class="fullwidth" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																				<tr>
+																					<td align="center" valign="top">
+																						<a href="https://www.upwork.com/freelancers/mdeliaschowdhury" style="display: inline-block;">
+																							<img src="images/card-i.png" alt="Card Image" width="100%" style="max-width: 100%;border-radius: 15px;box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.15);">
+																						</a>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+															<td class="fullwidthblock" align="center" valign="top">
+																<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td align="center" valign="top" style="padding: 0 15px 30px;">
+																			<table class="fullwidth" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																				<tr>
+																					<td align="center" valign="top">
+																						<a href="https://www.upwork.com/freelancers/mdeliaschowdhury" style="display: inline-block;">
+																							<img src="images/card-ii.png" alt="Card Image" width="100%" style="max-width: 100%;border-radius: 15px;box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.15);">
+																						</a>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td class="fullwidthblock" align="center" valign="top">
+																<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td align="center" valign="top" style="padding: 0 15px 30px;">
+																			<table class="fullwidth" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																				<tr>
+																					<td align="center" valign="top">
+																						<a href="https://www.upwork.com/freelancers/mdeliaschowdhury" style="display: inline-block;">
+																							<img src="images/card-iii.png" alt="Card Image" width="100%" style="max-width: 100%;border-radius: 15px;box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.15);">
+																						</a>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+															<td class="fullwidthblock" align="center" valign="top">
+																<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td align="center" valign="top" style="padding: 0 15px 30px;">
+																			<table class="fullwidth" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																				<tr>
+																					<td align="center" valign="top">
+																						<a href="https://www.upwork.com/freelancers/mdeliaschowdhury" style="display: inline-block;">
+																							<img src="images/card-iv.png" alt="Card Image" width="100%" style="max-width: 100%;border-radius: 15px;box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.15);">
+																						</a>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table><!-- end row -->
+
+				<table class="row row__5" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td align="center" valign="top">
+							<table class="fullwidth" role="presentation" width="720" align="center" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td width="100%" align="center" valign="top" bgcolor="#ffffff" style="padding: 40px 30px;">
+										<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td align="center" valign="middle" style="font-size: 0;">
+													<h3 style="color: #da2e29;font-size: 30px;font-weight: 500;font-family: 'Poppins', sans-serif;letter-spacing: 0;line-height: 30px;text-transform: capitalize;">
+														Business Card Design Process
+													</h3>
+												</td>
+											</tr>
+											<tr>
+												<td align="center" valign="middle" style="font-size: 0;padding-top: 15px;">
+													<p style="color: #1b1441;font-size: 16px;font-weight: 400;font-family: 'Poppins', sans-serif;letter-spacing: 0;line-height: 22px;">
+														We have a streamlined design process in place so that you have a hassle-free experience. We have listed down each step with a description for your convenience; take a look as follows:
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table><!-- end row -->
+
+				<table class="row row__6" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td align="center" valign="top">
+							<table class="fullwidth" role="presentation" width="720" align="center" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td align="center" valign="top" bgcolor="#ffffff">
+										<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td width="100%" align="center" valign="top" bgcolor="#ffffff" style="padding: 0 15px;">
+													<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td class="fullwidthblock" align="center" valign="top">
+																<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td align="center" valign="top" style="padding: 0 15px 30px;">
+																			<table class="fullwidth" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																				<tr>
+																					<td align="center" valign="middle">
+																						<img src="images/icon-i.png" alt="Card Image" style="max-width: 100%;border-radius: 0;">
+																					</td>
+																				</tr>
+																				<tr>
+																					<td align="center" valign="middle" style="padding: 15px 0;font-size: 0;">
+																						<h5 style="color: #303030;font-size: 20px;font-weight: 500;font-family: 'Poppins', sans-serif;letter-spacing: 0;line-height: 20px;text-transform: capitalize;">
+																							Information Details
+																						</h5>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td align="center" valign="middle">
+																						<p style="color:#303030;font-size: 14px;font-weight: 500;font-family: 'Poppins', sans-serif;letter-spacing: 0;line-height: 20px;">
+																							Collect information about your requirements and necessary files like logo , photos, text etc.
+																						</p>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+															<td class="fullwidthblock" align="center" valign="top">
+																<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td align="center" valign="top" style="padding: 0 15px 30px;">
+																			<table class="fullwidth" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																				<tr>
+																					<td align="center" valign="middle">
+																						<img src="images/icon-ii.png" alt="Card Image" style="max-width: 100%;border-radius: 0;">
+																					</td>
+																				</tr>
+																				<tr>
+																					<td align="center" valign="middle" style="padding: 15px 0;font-size: 0;">
+																						<h5 style="color: #303030;font-size: 20px;font-weight: 500;font-family: 'Poppins', sans-serif;letter-spacing: 0;line-height: 20px;text-transform: capitalize;">
+																							Submit & Revision
+																						</h5>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td align="center" valign="middle">
+																						<p style="color:#303030;font-size: 14px;font-weight: 500;font-family: 'Poppins', sans-serif;letter-spacing: 0;line-height: 20px;">
+																							We will present and submit the design to you. You can have internal discussions and let us know the revisions (if any).
+																						</p>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td class="fullwidthblock" align="center" valign="top">
+																<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td align="center" valign="top" style="padding: 0 15px 30px;">
+																			<table class="fullwidth" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																				<tr>
+																					<td align="center" valign="middle">
+																						<img src="images/icon-iii.png" alt="Card Image" style="max-width: 100%;border-radius: 0;">
+																					</td>
+																				</tr>
+																				<tr>
+																					<td align="center" valign="middle" style="padding: 15px 0;font-size: 0;">
+																						<h5 style="color: #303030;font-size: 20px;font-weight: 500;font-family: 'Poppins', sans-serif;letter-spacing: 0;line-height: 20px;text-transform: capitalize;">
+																							Design Idea
+																						</h5>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td align="center" valign="middle">
+																						<p style="color:#303030;font-size: 14px;font-weight: 500;font-family: 'Poppins', sans-serif;letter-spacing: 0;line-height: 20px;">
+																							After researching the industry, target audience, and recent trends, we brainstorm design ideas and settle for one.
+																						</p>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+															<td class="fullwidthblock" align="center" valign="top">
+																<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td align="center" valign="top" style="padding: 0 15px 30px;">
+																			<table class="fullwidth" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																				<tr>
+																					<td align="center" valign="middle">
+																						<img src="images/icon-iv.png" alt="Card Image" style="max-width: 100%;border-radius: 0;">
+																					</td>
+																				</tr>
+																				<tr>
+																					<td align="center" valign="middle" style="padding: 15px 0;font-size: 0;">
+																						<h5 style="color: #303030;font-size: 20px;font-weight: 500;font-family: 'Poppins', sans-serif;letter-spacing: 0;line-height: 20px;text-transform: capitalize;">
+																							Delivery Time
+																						</h5>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td align="center" valign="middle">
+																						<p style="color:#303030;font-size: 14px;font-weight: 500;font-family: 'Poppins', sans-serif;letter-spacing: 0;line-height: 20px;">
+																							You can expect your updated designs usually 1-3 business days after the initial design.
+																						</p>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table><!-- end row -->
+
+				<table class="row row__7" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td align="center" valign="top">
+							<table class="fullwidth" role="presentation" width="720" align="center" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td width="100%" align="center" valign="top" bgcolor="#ffffff" style="padding: 50px 30px;">
+										<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td align="center" valign="top" bgcolor="#ffffff" style="padding: 0;">
+													<table align="center" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="middle" style="padding: 0;font-size: 0;">
+																<p style="color: #303030;font-size: 18px;font-weight: 500;font-family: 'Poppins', sans-serif;letter-spacing: 0;line-height: 18px;text-transform: uppercase;">
+																	Follow along with us
+																</p>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td align="center" valign="middle" bgcolor="#ffffff" style="padding: 50px 0;">
+													<table align="center" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="middle" style="padding: 0 15px;font-size: 0;">
+																<a href="https://www.upwork.com/freelancers/mdeliaschowdhury" style="display: inline-block;text-decoration: none;">
+																	<img src="images/social-icon-facebook.png" alt="Icon Missing" width="60" style="outline: 0;">
+																</a>
+															</td>
+															<td align="center" valign="middle" style="padding: 0 15px;font-size: 0;">
+																<a href="https://www.upwork.com/freelancers/mdeliaschowdhury" style="display: inline-block;text-decoration: none;">
+																	<img src="images/social-icon-instagram.png" alt="Icon Missing" width="60" style="outline: 0;">
+																</a>
+															</td>
+															<td align="center" valign="middle" style="padding: 0 15px;font-size: 0;">
+																<a href="https://www.upwork.com/freelancers/mdeliaschowdhury" style="display: inline-block;text-decoration: none;">
+																	<img src="images/social-icon-twitter.png" alt="Icon Missing" width="60" style="outline: 0;">
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td align="center" valign="top" bgcolor="#ffffff" style="padding: 0;">
+													<table class="fullwidth" width="520" align="center" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="middle" style="padding: 0;font-size: 0;">
+																<p style="color: #303030;font-size: 16px;font-weight: 500;font-family: 'Poppins', sans-serif;letter-spacing: 0;line-height: 22px;text-transform: initial;">
+																	Lorem ipsum dolor ametconsectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+																</p>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table><!-- end row -->
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
