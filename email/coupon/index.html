@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+	<meta name="color-scheme" content="light dark">
+	<meta name="supported-color-schemes" content="light dark only">
+    <title>01 : Uplers</title>
+
+	<link rel="icon" type="image/png" href="images/titleicon.png" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap">
+
+    <!-- CSS RESET : BEGIN -->
+    <style>
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+		body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			height: 100% !important;
+			width: 100% !important;
+			background: #f1f1f1;
+		}
+
+		/* What it does: Stops email clients resizing small text. */
+		* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		/* What it does: Centers email on Android 4.4 */
+		div[style*="margin: 16px 0"] {
+			margin: 0 !important;
+		}
+
+		/* What it does: Stops Outlook from adding extra spacing to tables. */
+		table,
+		td {
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+		}
+
+		/* What it does: Fixes webkit padding issue. */
+		table {
+			border-spacing: 0 !important;
+			border-collapse: separate !important;
+			table-layout: fixed !important;
+			margin: 0 auto !important;
+		}
+
+		/* What it does: Uses a better rendering method when resizing images in IE. */
+		img {
+			-ms-interpolation-mode:	bicubic;
+		}
+
+		/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+		a {
+			text-decoration: none !important;
+		}
+
+		/* What it does: A work-around for email clients meddling in triggered links. */
+		*[x-apple-data-detectors],  /* iOS */
+		.unstyle-auto-detected-links *,
+		.aBn {
+			border-bottom: 0 !important;
+			cursor: default !important;
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
+
+		/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+		.a6S {
+			display: none !important;
+			opacity: 0.01 !important;
+		}
+
+		/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+		.im {
+			color: inherit !important;
+		}
+
+		/* If the above doesn't work, add a .g-img class to any image in question. */
+		img.g-img + div {
+			display: none !important;
+		}
+
+		/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+		/* Create one of these media queries for each additional viewport size you'd like to fix */
+
+		/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+		@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+			u ~ div .email-container {
+				min-width: 320px !important;
+			}
+		}
+		/* iPhone 6, 6S, 7, 8, and X */
+		@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+			u ~ div .email-container {
+				min-width: 375px !important;
+			}
+		}
+		/* iPhone 6+, 7+, and 8+ */
+		@media only screen and (min-device-width: 414px) {
+			u ~ div .email-container {
+				min-width: 414px !important;
+			}
+		}
+    </style>
+    <!-- CSS RESET : END -->
+
+	<!-- Allow for better image rendering on Windows hi-DPI displays. -->
+	<!--[if mso]>
+	<noscript>
+		<xml>
+			<o:OfficeDocumentSettings>
+			<o:AllowPNG/>
+			<o:PixelsPerInch>96</o:PixelsPerInch>
+			</o:OfficeDocumentSettings>
+		</xml>
+	</noscript>
+	<![endif]-->
+
+	<style>
+		.& .herobanner{ background-image: url('images/herobanner.png') !important; background-size: 100% 100% !important; background-repeat: no-repeat !important; }
+	</style>
+	<style>
+		[class~="x_herobanner"]{ background-image: url('images/herobanner.png') !important; background-size: 100% 100% !important; background-repeat: no-repeat !important; }
+	</style>
+	<style>
+		body[data-outlook-cycle] .herobanner { background-image: url('images/herobanner.png') !important; background-size: 100% 100% !important; background-repeat: no-repeat !important; }
+	</style>
+
+    <!-- PROGRESSIVE ENHANCEMENTS : BEGIN -->
+    <style>
+		body {
+			color: #2d2d2d;
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 1.5;
+			font-family: 'Montserrat', sans-serif;
+			
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin: 0;
+			padding: 0;
+			color: #2d2d2d;
+			font-weight: 400;
+			font-family: 'Montserrat', sans-serif;
+		}
+		p {
+			margin: 0;
+			padding: 0;
+			color: #2d2d2d;
+			font-size: 14px;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 4;
+		}
+		a {
+			color: #2d2d2d;
+			font-family: 'Montserrat', sans-serif;
+		}
+		@media screen and (max-width: 637px) {
+			.smartviews .fullwidth {
+				width: 100% !important;
+			}
+			.smartviews .fullheight {
+				height: 100% !important;
+			}
+			.smartviews .fullwidthblock {
+				display: block !important;
+				width: 100% !important;
+			}
+			.smartviews .widthauto {
+				width: auto !important;
+			}
+			.smartviews .fullcenter {
+				text-align: center !important;
+			}
+			.p-0 {
+				padding: 0 !important;
+			}
+			pb-0 {
+				padding-bottom: 0 !important;
+			}
+		}
+    </style>
+	<!-- PROGRESSIVE ENHANCEMENTS : END -->
+</head>
+
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #e5e5e5; overflow-x: hidden;">
+	<div style="display: none;font-size: 0;line-height: 1px;color: #353535;max-width: 0;max-height: 0;overflow: hidden;">Offer! Please check.</div>
+	<div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+		&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+	</div>
+	<table role="presentation" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" bgcolor="#e5e5e5">
+		<tr>
+			<td class="smartviews" align="center" valign="top" bgcolor="#e5e5e5">
+				<table class="row row__1" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td align="center" valign="top">
+							<table class="fullwidth" role="presentation" width="720" align="center" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td width="100%" align="center" valign="top" bgcolor="#ffffff" style="padding: 20px 30px;">
+										<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td align="center" valign="top">
+													<table align="left" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="middle" style="padding: 0;font-size: 0;">
+																<a href="https://www.upwork.com/freelancers/mdeliaschowdhury" style="margin: 0;padding: 0;display: inline-block;width: 100%;">
+																	<img src="images/logo.png" alt="Logo Missing" width="100%" style="display: inline-block;max-width: 100%;vertical-align: middle;">
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td align="right" valign="top">
+													<table height="46" align="right" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="left" valign="middle">
+																<a href="https://www.upwork.com/freelancers/mdeliaschowdhury" style="margin: 0;padding: 0;display: inline-block;color: #353535;font-size: 12px;font-weight: 400;font-family: 'Montserrat', sans-serif;line-height: 18px;">
+																	View in Browser
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table><!-- end row -->
+
+				<table class="row row__2" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td align="center" valign="top">
+							<table class="fullwidth" role="presentation" width="720" align="center" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td width="100%" align="center" valign="top" bgcolor="#ffdb2d" style="padding: 60px 30px;">
+										<table class="fullwidth" align="center" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td align="center" valign="top" bgcolor="#ffffff" style="padding: 6px 12px;">
+													<h1 style="color: #000000;font-size: 84px;font-weight: 800;font-family: 'Montserrat', sana-serif;letter-spacing: 0;line-height: 84px;text-transform: uppercase;">
+														$100 Off
+													</h1>
+												</td>
+											</tr>
+											<tr>
+												<td width="100%" height="15" align="left"></td>
+											</tr>
+											<tr>
+												<td align="center" valign="top" bgcolor="#ffffff" style="padding: 6px 12px;">
+													<h2 style="color: #000000;font-size: 60px;font-weight: 700;font-family: 'Montserrat', sana-serif;letter-spacing: 0;line-height: 60px;text-transform: uppercase;word-wrap:break-word;">
+														Exclusively
+													</h2>
+												</td>
+											</tr>
+											<tr>
+												<td width="100%" height="15" align="left"></td>
+											</tr>
+											<tr>
+												<td align="center" valign="top">
+													<table align="center" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="top" bgcolor="#ffffff" style="padding: 6px 12px;">
+																<h3 style="color: #000000;font-size: 50px;font-weight: 600;font-family: 'Montserrat', sana-serif;letter-spacing: 0;line-height: 50px;text-transform: uppercase;">
+																	For you
+																</h3>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table><!-- end row -->
+
+				<table class="row row__3" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td align="center" valign="top">
+							<table class="fullwidth" role="presentation" width="720" align="center" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td width="100%" align="center" valign="top" bgcolor="#efefef" style="padding: 60px 30px;">
+										<table class="fullwidth" width="480" align="center" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td align="center" valign="top">
+													<h5 style="color: #000000;font-size: 18px;font-weight: 600;font-family: 'Montserrat', sana-serif;letter-spacing: 0;line-height: 24px;text-transform: none;">
+														Use the <b>Coupon Code</b> on any of the below Design & Coding or Only Coding Services
+													</h5>
+												</td>
+											</tr>
+											<tr>
+												<td align="center" valign="middle" style="font-size: 0;padding: 50px 0;">
+													<img src="images/coupon.png" alt="Images Missing" style="display: inline-block;max-width: 100% !important;">
+												</td>
+											</tr>
+											<tr>
+												<td align="center" valign="top">
+													<table width="290" align="center" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="middle">
+																<!--[if mso]>
+																<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.upwork.com/freelancers/mdeliaschowdhury" style="width:290px;height:52px;v-text-anchor:middle;border:0" arcsize="25%" stroke="f" fillcolor="#000000">
+																<w:anchorlock/>
+																<center>
+																<![endif]-->
+																<a href="https://www.linkedin.com" style="display: inline-block;width: 100%;padding: 0;color: #ffffff;font-size: 18px;font-weight: 600;font-family: 'Montserrat', sans-serif;letter-spacing: 1px;line-height: 52px;text-align: center;text-transform: uppercase;text-decoration: none;border-radius: 25px;background-color: #000000;">
+																	Avail Offer
+																</a>
+																<!--[if mso]>
+																</center>
+																</v:roundrect>
+																<![endif]-->
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table><!-- end row -->
+
+				<table class="row row__4" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td align="center" valign="top">
+							<table class="fullwidth" role="presentation" width="720" align="center" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td width="100%" align="center" valign="top" bgcolor="#ffffff" style="padding: 60px 30px;">
+										<table class="fullwidth" width="480" align="center" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td align="center" valign="top">
+													<h5 style="color: #000000;font-size: 18px;font-weight: 600;font-family: 'Montserrat', sana-serif;letter-spacing: 0;line-height: 24px;text-transform: none;">
+														Use the <b>Coupon Code</b> on any of the below Design & Coding or Only Coding Services
+													</h5>
+												</td>
+											</tr>
+											<tr>
+												<td align="center" valign="top" style="padding: 50px 0;">
+													<h5 style="color: #000000;font-size: 20px;font-weight: 600;font-family: 'Montserrat', sana-serif;letter-spacing: 0;line-height: 28px;text-transform: none;">
+														Banners | Email Campaign Management | Web Development | SEO | SEM
+													</h5>
+												</td>
+											</tr>
+											<tr>
+												<td align="center" valign="top">
+													<table width="290" align="center" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="middle" style="border: 3px solid #000000;">
+																<!--[if mso]>
+																<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.upwork.com/freelancers/mdeliaschowdhury" style="width:290px;height:52px;v-text-anchor:middle;border:0" arcsize="0%" stroke="f" fillcolor="#ffffff">
+																<w:anchorlock/>
+																<center>
+																<![endif]-->
+																<a href="https://www.linkedin.com" style="display: inline-block;width: 100%;padding: 0;color: #000000;font-size: 18px;font-weight: 600;font-family: 'Montserrat', sans-serif;letter-spacing: 1px;line-height: 46px;text-align: center;text-transform: uppercase;text-decoration: none;border: 0;border-radius: 0;background-color: #ffffff;">
+																	Share Requirements
+																</a>
+																<!--[if mso]>
+																</center>
+																</v:roundrect>
+																<![endif]-->
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table><!-- end row -->
+
+				<table class="row row__5" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td align="center" valign="top">
+							<table class="fullwidth" role="presentation" width="720" align="center" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td width="100%" align="center" valign="top" bgcolor="#efefef" style="padding: 50px 0 20px;">
+										<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td align="center" valign="top" style="padding: 0 30px;">
+													<table class="fullwidth" align="left" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="middle" style="padding: 0;font-size: 0;">
+																<a href="https://www.upwork.com/freelancers/mdeliaschowdhury" style="margin: 0;padding: 0;display: inline-block;width: 100%;">
+																	<img src="images/logo.png" alt="Logo Missing" width="100%" style="display: inline-block;max-width: 138px;vertical-align: middle;">
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td width="100%" align="center" valign="top" style="padding: 30px 15px 0;">
+													<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td class="fullwidthblock" width="482" align="center" valign="top">
+																<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td align="center" valign="top" style="padding: 0 15px 30px;">
+																			<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																				<tr>
+																					<td class="fullcenter" align="left" valign="top" style="padding: 0 0 12px;">
+																						<p style="color: #2d2d2d;font-size: 14px;font-weight: 400;font-family: 'Montserrat', sans-serif;line-height: 18px;">
+																							Email monks is now <a href="#"  style="color: #2d2d2d;font-size: 14px;font-weight: 400;font-family: 'Montserrat', sans-serif;line-height: 14px;text-decoration: underline dotted !important;">Email Uplers</a>
+																						</p>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td class="fullcenter" align="left" valign="top" style="padding: 0 0 12px;">
+																						<p style="color: #2d2d2d;font-size: 14px;font-weight: 400;font-family: 'Montserrat', sans-serif;line-height: 18px;">
+																							9665 Granite Ridge Dr. Suite 200, San Diego CA
+																						</p>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td class="fullcenter" align="left" valign="top" style="padding: 0 0 12px;">
+																						<p style="color: #2d2d2d;font-size: 14px;font-weight: 400;font-family: 'Montserrat', sans-serif;line-height: 18px;">
+																							&copy; Copyright 2022 Uplers, All Rights Reserved.
+																						</p>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td class="fullcenter" align="left" valign="top">
+																						<a href="#" style="color: #2d2d2d;font-size: 14px;font-weight: 400;font-family: 'Montserrat', sans-serif;line-height: 14px;text-decoration: underline dotted !important;">
+																							Unsubscribe
+																						</a>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+															<td class="fullwidthblock" width="208" align="center" valign="top">
+																<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td align="center" valign="top" style="padding: 0 15px 30px;">
+																			<table class="fullwidth" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																				<tr>
+																					<td class="fullcenter" align="left" valign="top" style="padding: 0 0 20px;">
+																						<p style="color: #2d2d2d;font-size: 14px;font-weight: 400;font-family: 'Montserrat', sans-serif;line-height: 14px;">
+																							Follow us on :
+																						</p>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td align="center" valign="middle">
+																						<table align="center" cellspacing="0" cellpadding="0" border="0">
+																							<tr>
+																								<td align="center" valign="middle" style="font-size: 0;">
+																									<a href="https://www.upwork.com/freelancers/mdeliaschowdhury" style="display: inline-block;text-decoration: none;">
+																										<img src="images/social-icon-facebook.png" alt="Icon Missing" width="34" style="display: inline-block;outline: 0;">
+																									</a>
+																								</td>
+																								<td align="center" valign="middle" style="padding-left: 14px;font-size: 0;">
+																									<a href="https://www.upwork.com/freelancers/mdeliaschowdhury" style="display: inline-block;text-decoration: none;">
+																										<img src="images/social-icon-instagram.png" alt="Icon Missing" width="34" style="display: inline-block;outline: 0;">
+																									</a>
+																								</td>
+																								<td align="center" valign="middle" style="padding-left: 14px;font-size: 0;">
+																									<a href="https://www.upwork.com/freelancers/mdeliaschowdhury" style="display: inline-block;text-decoration: none;">
+																										<img src="images/social-icon-linkedin.png" alt="Icon Missing" width="34" style="display: inline-block;outline: 0;">
+																									</a>
+																								</td>
+																								<td align="center" valign="middle" style="padding-left: 14px;font-size: 0;">
+																									<a href="https://www.upwork.com/freelancers/mdeliaschowdhury" style="display: inline-block;text-decoration: none;">
+																										<img src="images/social-icon-twitter.png" alt="Icon Missing" width="34" style="display: inline-block;outline: 0;">
+																									</a>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table><!-- end row -->
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
