@@ -1,0 +1,814 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+	<meta name="color-scheme" content="light dark">
+	<meta name="supported-color-schemes" content="light dark only">
+    <title>01 : CNC Cabinetry</title>
+
+	<link rel="icon" type="image/png" href="images/titleicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+
+    <!-- CSS RESET : BEGIN -->
+	<style>
+		@font-face {
+			font-family: 'Neue Plak regular';
+			font-style: normal;
+			font-weight: normal;
+			src: url('fonts/Neue\ Plak\ Regular.otf') format('opentype');
+		}
+		@font-face {
+			font-family: 'Neue Plak SemiBold';
+			font-style: normal;
+			font-weight: normal;
+			src: url('fonts/Neue\ Plak\ SemiBold.otf') format('opentype');
+		}
+		@font-face {
+			font-family: 'Neue Plak Bold';
+			font-style: normal;
+			font-weight: normal;
+			src: url('fonts/Neue\ Plak\ Bold.otf') format('opentype');
+		}
+		@font-face {
+			font-family: 'Neue Plak Extended Regular';
+			font-style: normal;
+			font-weight: normal;
+			src: url('fonts/Neue\ Plak\ Extended\ Regular.otf') format('opentype');
+		}
+		@font-face {
+			font-family: 'Neue Plak ExtendSemiBold';
+			font-style: normal;
+			font-weight: normal;
+			src: url('fonts/Neue\ Plak\ Extended\ SemiBold.otf') format('opentype');
+		}
+		@font-face {
+			font-family: 'Neue Plak ExtendBlack';
+			font-style: normal;
+			font-weight: normal;
+			src: url('fonts/Neue\ Plak\ Extended\ Black.otf') format('opentype');
+		}
+	</style>
+    <style>
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+		/* Outlook Desktop Client make an issue when setting px for line height of the BODY*/
+        html,
+		body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			height: 100% !important;
+			width: 100% !important;
+			line-height: 100% !important;
+			background: #f1f1f1;
+		}
+
+		:root {
+			color-scheme: light dark;
+			supported-color-schemes: light dark;
+		}
+
+		/* What it does: Stops email clients resizing small text. */
+		* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		/* What it does: Centers email on Android 4.4 */
+		div[style*="margin: 16px 0"] {
+			margin: 0 !important;
+		}
+
+		/* What it does: Stops Outlook from adding extra spacing to tables. */
+		table,
+		td {
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+		}
+
+		/* What it does: Fixes webkit padding issue. */
+		table {
+			border-spacing: 0 !important;
+			border-collapse: separate !important;
+			table-layout: fixed !important;
+			margin: 0 auto !important;
+		}
+
+		/* What it does: Uses a better rendering method when resizing images in IE. */
+		img {
+			-ms-interpolation-mode:	bicubic;
+		}
+
+		/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+		a {
+			text-decoration: none !important;
+		}
+
+		/* What it does: A work-around for email clients meddling in triggered links. */
+		*[x-apple-data-detectors],  /* iOS */
+		.unstyle-auto-detected-links *,
+		.aBn {
+			border-bottom: 0 !important;
+			cursor: default !important;
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
+
+		/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+		.a6S {
+			display: none !important;
+			opacity: 0.01 !important;
+		}
+
+		/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+		.im {
+			color: inherit !important;
+		}
+
+		/* If the above doesn't work, add a .g-img class to any image in question. */
+		img.g-img + div {
+			display: none !important;
+		}
+
+		u + .body .gmail-blend-screen { 
+			background:#323232; mix-blend-mode:screen; 
+		}
+		u + .body .gmail-blend-difference { 
+			background:#323232; mix-blend-mode:difference; 
+		}
+
+		/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+		/* Create one of these media queries for each additional viewport size you'd like to fix */
+
+		/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+		@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+			u ~ div .email-container {
+				min-width: 320px !important;
+			}
+		}
+		/* iPhone 6, 6S, 7, 8, and X */
+		@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+			u ~ div .email-container {
+				min-width: 375px !important;
+			}
+		}
+		/* iPhone 6+, 7+, and 8+ */
+		@media only screen and (min-device-width: 414px) {
+			u ~ div .email-container {
+				min-width: 414px !important;
+			}
+		}
+    </style>
+    <!-- CSS RESET : END -->
+
+	<!-- Allow for better image rendering on Windows hi-DPI displays. -->
+	<!--[if mso]>
+	<noscript>
+		<xml>
+			<o:OfficeDocumentSettings>
+			<o:AllowPNG/>
+			<o:PixelsPerInch>96</o:PixelsPerInch>
+			</o:OfficeDocumentSettings>
+		</xml>
+	</noscript>
+	<![endif]-->
+	<!--[if lte mso 11]>
+        <style type="text/css">
+			.mj-outlook-group-fix { width:100% !important; }
+        </style>
+    <![endif]-->
+
+    <!-- PROGRESSIVE ENHANCEMENTS : BEGIN -->
+    <style>
+		body {
+			color: #2d2d2d;
+			font-size: 15px;
+			font-weight: 400;
+			font-family: 'Inter', sans-serif;
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin: 0;
+			padding: 0;
+			font-family: 'Inter', sans-serif;
+		}
+		p {
+			margin: 0;
+			padding: 0;
+			font-size: 14px;
+			font-family: 'Inter', sans-serif;
+			font-weight: 400;
+		}
+		a {
+			margin: 0;
+			padding: 0;
+			font-family: 'Inter', sans-serif;
+		}
+		@media (prefers-color-scheme: dark) {
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			p,
+			span {
+				color: #ffffff !important;
+			}
+			.s-ht {
+				color: #eeb130 !important;
+			}
+			.h1-ht {
+				color: #ffffff !important;
+			}
+			.btn-link {
+				color: #ffffff !important;
+			}
+			.footer-link {
+				color: #eeb130 !important;
+			}
+		}
+		@media screen and (max-width: 575px) {
+			.smartviews .fullwidth {
+				width: 100% !important;
+			}
+			.smartviews .fullheight {
+				height: 100% !important;
+			}
+			.smartviews .fullwidthblock {
+				display: block !important;
+				width: 100% !important;
+				height: 100% !important;
+			}
+			.smartviews .widthauto {
+				width: auto !important;
+			}
+			.smartviews .w-24 {
+				width: 24px !important;
+			}
+			.smartviews .d-block {
+				display: block !important;
+			}
+			.smartviews .d-none {
+				display: none !important;
+			}
+			.smartviews .fullcenter {
+				text-align: center !important;
+			}
+			.smartviews .p-rl-20 {
+				padding-right: 20px !important;
+				padding-left: 20px !important;
+			}
+			.smartviews .pt-15 {
+				padding-top: 15px !important;
+			}
+			.smartviews .pt-25 {
+				padding-top: 25px !important;
+			}
+			.smartviews .pb-40 {
+				padding-bottom: 40px !important;
+			}
+			.smartviews .p-3025 {
+				padding: 30px 25px !important;
+			}
+			.smartviews .s-ht {
+				font-size: 32px !important;
+			}
+			.smartviews .h1-ht {
+				font-size: 38px !important;
+				line-height: 38px !important;
+			}
+		}
+    </style>
+	<!-- PROGRESSIVE ENHANCEMENTS : END -->
+</head>
+
+<body class="body" width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; overflow-x: hidden;background-color: #E7E7E7;">
+	<div style="display: none;font-size: 0px;line-height: 1px;color: #353535;max-width: 0;max-height: 0;overflow: hidden;">Welcome to Deja Blue</div>
+	<div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+		&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+	</div>
+	<div style="background-color: #E7E7E7;">
+		<table role="presentation" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td class="smartviews" align="center" valign="top">
+					<table class="row row__1" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td align="center" valign="top">
+								<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td align="center" valign="top" bgcolor="#e7e7e7" style="background: #e7e7e7;background-color: #e7e7e7;">
+											<table class="fullwidth" role="presentation" width="600" align="center" cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td width="100%" height="100%" align="left" valign="top" bgcolor="#2c323a" background="images/hero-bg.png" style="background: url('images/hero-bg.png');background-size: cover;background-repeat: no-repeat;background-position: center center;background-color: #2c323a;">
+														<div style="margin:0 auto;max-width: 600px;">
+															<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																<tr>
+																	<td class="p-rl-20" align="left" valign="top" style="padding: 46px 50px 566px;">
+																		<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																			<tr>
+																				<td class="fullwidthblock" align="left" valign="top">
+																					<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																						<tr>
+																							<td class="pb-40" align="left" valign="top">
+																								<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																									<tr>
+																										<td class="fullcenter" align="left" valign="middle" style="font-size: 0px;">
+																											<a href="https://cnccabinetry.com/" target="_blank" style="font-size: 0px;text-decoration: none;">
+																												<img src="images/logo.png" alt="Here is Logo">
+																											</a>
+																										</td>
+																									</tr>
+																								</table>
+																							</td>
+																						</tr>
+																					</table>
+																				</td>
+																				<td class="fullwidthblock" width="140" align="left" valign="middle">
+																					<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																						<tr>
+																							<td align="left" valign="top">
+																								<table class="fullwidth" align="right" cellspacing="0" cellpadding="0" border="0">
+																									<tr>
+																										<td class="fullcenter" align="left" valign="middle">
+																											<p style="color: #ffffff;font-size: 14px;font-family: 'Neue Plak ExtendBlack';letter-spacing: 0;line-height: 18px;">
+																												America's Best Value in Cabinetry
+																											</p>
+																										</td>
+																									</tr>
+																								</table>
+																							</td>
+																						</tr>
+																					</table>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</div>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						
+					</table><!-- end row -->
+
+					<table class="row row__2" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td align="center" valign="top">
+								<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td align="left" valign="top" bgcolor="#e7e7e7" style="background: #e7e7e7;background-color: #e7e7e7;">
+											<table class="fullwidth" role="presentation" width="600" align="center" cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td class="p-rl-20" align="center" valign="top" bgcolor="#2c323a" style="padding: 40px 50px;background: #2c323a;background-color: #2c323a;">
+														<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+															<tr>
+																<td align="center" valign="top">
+																	<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																		<tr>
+																			<td class="fullcenter" align="left" valign="top">
+																				<p style="color: #ffffff;font-size: 12px;font-family: 'Neue Plak Regular';letter-spacing: 0;line-height: 12px;text-transform: uppercase;">
+																					The cnc difference
+																				</p>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="fullcenter" align="left" valign="top" style="padding: 30px 0px;">
+																				<h2 style="color: #ffffff;font-size: 40px;font-family: 'Neue Plak Extended Regular';letter-spacing: 0px; line-height: 40px;">
+																					Value Redifined
+																				</h2>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td align="left" valign="top">
+																				<table class="fullwidth" align="left" cellspacing="0" cellpadding="0" border="0">
+																					<tr>
+																						<td align="center" valign="top">
+																							<table width="146" align="center" cellspacing="0" cellpadding="0" border="0">
+																								<tr>
+																									<td width="100%" height="1px" bgcolor="#fcda21" align="center" valign="top"></td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td align="left" valign="top" style="padding-top: 30px;">
+																	<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																		<tr>
+																			<td class="fullcenter" align="left" valign="top">
+																				<p style="color: #ffffff;font-size: 13px;font-family: 'Neue Plak Regular';letter-spacing: 0px;line-height: 18px;">
+																					We distinguish ourselves by consistently delivering exceptional value to our customers. Our commitment to quality craftsmanship, personalized service, and competitive pricing ensures that you receive nothing but our best on every order.
+																				</p>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table><!-- end row -->
+
+					<table class="row row__3" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td align="center" valign="top">
+								<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td align="left" valign="top" bgcolor="#e7e7e7" style="background: #e7e7e7;background-color: #e7e7e7;">
+											<table class="fullwidth" role="presentation" width="600" align="center" cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td align="center" valign="top" style="padding: 0;">
+														<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+															<tr>
+																<td align="center" valign="top" style="padding: 0;font-size: 0px;">
+																	<img src="images/banner-img.jpg" width="100%" alt="Image Missing" style="border-radius: 0;">
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td class="p-rl-20" align="left" valign="top" bgcolor="#ffffff" style="padding: 40px 50px;">
+														<table align="center" cellspacing="0" cellpadding="0" border="0">
+															<tr>
+																<td align="center" valign="top">
+																	<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																		<tr>
+																			<td align="center" valign="top" bgcolor="" style="border: 0;border-radius: 0;background: transparent;background-color: transparent;">
+																				<!--[if mso]>
+																				<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.cnccabinetry.com/become-a-dealer" target="_blank" style="width:500px;height:54px;v-text-anchor:middle; arcsize="25px" strokecolor="#fcda21" storkeweight="1px" fillcolor="#fcda21">
+																				<w:anchorlock/>
+																				<center>
+																				<![endif]-->
+																				<div>
+																					<a class="btn-link" href="https://www.cnccabinetry.com/become-a-dealer" target="_blank" style="display: block;width: auto;max-width: 100%;color:#2c323a;padding: 20px 16px;font-size: 16px; font-family: 'Neue Plak SemiBold';line-height: 16px;text-align: center;text-transform: initial;text-decoration: none;border: 0;border-radius: 25px;-webkit-text-size-adjust: none;background-color: #fcda21;">
+																						Click here to become a dealer today!
+																					</a>
+																				</div>
+																				<!--[if mso]>
+																				</center>
+																				</v:rect>
+																				<![endif]-->
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table><!-- end row -->
+
+					<table class="row row__4" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td align="center" valign="top">
+								<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td align="left" valign="top" bgcolor="#e7e7e7" style="background: #e7e7e7;background-color: #e7e7e7;">
+											<table class="fullwidth" role="presentation" width="600" align="center" cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td class="p-rl-20" align="center" valign="top" bgcolor="#2c323a" style="padding: 40px 50px;background: #2c323a;background-color: #2c323a;">
+														<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+															<tr>
+																<td align="center" valign="top">
+																	<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																		<tr>
+																			<td class="fullcenter" align="left" valign="top">
+																				<p style="color: #ffffff;font-size: 12px;font-family: 'Neue Plak Regular';letter-spacing: 0;line-height: 12px;text-transform: uppercase;">
+																					KBIS 2025
+																				</p>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="fullcenter" align="left" valign="top" style="padding: 30px 0px;">
+																				<h2 style="color: #ffffff;font-size: 26px;font-family: 'Neue Plak Extended Regular';letter-spacing: 0px; line-height: 40px;">
+																					More style. More color. More range.
+																				</h2>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td align="left" valign="top">
+																				<table class="fullwidth" align="left" cellspacing="0" cellpadding="0" border="0">
+																					<tr>
+																						<td align="center" valign="top">
+																							<table width="146" align="center" cellspacing="0" cellpadding="0" border="0">
+																								<tr>
+																									<td width="100%" height="1px" bgcolor="#fcda21" align="center" valign="top"></td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td align="left" valign="top" style="padding-top: 30px;">
+																	<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																		<tr>
+																			<td class="fullcenter" align="left" valign="top">
+																				<p style="color: #ffffff;font-size: 13px;font-family: 'Neue Plak Regular';letter-spacing: 0px;line-height: 18px;">
+																					KBIS this year wasn’t just about the new product on display—it was about the incredible team behind hard work. From the designers to the builders to the ones who made sure our booth was the place to be, every step was powered by passion, talent, and teamwork.
+																				</p>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table><!-- end row -->
+
+					<table class="row row__5" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td align="center" valign="top">
+								<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td align="left" valign="top" bgcolor="#e7e7e7" style="background: #e7e7e7;background-color: #e7e7e7;">
+											<table class="fullwidth" role="presentation" width="600" align="center" cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td align="center" valign="top" style="padding: 0;">
+														<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+															<tr>
+																<td align="center" valign="top" style="padding: 0;font-size: 0px;">
+																	<img src="images/card-img-i.jpg" width="100%" alt="Image Missing" style="border-radius: 0;">
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table><!-- end row -->
+
+					<table class="row row__6" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td align="center" valign="top">
+								<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td align="left" valign="top" bgcolor="#e7e7e7" style="background: #e7e7e7;background-color: #e7e7e7;">
+											<table class="fullwidth" role="presentation" width="600" align="center" cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td align="center" valign="top" style="padding: 0;">
+														<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+															<tr>
+																<td class="fullwidth" width="600" align="left" valign="top">
+																	<table class="fullwidth" width="600" align="center" cellspacing="0" cellpadding="0" border="0">
+																		<tr>
+																			<td class="fullwidth" width="600" align="left" valign="top" bgcolor="#303032">
+																				<table class="fullwidth" width="600" align="center" cellspacing="0" cellpadding="0" border="0">
+																					<tr>
+																						<td class="fullwidthblock" width="250" align="center" valign="top">
+																							<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																								<tr>
+																									<td class="fullwidth" width="250" align="left" valign="top" style="font-size: 0px;">
+																										<img class="fullwidth" src="images/card-img-ii.jpg" width="250" alt="Image Missing" style="max-width: 100%;">
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																						<td class="fullwidthblock" width="350" align="center" valign="top">
+																							<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																								<tr>
+																									<td class="fullwidth" width="350" align="left" valign="top" style="font-size: 0px;">
+																										<img class="fullwidth" src="images/card-img-iii.jpg" width="350" alt="Image Missing" style="max-width: 100%;">
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table><!-- end row -->
+
+					<table class="row row__7" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td align="center" valign="top">
+								<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td align="left" valign="top" bgcolor="#e7e7e7" style="background: #e7e7e7;background-color: #e7e7e7;">
+											<table class="fullwidth" role="presentation" width="600" align="center" cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td align="center" valign="top" style="padding: 0;">
+														<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+															<tr>
+																<td align="center" valign="top" style="padding: 0;font-size: 0px;">
+																	<img src="images/card-img-iv.jpg" width="100%" alt="Image Missing" style="border-radius: 0;">
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table><!-- end row -->
+	
+					<table class="row row__8" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td align="center" valign="top" bgcolor="#e7e7e7" style="font-size: 0px;background: #e7e7e7;background-color: #e7e7e7;">
+								<table class="fullwidth" role="presentation" width="600" align="center" cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td class="p-rl-20" align="center" valign="top" bgcolor="#2c323a" style="padding: 40px 50px 0px;background: #2c323a;background-color: #2c323a;">
+											<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td class="fullwidthblock" width="250" align="center" valign="top">
+														<table class="fullwidth" align="left" cellspacing="0" cellpadding="0" border="0">
+															<tr>
+																<td class="pb-40" align="center" valign="top" style="font-size: 0px;">
+																	<a href="https://www.cnccabinetry.com/" target="_blank" style="font-size: 0px;text-decoration: none;">
+																		<img src="images/footer-logo.png" alt="Logo Missing">
+																	</a>
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td class="fullwidthblock" width="250" align="center" valign="top">
+														<table class="fullwidth" align="right" cellspacing="0" cellpadding="0" border="0">
+															<tr>
+																<td align="center" valign="top" style="font-size: 0px;">
+																	<img src="images/warranty.png" alt="Logo Missing">
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table><!-- end row -->
+	
+					<table class="row row__9" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td align="center" valign="top" bgcolor="#e7e7e7" style="font-size: 0px;background: #e7e7e7;background-color: #e7e7e7;">
+								<table class="fullwidth" role="presentation" width="600" align="center" cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td class="p-rl-20" align="center" valign="top" bgcolor="#2c323a" style="padding: 40px 50px;background: #2c323a;background-color: #2c323a;">
+											<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td align="left" valign="top">
+														<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+															<tr>
+																<td class="fullwidthblock" width="120" align="left" valign="make">
+																	<table align="center" cellspacing="0" cellpadding="0" border="0">
+																		<tr>
+																			<td class="pb-40" align="left" valign="middle">
+																				<p style="color: #ffffff;font-size: 9px;font-family: 'Neue Plak Regular';letter-spacing: 0px;line-height: 12px;">
+																					Folloow us on social media for the latest updates!
+																				</p>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+																<td class="fullwidthblock" width="380" align="left" valign="make">
+																	<table class="fullwidth" align="right" cellspacing="0" cellpadding="0" border="0">
+																		<tr>
+																			<td align="center" valign="middle" style="padding: 0 10px;font-size: 0px;">
+																				<a href="https://www.facebook.com/cnccabinetry" target="_blank" style="display: inline-block;text-decoration: none;">
+																					<img class="w-24" src="images/social-icon-facebook.png" alt="Icon Missing" width="24" style="display: inline-block;outline: 0;">
+																				</a>
+																			</td>
+																			<td align="center" valign="middle" style="padding: 0 10px;font-size: 0px;">
+																				<a href="https://www.instagram.com/cnc_cabinetry/" target="_blank" style="display: inline-block;text-decoration: none;">
+																					<img class="w-24" src="images/social-icon-insta.png" alt="Icon Missing" width="24" style="display: inline-block;outline: 0;">
+																				</a>
+																			</td>
+																			<td align="center" valign="middle" style="padding: 0 10px;font-size: 0px;">
+																				<a href="https://www.linkedin.com/company/cnc-cabinetry-1" target="_blank" style="display: inline-block;text-decoration: none;">
+																					<img class="w-24" src="images/social-icon-linkedin.png" alt="Icon Missing" width="24" style="display: inline-block;outline: 0;">
+																				</a>
+																			</td>
+																			<td align="center" valign="middle" style="padding: 0 10px;font-size: 0px;">
+																				<a href="https://www.tiktok.com/@cnc_cabinetry" target="_blank" style="display: inline-block;text-decoration: none;">
+																					<img class="w-24" src="images/social-icon-tiktok.png" alt="Icon Missing" width="24" style="display: inline-block;outline: 0;">
+																				</a>
+																			</td>
+																			<td align="center" valign="middle" style="padding: 0 10px;font-size: 0px;">
+																				<a href="https://www.youtube.com/channel/UCXSYP_A1ZByK-cHaqchkJpg" target="_blank" style="display: inline-block;text-decoration: none;">
+																					<img class="w-24" src="images/social-icon-youtube.png" alt="Icon Missing" width="24" style="display: inline-block;outline: 0;">
+																				</a>
+																			</td>
+																			<td align="center" valign="middle" style="padding: 0 10px;font-size: 0px;">
+																				<a href="https://www.pinterest.com/cnccabinetry/" target="_blank" style="display: inline-block;text-decoration: none;">
+																					<img class="w-24" src="images/social-icon-pinterest.png" alt="Icon Missing" width="24" style="display: inline-block;outline: 0;">
+																				</a>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" valign="top" style="padding: 41px 0 0;font-size: 0px;">
+														<table align="center" cellspacing="0" cellpadding="0" border="0">
+															<tr>
+																<td align="center" valign="middle">
+																	<table align="center" cellspacing="0" cellpadding="0" border="0">
+																		<tr>
+																			<td align="center" valign="top">
+																				<a class="footer-link" href="https://cnccabinetry.com/" target="_blank" style="display: inline-block;color: #ffffff !important;font-size: 12px;font-family: 'Neue Plak Regular';line-height: 16px;text-decoration: underline !important;">
+																					www.cnccabinetry.com
+																				</a>
+																			</td>
+																			<td align="center" valign="top" style="padding: 0px 15px;">
+																				<a class="footer-link" href="http://www.please-add-your-link-here.com" target="_blank" style="display: inline-block;color: #ffffff !important;font-size: 12px;font-family: 'Neue Plak Regular';line-height: 16px;text-decoration: underline !important;">
+																					Unsubscribe
+																				</a>
+																			</td>
+																			<td class="footer-link" align="center" valign="top">
+																				<a href="http://www.please-add-your-link-here.com" target="_blank" style="display: inline-block;color: #ffffff !important;font-size: 12px;font-family: 'Neue Plak Regular';line-height: 16px;text-decoration: underline !important;">
+																					View in Browser
+																				</a>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table><!-- end row -->
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
