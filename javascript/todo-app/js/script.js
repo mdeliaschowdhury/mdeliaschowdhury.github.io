@@ -14,7 +14,7 @@ let tasks = [];
 let secondInterval = null;
 
 const selectForm = document.querySelector('.todo-form'); // Select input
-console.log(selectForm)
+
 window.addEventListener('load', () => {
     if(tasks.length > 0) {
         showTimestamp();
@@ -24,7 +24,6 @@ window.addEventListener('load', () => {
 // Load tasks from localStorage
 const loadTasks = () => {
     const storedTasks = localStorage.getItem(STORAGE_KEY);
-    console.log(storedTasks);
     if (storedTasks) {
         tasks = JSON.parse(storedTasks);
     }
@@ -41,7 +40,6 @@ selectForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const getTask = e.target.task;
     const text = getTask.value.trim(); 
-    console.log(text);
 
     if (validateInputTodo(text, getTask)) {
         const task = {
@@ -170,7 +168,6 @@ function editTask(id) {
 
 function saveTask(id) {
     const listItem = document.querySelector(`li[data-id="${id}"]`);
-    const taskText = listItem.querySelector('.task-text');
     const editInput = listItem.querySelector('.edit-input');
     const newText = editInput.value.trim();
     if (newText) {
@@ -195,18 +192,6 @@ function deleteTask(id) {
         stopClock();
     }
 }
-
-// function toggleTaskCompletion(id) {
-//     const listItem = document.querySelector(`li[data-id="${id}"]`);
-//     const checkbox = listItem.querySelector('.complete-checkbox');
-//     const task = tasks.find(task => task.id === id);
-//     if (task) {
-//         task.completed = checkbox.checked;
-//         saveTasks();
-//         renderTasks();
-//         updateStatus();
-//     }
-// }
 
 function updateStatus() {
     const totalTasks = tasks.length;
