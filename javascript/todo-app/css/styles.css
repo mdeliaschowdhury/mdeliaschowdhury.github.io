@@ -258,6 +258,9 @@ PAGE STYLES
     border-radius: 5px;
     background-color: #f9f9f9;
 }
+.checkbox {
+    cursor: pointer;
+}
 .task-text {
     display: inline-block;
     flex: 1;

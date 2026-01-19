@@ -132,7 +132,7 @@ function renderTasks() {
     }
     taskList.innerHTML = tasks.map(task => `
         <li class="task-item" data-id="${task.id}">
-            <input type="checkbox" class="complete-checkbox" ${task.completed ? 'checked' : ''} onchange="toggleTaskCompletion(${task.id})"/>
+            <input type="checkbox" class="checkbox" ${task.completed ? 'checked' : ''} onchange="toggleTaskCompletion(${task.id})"/>
             <span class="task-text ${task.completed ? 'completed' : ''}">${task.content}</span>
             <input type="text" name="" class="edit-input" value="${task.content}" "/>
             <button class="btn btn-edit" onclick="editTask(${task.id})">Edit</button>
