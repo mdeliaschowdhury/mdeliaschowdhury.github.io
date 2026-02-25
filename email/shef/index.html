@@ -1,0 +1,1055 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+	<meta name="color-scheme" content="light dark">
+	<meta name="supported-color-schemes" content="light dark only">
+    <title>03 : Shef HTML Email Template</title>
+
+	<link rel="icon" type="image/png" href="images/titleicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+
+	<!-- CUSTOM FONT : BEGIN -->
+	<style>
+		@font-face {
+			font-family: 'JaSN-Bold';
+			font-style: normal;
+			font-weight: normal;
+			src: url('fonts/JaSN-Bold.otf') format('opentype');
+		}
+		@font-face {
+			font-family: 'JaSN-Regular';
+			font-style: normal;
+			font-weight: normal;
+			src: url('fonts/JaSN-Regular.otf') format('opentype');
+		}
+	</style>
+	<!-- CUSTOM FONT : END-->
+
+    <!-- CSS RESET : BEGIN -->
+    <style>
+        html,
+		body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			height: 100% !important;
+			width: 100% !important;
+			line-height: 100% !important;
+			background: #f1f1f1;
+		}
+
+		:root {
+			color-scheme: light dark;
+			supported-color-schemes: light dark;
+		}
+
+		* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		div[style*="margin: 16px 0"] {
+			margin: 0 !important;
+		}
+
+		table,
+		td {
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+		}
+
+		table {
+			border-spacing: 0 !important;
+			border-collapse: separate !important;
+			table-layout: fixed !important;
+			margin: 0 auto !important;
+		}
+
+		img {
+			-ms-interpolation-mode:	bicubic;
+		}
+
+		a {
+			text-decoration: none !important;
+		}
+
+		*[x-apple-data-detectors],  /* iOS */
+		.unstyle-auto-detected-links *,
+		.aBn {
+			border-bottom: 0 !important;
+			cursor: default !important;
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
+
+		.a6S {
+			display: none !important;
+			opacity: 0.01 !important;
+		}
+
+		.im {
+			color: inherit !important;
+		}
+
+		img.g-img + div {
+			display: none !important;
+		}
+
+		u + .body .gmail-blend-screen { 
+			background:#323232; mix-blend-mode:screen; 
+		}
+		u + .body .gmail-blend-difference { 
+			background:#323232; mix-blend-mode:difference; 
+		}
+
+		@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+			u ~ div .email-container {
+				min-width: 320px !important;
+			}
+		}
+		
+		@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+			u ~ div .email-container {
+				min-width: 375px !important;
+			}
+		}
+		
+		@media only screen and (min-device-width: 414px) {
+			u ~ div .email-container {
+				min-width: 414px !important;
+			}
+		}
+    </style>
+    <!-- CSS RESET : END -->
+
+	<!-- Allow for better image rendering on Windows hi-DPI displays. -->
+	<!--[if mso]>
+	<noscript>
+		<xml>
+			<o:OfficeDocumentSettings>
+			<o:AllowPNG/>
+			<o:PixelsPerInch>96</o:PixelsPerInch>
+			</o:OfficeDocumentSettings>
+		</xml>
+	</noscript>
+	<![endif]-->
+	<!--[if lte mso 11]>
+        <style type="text/css">
+			.mj-outlook-group-fix { width:100% !important; }
+        </style>
+    <![endif]-->
+
+    <!-- PROGRESSIVE ENHANCEMENTS : BEGIN -->
+    <style>
+		body {
+			color: #2d2d2d;
+			font-size: 15px;
+			font-weight: 400;
+			font-family: 'JaSN-Regular', Helvetica, Arial, sans-serif;
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin: 0;
+			padding: 0;
+			font-family: 'JaSN-Bold', Helvetica, Arial, sans-serif;
+		}
+		p {
+			margin: 0;
+			padding: 0;
+			font-size: 14px;
+			font-family: 'JaSN-Regular', Helvetica, Arial, sans-serif;
+			font-weight: 400;
+		}
+		a {
+			margin: 0;
+			padding: 0;
+			font-family: 'JaSN-Regular', Helvetica, Arial, sans-serif;
+		}
+		@media screen and (max-width: 575px) {
+			.smartviews .fullwidth {
+				width: 100% !important;
+			}
+			.smartviews .fullheight {
+				height: 100% !important;
+			}
+			.smartviews .fullwidthblock {
+				display: block !important;
+				width: 100% !important;
+				height: 100% !important;
+			}
+			.smartviews .widthauto {
+				width: auto !important;
+			}
+			.smartviews .d-block {
+				display: block !important;
+			}
+			.smartviews .d-none {
+				display: none !important;
+			}
+			.smartviews .fullcenter {
+				text-align: center !important;
+			}
+			.smartviews .gpt-15 {
+				padding-top: 15px !important;
+			}
+			.smartviews .gpb-15 {
+				padding-bottom: 15px !important;
+			}
+			.smartviews .gprl-15 {
+				padding-right: 15px !important;
+				padding-left: 15px !important;
+			}
+			.smartviews .gprlb-15 {
+				padding-right: 0px !important;
+				padding-left: 0px !important;
+				padding-bottom: 15px !important;
+			}
+			.smartviews .gprl-0 {
+				padding-right: 0px !important;
+				padding-left: 0px !important;
+			}
+			.smartviews ul {
+				list-style: none !important;
+				padding: 0px !important;
+			}
+		}
+    </style>
+	<!-- PROGRESSIVE ENHANCEMENTS : END -->
+</head>
+
+<body class="body" width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; overflow-x: hidden;background-color: #ffffff;">
+	<div style="display: none;font-size: 0px;line-height: 1px;color: #353535;max-width: 0;max-height: 0;overflow: hidden;">Bright Mediterranean Flavors</div>
+	<div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+		&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+	</div>
+	<div style="background-color: #ffffff;">
+		<table role="presentation" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td class="smartviews" align="center" valign="top" bgcolor="#ffffff" style="background: #ffffff;background-color: #ffffff;">
+					<table class="row row__1" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0">
+						<tr>
+							<td align="center" valign="top">
+								<table class="fullwidth" width="600" align="center" cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td class="gprl-15" align="left" valign="top" bgcolor="#35081A" style="padding: 0 30px;background: #35081A;background-color: #35081A;">
+											<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td align="center" valign="middle" style="padding: 16px 0;">
+														<p style="color: #ffffff;font-size: 15px;font-weight: 700;font-family: 'Inter', sans-serif;letter-spacing: 0;line-height: 18px;text-transform: uppercase;text-align: center;">
+															Enjoy 30% OFF YOUR FIRST WEEK OF MEALS
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table><!-- end row -->
+
+					<table class="row row__2" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td align="center" valign="top">
+								<table class="fullwidth" width="600" align="center" cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td align="center" valign="top" bgcolor="#fff9f2" style="padding-top: 33px;padding-bottom: 33px;background: #fff9f2;background-color: #fff9f2;">
+											<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td align="center" valign="top" style="padding: 0;font-size: 0px;">
+														<a href="https://shef.com/" target="_blank" style="font-size: 0px;text-decoration: none;">
+															<img src="images/logo.png" width="117" alt="Logo Missing" style="border-radius: 0;">
+														</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table><!-- end row -->
+
+					<table class="row row__3" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td align="center" valign="top">
+								<table class="fullwidth" width="600" align="center" cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td class="gprl-15" align="center" valign="top" bgcolor="#fff9f2" style="padding: 0 37px 20px;background: #fff9f2;background-color: #fff9f2;">
+											<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td align="left" valign="top" bgcolor="#FFDBC7" style="padding: 30px 0 14px;border-radius: 25px;background: #FFDBC7;background-color: #FFDBC7;">
+														<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+															<tr>
+																<td align="left" valign="top" style="padding: 0 10px">
+																	<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																		<tr>
+																			<td class="fullwidthblock" align="left" valign="top" width="171">
+																				<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																					<tr>
+																						<td align="left" valign="top" style="padding: 0 8px 16px;">
+																							<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																								<tr>
+																									<td class="fullcenter" align="left" valign="middle" style="font-size: 0;">
+																										<img src="images/person-horizontal.png" alt="Image Missing">
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																			<td class="fullwidthblock" align="left" valign="top" width="335">
+																				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+																					<tr>
+																						<td align="left" valign="top" style="padding: 0 8px 16px;">
+																							<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top">
+																										<h1>
+																											<span style="display: inline-block;color: #F01D59;font-size: 42px;font-weight: 700;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 42px;text-transform: uppercase;">
+																												Shef Kwesi R.
+																											</span>
+																										</h1>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="padding-top: 12px;">
+																										<h4>
+																											<span style="display: inline-block;color: #35081A;font-size: 22px;font-weight: 700;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 24px;">
+																												Bright Mediterranean Flavors
+																											</span>
+																										</h4>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="padding-top: 6px;">
+																										<p style="color: #35081A;font-size: 16px;font-weight: 700;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 18px;">
+																											15+ Years of professional experience
+																										</p>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="padding: 16px 0;">
+																										<p style="color: #35081A;font-size: 16px;font-weight: 400;font-family: 'JaSN-Regular', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 18px;">
+																											A passionate shef specializing in modern American cuisine. Joshua creates fresh, inventive comfort food from a place of love for the craft.
+																										</p>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top">
+																										<h6>
+																											<span style="display: inline-block;color: #F01D59;font-size: 16px;font-weight: 700;font-family: 'JaSN-Regular', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 18px;text-transform: uppercase;">
+																												CUISINE
+																											</span>
+																										</h6>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td align="left" valign="top" style="padding-top: 6px;">
+																										<table class="fullwidth" align="left" cellspacing="0" cellpadding="0" border="0">
+																											<tr>
+																												<td align="left" valign="top">
+																													<table align="center" cellspacing="0" cellpadding="0" border="0">
+																														<tr>
+																															<td class="fullcenter" align="center" valign="top">
+																																<span style="color: #35081A;font-size: 13px;font-weight: 400;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;text-transform: uppercase;">
+																																	AMERICAN
+																																</span>
+																															</td>
+																															<td class="fullcenter" align="center" valign="top" style="padding: 0 8px;">
+																																<span style="color: #35081A;font-size: 13px;font-weight: 400;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;text-transform: uppercase;">
+																																	MEDITERRANEAN
+																																</span>
+																															</td>
+																															<td class="fullcenter" align="center" valign="top">
+																																<span style="color: #35081A;font-size: 13px;font-weight: 400;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;text-transform: uppercase;">
+																																	MOROCCAN
+																																</span>
+																															</td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="padding-top: 12px;">
+																										<h6>
+																											<span style="display: inline-block;color: #F01D59;font-size: 16px;font-weight: 700;font-family: 'JaSN-Regular', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 18px;text-transform: uppercase;">
+																												EXPERIENCE & TRAINING
+																											</span>
+																										</h6>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td align="left" valign="top" style="padding-top: 6px;">
+																										<table class="fullwidth" align="left" cellspacing="0" cellpadding="0" border="0">
+																											<tr>
+																												<td align="left" valign="top">
+																													<table align="center" cellspacing="0" cellpadding="0" border="0">
+																														<tr>
+																															<td class="fullcenter" align="center" valign="top">
+																																<span style="color: #35081A;font-size: 13px;font-weight: 400;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;text-transform: uppercase;">
+																																	NYC Restaurants
+																																</span>
+																															</td>
+																															<td class="fullcenter" align="center" valign="top" style="padding-left: 8px;">
+																																<span style="color: #35081A;font-size: 13px;font-weight: 400;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;text-transform: uppercase;">
+																																	Tel Aviv Restaurants
+																																</span>
+																															</td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td align="left" valign="top" style="padding: 0 10px;">
+																	<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																		<tr>
+																			<td class="fullwidthblock" align="left" valign="top">
+																				<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																					<tr>
+																						<td align="left" valign="top" style="padding: 0 8px 16px;">
+																							<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top">
+																										<img src="images/food-card-i.png" alt="Image Missing">
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="padding-top: 10px;">
+																										<p style="color: #35081A;font-size: 12px;font-weight: 400;font-family: 'JaSN-Regular', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;">
+																											Slow-Cooked Butter Beans
+																										</p>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																			<td class="fullwidthblock" align="left" valign="top">
+																				<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																					<tr>
+																						<td align="left" valign="top" style="padding: 0 8px 16px;">
+																							<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="font-size: 0;">
+																										<img src="images/food-card-ii.png" alt="Image Missing">
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="padding-top: 10px;">
+																										<p style="color: #35081A;font-size: 12px;font-weight: 400;font-family: 'JaSN-Regular', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;">
+																											Slow-Cooked Butter Beans
+																										</p>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																			<td class="fullwidthblock" align="left" valign="top">
+																				<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																					<tr>
+																						<td align="left" valign="top" style="padding: 0 8px 16px;">
+																							<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="font-size: 0;">
+																										<img src="images/food-card-ii.png" alt="Image Missing">
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="padding-top: 10px;">
+																										<p style="color: #35081A;font-size: 12px;font-weight: 400;font-family: 'JaSN-Regular', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;">
+																											Slow-Cooked Butter Beans
+																										</p>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table><!-- end row -->
+
+					<table class="row row__4" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td align="center" valign="top">
+								<table class="fullwidth" width="600" align="center" cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td class="gprl-15" align="center" valign="top" bgcolor="#fff9f2" style="padding: 0 37px 20px;background: #fff9f2;background-color: #fff9f2;">
+											<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td align="left" valign="top" bgcolor="#FFDBC7" style="padding: 30px 0 14px;border-radius: 25px;background: #FFDBC7;background-color: #FFDBC7;">
+														<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+															<tr>
+																<td align="left" valign="top" style="padding: 0 10px">
+																	<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																		<tr>
+																			<td class="fullwidthblock" align="left" valign="top" width="171">
+																				<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																					<tr>
+																						<td align="left" valign="top" style="padding: 0 8px 16px;">
+																							<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																								<tr>
+																									<td class="fullcenter" align="left" valign="middle" style="font-size: 0;">
+																										<img src="images/person-horizontal.png" alt="Image Missing">
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																			<td class="fullwidthblock" align="left" valign="top" width="335">
+																				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+																					<tr>
+																						<td align="left" valign="top" style="padding: 0 8px 16px;">
+																							<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top">
+																										<h1>
+																											<span style="display: inline-block;color: #F01D59;font-size: 42px;font-weight: 700;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 42px;text-transform: uppercase;">
+																												Shef Kwesi R.
+																											</span>
+																										</h1>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="padding-top: 12px;">
+																										<h4>
+																											<span style="display: inline-block;color: #35081A;font-size: 22px;font-weight: 700;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 24px;">
+																												Bright Mediterranean Flavors
+																											</span>
+																										</h4>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="padding-top: 6px;">
+																										<p style="color: #35081A;font-size: 16px;font-weight: 700;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 18px;">
+																											15+ Years of professional experience
+																										</p>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="padding: 16px 0;">
+																										<p style="color: #35081A;font-size: 16px;font-weight: 400;font-family: 'JaSN-Regular', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 18px;">
+																											A passionate shef specializing in modern American cuisine. Joshua creates fresh, inventive comfort food from a place of love for the craft.
+																										</p>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top">
+																										<h6>
+																											<span style="display: inline-block;color: #F01D59;font-size: 16px;font-weight: 700;font-family: 'JaSN-Regular', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 18px;text-transform: uppercase;">
+																												CUISINE
+																											</span>
+																										</h6>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td align="left" valign="top" style="padding-top: 6px;">
+																										<table class="fullwidth" align="left" cellspacing="0" cellpadding="0" border="0">
+																											<tr>
+																												<td align="left" valign="top">
+																													<table align="center" cellspacing="0" cellpadding="0" border="0">
+																														<tr>
+																															<td class="fullcenter" align="center" valign="top">
+																																<span style="color: #35081A;font-size: 13px;font-weight: 400;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;text-transform: uppercase;">
+																																	AMERICAN
+																																</span>
+																															</td>
+																															<td class="fullcenter" align="center" valign="top" style="padding: 0 8px;">
+																																<span style="color: #35081A;font-size: 13px;font-weight: 400;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;text-transform: uppercase;">
+																																	MEDITERRANEAN
+																																</span>
+																															</td>
+																															<td class="fullcenter" align="center" valign="top">
+																																<span style="color: #35081A;font-size: 13px;font-weight: 400;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;text-transform: uppercase;">
+																																	MOROCCAN
+																																</span>
+																															</td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="padding-top: 12px;">
+																										<h6>
+																											<span style="display: inline-block;color: #F01D59;font-size: 16px;font-weight: 700;font-family: 'JaSN-Regular', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 18px;text-transform: uppercase;">
+																												EXPERIENCE & TRAINING
+																											</span>
+																										</h6>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td align="left" valign="top" style="padding-top: 6px;">
+																										<table class="fullwidth" align="left" cellspacing="0" cellpadding="0" border="0">
+																											<tr>
+																												<td align="left" valign="top">
+																													<table align="center" cellspacing="0" cellpadding="0" border="0">
+																														<tr>
+																															<td class="fullcenter" align="center" valign="top">
+																																<span style="color: #35081A;font-size: 13px;font-weight: 400;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;text-transform: uppercase;">
+																																	NYC Restaurants
+																																</span>
+																															</td>
+																															<td class="fullcenter" align="center" valign="top" style="padding-left: 8px;">
+																																<span style="color: #35081A;font-size: 13px;font-weight: 400;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;text-transform: uppercase;">
+																																	Tel Aviv Restaurants
+																																</span>
+																															</td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td align="left" valign="top" style="padding: 0 10px;">
+																	<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																		<tr>
+																			<td class="fullwidthblock" align="left" valign="top">
+																				<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																					<tr>
+																						<td align="left" valign="top" style="padding: 0 8px 16px;">
+																							<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top">
+																										<img src="images/food-card-i.png" alt="Image Missing">
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="padding-top: 10px;">
+																										<p style="color: #35081A;font-size: 12px;font-weight: 400;font-family: 'JaSN-Regular', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;">
+																											Slow-Cooked Butter Beans
+																										</p>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																			<td class="fullwidthblock" align="left" valign="top">
+																				<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																					<tr>
+																						<td align="left" valign="top" style="padding: 0 8px 16px;">
+																							<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="font-size: 0;">
+																										<img src="images/food-card-ii.png" alt="Image Missing">
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="padding-top: 10px;">
+																										<p style="color: #35081A;font-size: 12px;font-weight: 400;font-family: 'JaSN-Regular', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;">
+																											Slow-Cooked Butter Beans
+																										</p>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																			<td class="fullwidthblock" align="left" valign="top">
+																				<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																					<tr>
+																						<td align="left" valign="top" style="padding: 0 8px 16px;">
+																							<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="font-size: 0;">
+																										<img src="images/food-card-ii.png" alt="Image Missing">
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="padding-top: 10px;">
+																										<p style="color: #35081A;font-size: 12px;font-weight: 400;font-family: 'JaSN-Regular', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;">
+																											Slow-Cooked Butter Beans
+																										</p>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table><!-- end row -->
+
+					<table class="row row__5" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td align="center" valign="top">
+								<table class="fullwidth" width="600" align="center" cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td class="gprl-15" align="center" valign="top" bgcolor="#fff9f2" style="padding: 0 37px 40px;background: #fff9f2;background-color: #fff9f2;">
+											<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td align="left" valign="top" bgcolor="#FFDBC7" style="padding: 30px 0 14px;border-radius: 25px;background: #FFDBC7;background-color: #FFDBC7;">
+														<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+															<tr>
+																<td align="left" valign="top" style="padding: 0 10px">
+																	<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																		<tr>
+																			<td class="fullwidthblock" align="left" valign="top" width="171">
+																				<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																					<tr>
+																						<td align="left" valign="top" style="padding: 0 8px 16px;">
+																							<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																								<tr>
+																									<td class="fullcenter" align="left" valign="middle" style="font-size: 0;">
+																										<img src="images/person-horizontal.png" alt="Image Missing">
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																			<td class="fullwidthblock" align="left" valign="top" width="335">
+																				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+																					<tr>
+																						<td align="left" valign="top" style="padding: 0 8px 16px;">
+																							<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top">
+																										<h1>
+																											<span style="display: inline-block;color: #F01D59;font-size: 42px;font-weight: 700;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 42px;text-transform: uppercase;">
+																												Shef Kwesi R.
+																											</span>
+																										</h1>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="padding-top: 12px;">
+																										<h4>
+																											<span style="display: inline-block;color: #35081A;font-size: 22px;font-weight: 700;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 24px;">
+																												Bright Mediterranean Flavors
+																											</span>
+																										</h4>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="padding-top: 6px;">
+																										<p style="color: #35081A;font-size: 16px;font-weight: 700;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 18px;">
+																											15+ Years of professional experience
+																										</p>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="padding: 16px 0;">
+																										<p style="color: #35081A;font-size: 16px;font-weight: 400;font-family: 'JaSN-Regular', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 18px;">
+																											A passionate shef specializing in modern American cuisine. Joshua creates fresh, inventive comfort food from a place of love for the craft.
+																										</p>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top">
+																										<h6>
+																											<span style="display: inline-block;color: #F01D59;font-size: 16px;font-weight: 700;font-family: 'JaSN-Regular', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 18px;text-transform: uppercase;">
+																												CUISINE
+																											</span>
+																										</h6>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td align="left" valign="top" style="padding-top: 6px;">
+																										<table class="fullwidth" align="left" cellspacing="0" cellpadding="0" border="0">
+																											<tr>
+																												<td align="left" valign="top">
+																													<table align="center" cellspacing="0" cellpadding="0" border="0">
+																														<tr>
+																															<td class="fullcenter" align="center" valign="top">
+																																<span style="color: #35081A;font-size: 13px;font-weight: 400;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;text-transform: uppercase;">
+																																	AMERICAN
+																																</span>
+																															</td>
+																															<td class="fullcenter" align="center" valign="top" style="padding: 0 8px;">
+																																<span style="color: #35081A;font-size: 13px;font-weight: 400;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;text-transform: uppercase;">
+																																	MEDITERRANEAN
+																																</span>
+																															</td>
+																															<td class="fullcenter" align="center" valign="top">
+																																<span style="color: #35081A;font-size: 13px;font-weight: 400;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;text-transform: uppercase;">
+																																	MOROCCAN
+																																</span>
+																															</td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="padding-top: 12px;">
+																										<h6>
+																											<span style="display: inline-block;color: #F01D59;font-size: 16px;font-weight: 700;font-family: 'JaSN-Regular', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 18px;text-transform: uppercase;">
+																												EXPERIENCE & TRAINING
+																											</span>
+																										</h6>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td align="left" valign="top" style="padding-top: 6px;">
+																										<table class="fullwidth" align="left" cellspacing="0" cellpadding="0" border="0">
+																											<tr>
+																												<td align="left" valign="top">
+																													<table align="center" cellspacing="0" cellpadding="0" border="0">
+																														<tr>
+																															<td class="fullcenter" align="center" valign="top">
+																																<span style="color: #35081A;font-size: 13px;font-weight: 400;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;text-transform: uppercase;">
+																																	NYC Restaurants
+																																</span>
+																															</td>
+																															<td class="fullcenter" align="center" valign="top" style="padding-left: 8px;">
+																																<span style="color: #35081A;font-size: 13px;font-weight: 400;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;text-transform: uppercase;">
+																																	Tel Aviv Restaurants
+																																</span>
+																															</td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td align="left" valign="top" style="padding: 0 10px;">
+																	<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																		<tr>
+																			<td class="fullwidthblock" align="left" valign="top">
+																				<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																					<tr>
+																						<td align="left" valign="top" style="padding: 0 8px 16px;">
+																							<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top">
+																										<img src="images/food-card-i.png" alt="Image Missing">
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="padding-top: 10px;">
+																										<p style="color: #35081A;font-size: 12px;font-weight: 400;font-family: 'JaSN-Regular', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;">
+																											Slow-Cooked Butter Beans
+																										</p>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																			<td class="fullwidthblock" align="left" valign="top">
+																				<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																					<tr>
+																						<td align="left" valign="top" style="padding: 0 8px 16px;">
+																							<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="font-size: 0;">
+																										<img src="images/food-card-ii.png" alt="Image Missing">
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="padding-top: 10px;">
+																										<p style="color: #35081A;font-size: 12px;font-weight: 400;font-family: 'JaSN-Regular', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;">
+																											Slow-Cooked Butter Beans
+																										</p>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																			<td class="fullwidthblock" align="left" valign="top">
+																				<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																					<tr>
+																						<td align="left" valign="top" style="padding: 0 8px 16px;">
+																							<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="font-size: 0;">
+																										<img src="images/food-card-ii.png" alt="Image Missing">
+																									</td>
+																								</tr>
+																								<tr>
+																									<td class="fullcenter" align="left" valign="top" style="padding-top: 10px;">
+																										<p style="color: #35081A;font-size: 12px;font-weight: 400;font-family: 'JaSN-Regular', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 14px;">
+																											Slow-Cooked Butter Beans
+																										</p>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table><!-- end row -->
+
+					<table class="row row__6" role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td align="center" valign="top">
+								<table class="fullwidth" width="600" align="center" cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td class="gprl-15" align="center" valign="top" bgcolor="#35081a" style="padding: 70px 74px;background: #35081a;background-color: #35081a;">
+											<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td align="center" valign="top">
+														<h1 style="display: inline-block;">
+															<span style="color: #ffffff;font-size: 32px;font-weight: 700;font-family: 'JaSN-Bold', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 32px;text-transform: uppercase;text-align: center;">
+																Connect with us
+															</span>
+														</h1>
+													</td>
+												</tr>
+												<tr>
+													<td align="center" valign="top" style="padding-top: 30px;">
+														<table align="center" cellspacing="0" cellpadding="0" border="0">
+															<tr>
+																<td align="center" valign="middle">
+																	<a href="#" target="_blank" style="font-size: 0;">
+																		<img src="images/social-icon-x.png" alt="Icon Missing">
+																	</a>
+																</td>
+																<td align="center" valign="middle" style="padding: 0 15px;">
+																	<a href="#" target="_blank" style="font-size: 0;">
+																		<img src="images/social-icon-facebook.png" alt="Icon Missing">
+																	</a>
+																</td>
+																<td align="center" valign="middle">
+																	<a href="#" target="_blank" style="font-size: 0;">
+																		<img src="images/social-icon-insta.png" alt="Icon Missing">
+																	</a>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td align="center" valign="top" style="padding: 18px 0;">
+														<p style="color: #ffffff;font-size: 12px;font-weight: 400;font-family: 'JaSN-Regular', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 1;text-align: center;">
+															If you'd like to unsubscribe and stop receiving <br>these emails, <a href="#" style="color: #ffffff;font-size: 12px;font-weight: 400;font-family: 'JaSN-Regular', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 16px;">click here</a>
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td align="center" valign="top">
+														<table width="80" align="center" cellspacing="0" cellpadding="0" border="0">
+															<tr>
+																<td height="1" align="center" valign="top" bgcolor="#ffffff"></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td align="center" valign="top" style="padding-top: 18px;">
+														<p style="color: #ffffff;font-size: 15px;font-weight: 400;font-family: 'JaSN-Regular', Arial, Helvetica, sans-serif;letter-spacing: 0;line-height: 1.5;text-align: center;">
+															165 Jessie St Fl 4 <br> San Francisco, CA 94105-4012 <br> © 2026 Shef, Inc
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table><!-- end row -->
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
